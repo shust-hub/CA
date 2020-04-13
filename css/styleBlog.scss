@@ -1,0 +1,221 @@
+.blogContainer {
+    width: 100%;
+    padding-top: 45px;
+}
+
+.blogBox {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 768px)  {
+        flex-direction: row;
+    }
+
+    &__cover{
+        height: 198px;
+        width: 100%;
+        overflow: hidden;
+        border-top: 4px solid orangered;
+        object-fit: cover;
+
+        @media (min-width: 768px)  {
+            width: 30%;
+            border-top: none;
+            border-left: 4px solid orangered;
+        }
+    }
+
+    &__content {
+        box-sizing: border-box;
+        width: 100%;
+        background-color: white;
+        padding-top: 20px;
+        
+
+        @media (min-width: 768px)  {
+            width: 70%;
+            padding: 20px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 5px;
+    }
+
+    &__date {
+        color: #cfcfcf;
+        font-size: 14px;
+        padding: 0;
+    }
+
+
+    &__readMore {
+        display: block;
+        background-color: orangered;
+        color: white;
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 50px;
+        @media (min-width: 768px)  {
+            width: 250px;
+        }
+    }
+}
+
+
+.blogBox__readMore:hover{
+    background-color: #f9e821;
+}
+
+.blogBox__readMore:hover+.blogBox__cover{
+    border-bottom: 4px solid #f9e821;
+}
+
+.blogBox:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+///////////////////////////////////////////////////
+
+.blogPage {
+    &__container {
+        h2{
+            margin-bottom: 15px;
+            margin-top: 20px;
+            font-size: 25px;
+            @media (min-width: 768px)  {
+                font-size: 35px;
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: 10px!important;
+        font-weight: bold;
+        color: #707070;
+        margin-top: 30px!important;
+        font-size: 30px!important;
+        @media (min-width: 768px)  {
+            font-size: 40px!important;
+        }
+    }
+
+    &__Img{
+        height: 350px;
+        width: 100%;
+        overflow: hidden;
+        object-fit: cover;
+        
+
+    }
+
+    &__calloutBox{
+        background-color: whitesmoke;
+        padding: 20px 30px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        border-left: 4px solid orangered;
+
+        h2{
+            margin-bottom: 15px;
+            margin-top: 0;
+            font-size: 25px;
+
+            @media (min-width: 768px)  {
+                font-size: 30px;
+                span{
+                    font-size: 30px!important;
+                }
+            }
+            span{
+                font-size: 25px;
+            }
+        }
+
+    }
+
+    &__atention {
+        background-color: orangered;
+        padding: 20px 30px;
+        margin: 10px 0;
+        color: white;
+    }
+
+    &__date{
+        i{
+            color: orangered;
+        }
+        margin-bottom: 25px;
+    }
+}
+
+/////////////////////////////////////////////
+.relatedArticles{
+    &__box{
+        
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    &__box:first-child{
+        margin-top: 90px;
+        @media (min-width: 768px)  {
+            margin-top: 0;
+        }
+    }
+
+    &__content{
+        padding: 20px 10px;
+        background-color: orangered;
+        width: 55%;
+    }
+
+    &__title{
+        color: white;
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
+
+    &__date {
+        color: whitesmoke;
+        font-size: 14px;
+    }
+
+    &__img{
+        height: 200px;
+        width: 45%;
+        overflow: hidden;
+        object-fit: cover;
+    }
+
+    &__ReadMore{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100px;
+        background-color: #52d0f1;
+        color: white;
+        text-decoration: none;
+        line-height: 1;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 16px 20px 16px 20px;
+        text-align: center;
+        &:hover{
+            background-color: #f9e821;
+        }
+    }
+}
+
+

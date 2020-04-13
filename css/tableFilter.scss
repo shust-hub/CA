@@ -1,0 +1,29 @@
+.filterTable{
+    position: relative;
+}
+.filterTable__form{
+        display: none; 
+    input{
+        margin-left: 15px;
+    }
+}
+.filterForm__wrapper{
+    align-items: center;
+    margin-left: -15px;
+    display: flex;
+}
+.filterTable__btn {
+    color: orangered;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    font-size: smaller;
+    cursor: pointer;
+    &:hover{
+        color: #52d0f1;
+    }
+}
+.ClassesFilterButton{
+    position: absolute;
+    top: 0px;
+    left: 150px;
+}

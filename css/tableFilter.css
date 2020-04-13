@@ -1,0 +1,41 @@
+.filterTable {
+  position: relative;
+}
+
+.filterTable__form {
+  display: none;
+}
+
+.filterTable__form input {
+  margin-left: 15px;
+}
+
+.filterForm__wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.filterTable__btn {
+  color: orangered;
+  text-decoration: underline;
+  -webkit-text-decoration-style: dashed;
+          text-decoration-style: dashed;
+  font-size: smaller;
+  cursor: pointer;
+}
+
+.filterTable__btn:hover {
+  color: #52d0f1;
+}
+
+.ClassesFilterButton {
+  position: absolute;
+  top: 0px;
+  left: 150px;
+}
+/*# sourceMappingURL=tableFilter.css.map */

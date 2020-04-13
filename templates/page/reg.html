@@ -1,0 +1,819 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ description }}">
+    <link rel='dns-prefetch' href='//maps.google.com' />
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel='dns-prefetch' href='//s.w.org' />
+    <link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+
+
+    <link rel='stylesheet' id='wp-block-library-group-css' href='/css/style1.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='pb-component-blockquote-group-css' href='/css/style2.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='pb-component-feature-group-css' href='/css/style3.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='pb-component-responsive-nav-group-css' href='/css/style4.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='pb-component-space-group-css' href='/css/style5.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='rs-plugin-settings-group-css' href='/css/style6.css' type='text/css' media='all' />
+
+    <link rel='stylesheet' id='timetable_font_lato-css'  href='//fonts.googleapis.com/css?family=Lato%3A400%2C700&#038;ver=5.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='woocommerce-general-group-css' href='/css/style7.css' type='text/css' media='all' />
+    {% for item in css %}
+        <link rel='stylesheet' href='{{ item }}' type='text/css' media='all' />
+    {% endfor %}
+    <link rel='stylesheet' id='google-font-open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&#038;subset=cyrillic-ext%2Ccyrillic%2Cvietnamese%2Cgreek-ext%2Clatin%2Cgreek%2Clatin-ext&#038;ver=5.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='google-font-dosis-css'  href='//fonts.googleapis.com/css?family=Dosis%3A200%2C300%2Cregular%2C500%2C600%2C700%2C800&#038;subset=latin%2Clatin-ext&#038;ver=5.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='google-font-lato-css'  href='//fonts.googleapis.com/css?family=Lato%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&#038;subset=latin%2Clatin-ext&#038;ver=5.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='olympus-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Noto+Sans%3A400%2C700%2C400i%2C700i%7CPT+Mono%3A400%2C400i%7CUbuntu%3A300%2C400%2C500%2C700%2C300i%2C400i%2C500i%2C700i&#038;subset=greek-ext%2Clatin-ext%2Cvietnamese%2Clatin%2Ccyrillic-ext%2Cdevanagari%2Ccyrillic%2Cgreek&#038;display=swap&#038;ver=1.9.6' type='text/css' media='all' />
+
+    <link rel="stylesheet" href="/css/stylePortal.css" type='text/css'>
+    <link rel="stylesheet" href="/css/style_reg.css" type='text/css'>
+    <!--n2css-->
+    <script type='text/javascript' src='/js/jquery.js'></script>
+    <script type='text/javascript' src='/js/jquery-migrate.min.js'></script>
+    <script type='text/javascript' src='/js/plugins10.js'></script>
+
+    <script type='text/javascript'>
+        var video_popup_unprm_general_settings = {
+            'unprm_r_border': ''
+        };
+    </script>
+
+
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
+    <script type="text/javascript">function setREVStartSize(e){
+            try{ e.c=jQuery(e.c);var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+                if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})
+            }catch(d){console.log("Failure at Presize of Slider:"+d)}
+        };</script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118296305-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-118296305-5');
+        gtag('config', 'AW-945420837');
+    </script>
+
+	
+	<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+ fbq('init', '191358722010157'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+ <img height="1" width="1" 
+src="https://www.facebook.com/tr?id=191358722010157&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+</head>
+
+<body class="home page-template page-template-main page-template-main-php page page-id-404 custom-background pb woocommerce-no-js">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NQBN4JV"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="pb-menu pb pb-menu-template-type-1" id="pb_menu_1356D2CB2EB1BA9E744C3D62316D6262">
+    <div class="pb-main pb-clear-fix">
+        <div class="pb-logo">
+
+            <a href="/" title="CodeAdvantage ">
+                <img src="/images/logor.png" alt="CodeAdvantage "/>
+            </a>
+
+        </div>
+
+        <div class="pb-menu-default">
+            {# не забудь обновить мобильное меню! #}
+            <ul id="menu-code-advantage-menu" class="sf-menu pb-reset-list pb-clear-fix">
+                <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children sf-mega-enable-0  ">
+                    <a href="/classes">Classes</a>
+                    <ul>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/classes/grades"><span></span>Classes by Grade</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/classes/tech-and-arts"><span></span>Technology and Arts Exploration</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/classes/robotics"><span></span>Robotics</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/classes/coding"><span></span>Coding</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children sf-mega-enable-0  ">
+                    <a href="/online-coding-classes-for-kids"><span></span>Online Coding Classes</a>
+                    <ul>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/online-coding-classes-for-kids">Online Coding for Kids</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/online/intro-to-coding"><span></span>3D Video Game Design</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/online/intermediate-coding"><span></span>Scratch</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/online/advanced-coding"><span></span>Design with Python</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/online/web-development"><span></span>Web Development</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/online-trial-coding-classes-for-kids"><span></span>Take A Trial Class</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" menu-item menu-item-type-post_type menu-item-object-page sf-mega-enable-0  ">
+                    <a href="/private-classes"><span></span>Private Classes</a>
+                </li>
+                <li class=" menu-item menu-item-type-post_type menu-item-object-page sf-mega-enable-0  ">
+                    <a href="/school-programs"><span></span>After School</a>
+                </li>
+
+                <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children sf-mega-enable-0  ">
+                    <a href="/about"><span></span>About</a>
+
+                    <ul>
+                       <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/about"><span></span>About us</a>
+
+                        </li>
+
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/about/press"><span></span>In the Press</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/about/testimonials"><span></span>Testimonials</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/about/why-coding"><span></span>Why Coding?</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/about/join-the-team"><span></span>Join the Team</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/about/faq"><span></span>FAQ</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" menu-item menu-item-type-post_type menu-item-object-page sf-mega-enable-0  ">
+                    <a href="/contact"><span></span>Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="pb-menu-responsive">
+            <div id="menu-code-advantage-menu-1" class="pb-clear-fix">
+                <div id="pb_menu_responsive_329AE32EDE8E62CD52ACFDC02FC60D94">
+                    <ul>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
+                            <a href="/classes">Classes</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/classes/grades">-- Classes by Grade</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/classes/tech-and-arts">-- Technology and Arts Exploration</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/classes/robotics">-- Robotics</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/classes/coding">-- Coding</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
+                            <a href="/online-coding-classes-for-kids">Online Coding Classes</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/online-coding-classes-for-kids">-- Online Coding for Kids</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/online/intro-to-coding">-- 3D Video Game Design</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/online/intermediate-coding">-- Scratch</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/online/advanced-coding">-- Design with Python</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/online/web-development">-- Web Development</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/online-trial-coding-classes-for-kids">-- Take A Trial Class</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/private-classes">Private Classes</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/school-programs"><span></span>After School</a>
+                        </li>
+
+
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/about">-- About us</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/about/press">-- In the Press</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/about/testimonials">-- Testimonials</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/about/why-coding">-- Why Coding?</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/about/join-the-team">-- Join the Team</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/about/faq">-- FAQ</a>
+                        </li>
+
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<div class="pb-script-tag">
+    <script type="text/javascript">
+        jQuery(document).ready(function($)
+        {
+            $('#pb_menu_1356D2CB2EB1BA9E744C3D62316D6262').PBMenu({"responsive_mode":"768","sticky_enable":"0","hide_scroll_enable":"0","menu_animation_enable":"1","menu_animation_speed_open":"400","menu_animation_speed_close":"200","menu_animation_delay":"0","scroll_animation_enable":"1","scroll_animation_speed":"1000","scroll_animation_easing":"easeOutQuint","responsive_menu_id":"pb_menu_responsive_329AE32EDE8E62CD52ACFDC02FC60D94","responsive_menu_label":"Menu"});
+        });
+    </script>
+</div>
+
+<div class="theme-page">
+    <div class="theme-page-content theme-clear-fix">
+
+        
+        {% if prog %}
+        <div class="pb-line pb-clear-fix   pb-main">
+            <div class="well">
+                <h4><i class="icon icon-ca-location"></i> {{ location}}</h4>
+                <p>Please choose the number of students
+                    <select onchange="studentEnroll(this);" class="pb-infield-label">
+                        {% for item in 1..max %}
+                        <option value="{{ item }}">{{ item }}</option>
+                        {% endfor %}
+                    </select>
+                </p>
+                <table class="table">
+        
+                    <tr>
+                        <td><div class="h5 margin-bottom-10 no-margin-top"><strong>{{ prog.name }}</strong>,
+                                grades {{ prog.grade }}</div>
+                            <p>
+                                <i class="icon icon-ca-clock"></i> {{ prog.clock }}<br>
+                                <i class="icon icon-ca-calendar"></i> {{ prog.dates }}<br>
+                            </p></td>
+                        <td><strong class="no-margin-top"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> <span class="student_cnt">1</span></strong></td>
+                        <td class=" text-right">
+                            <div class="h4 no-margin-top">Price: $<span class="course_price" data-price="{{ prog.price }}">{{ prog.price }}</span></div>
+        
+                        </td>
+                    </tr>
+        
+                </table>
+        
+        
+                <div class="text-right"><h2>Total: <span>$<span id="mprice">{{ prog.price }}</span></span><span id="dprice"></span></h2></div>
+        
+        
+            </div>
+        
+            <div id="proceed">
+                <form method="post" id="order_form">
+                    <div style="line-height: 30px; margin-bottom: 10px;">
+                        <strong>Promo code: </strong>
+                        <div style="display: inline-block; width: 220px; vertical-align: middle; margin-left: 10px;">
+                            <input type="text" class="form-control" name="promo_code" id="promo_code" onblur="check_promo(this);">
+                        </div>
+                        <button type="button" class="btn btn-warning btn-sm">Apply Promo Code</button>
+                        <span id="pmsg"></span>
+                    </div>
+                    <p>Please fill in the form below</p>
+        
+                    <input type="hidden" name="r" value="{{ time }}">
+                    <input type="hidden" name="tok" value="{{ tok }}">
+                    <input type="hidden" name="program" value="{{ prog.id }}">
+        
+                    <strong>Parent Information</strong>
+        
+                    <div class="well">
+        
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <label for="firstname">First Name*</label>
+                                <input type="text" class="form-control" name="firstname" value="" required="">
+                            </div>
+                            <div class="col-sm-3">
+                                <label for="lastname">Last Name*</label>
+                                <input type="text" class="form-control" name="lastname" value="" required="">
+                            </div>
+                            <div class="col-sm-3">
+                                <label for="name">Cell Phone*</label>
+                                <input type="text" class="form-control" name="phone" value="" required="">
+                            </div>
+                            <div class="col-sm-3">
+                                <label for="name">Email*</label>
+                                <input type="text" class="form-control" name="email" value="" required="">
+                            </div>
+                            <div class="col-sm-3">
+                                <label for="reg_guardian_name">Emergency Contact Person*</label>
+                                <input type="text" id="reg_guardian_name" class="form-control" name="guardian_name" onkeyup="update_guardian();" value="" required="">
+                            </div>
+                            <div class="col-sm-3">
+                                <label for="reg_guardian_phone">Emergency Contact Phone*</label>
+                                <input type="text" id="reg_guardian_phone" class="form-control" name="guardian_phone" onkeyup="update_guardian();" value="" required="">
+                            </div>
+                        </div>
+                    </div>
+        
+                    <strong>Student Information</strong>
+                    <div id="studentBlock" class="margin-bottom-10">
+                        <div class="well">
+                            <div class="child-num" style="display: none; font-weight: bold">Child 1</div>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <label for="student_firstname">First Name*</label>
+                                    <input type="text" class="form-control" name="student_firstname[]" required="">
+                                </div>
+                                <div class="col-sm-3">
+                                    <label for="student_lastname">Last Name*</label>
+                                    <input type="text" class="form-control" name="student_lastname[]" required="">
+                                </div>
+                                <div class="col-sm-1">
+                                    <label for="student_grade">Grade*</label>
+                                    <select class="form-control" name="student_grade[]" required="">
+                                        <option value=""></option>
+                                        <option value="Pre-K">Pre-K</option>
+                                        <option value="K">K</option>
+                                        <option value="1st">1st</option>
+                                        <option value="2nd">2nd</option>
+                                        <option value="3rd">3rd</option>
+                                        <option value="4th">4th</option>
+                                        <option value="5th">5th</option>
+                                        <option value="6th">6th</option>
+                                        <option value="7th">7th</option>
+                                        <option value="8th">8th</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label for="name">Date of birth*</label>
+        
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <div class="form-group">
+                                                <select name="st_bday[]" class="form-control" required="">
+                                                    <option value="">-</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                    <option value="13">13</option>
+                                                    <option value="14">14</option>
+                                                    <option value="15">15</option>
+                                                    <option value="16">16</option>
+                                                    <option value="17">17</option>
+                                                    <option value="18">18</option>
+                                                    <option value="19">19</option>
+                                                    <option value="20">20</option>
+                                                    <option value="21">21</option>
+                                                    <option value="22">22</option>
+                                                    <option value="23">23</option>
+                                                    <option value="24">24</option>
+                                                    <option value="25">25</option>
+                                                    <option value="26">26</option>
+                                                    <option value="27">27</option>
+                                                    <option value="28">28</option>
+                                                    <option value="29">29</option>
+                                                    <option value="30">30</option>
+                                                    <option value="31">31</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <div class="form-group">
+                                                <select name="st_bmon[]" class="form-control" required="">
+                                                    <option value="">-</option>
+                                                    <option value="1">Jan</option>
+                                                    <option value="2">Feb</option>
+                                                    <option value="3">Mar</option>
+                                                    <option value="4">Apr</option>
+                                                    <option value="5">May</option>
+                                                    <option value="6">Jun</option>
+                                                    <option value="7">Jul</option>
+                                                    <option value="8">Aug</option>
+                                                    <option value="9">Sep</option>
+                                                    <option value="10">Oct</option>
+                                                    <option value="11">Nov</option>
+                                                    <option value="12">Dec</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <div class="form-group">
+                                                <select name="st_byear[]" class="form-control" required="">
+                                                    <option value="">-</option>
+                                                    <option value="2019">2019</option>
+                                                    <option value="2018">2018</option>
+                                                    <option value="2017">2017</option>
+                                                    <option value="2016">2016</option>
+                                                    <option value="2015">2015</option>
+                                                    <option value="2014">2014</option>
+                                                    <option value="2013">2013</option>
+                                                    <option value="2012">2012</option>
+                                                    <option value="2011">2011</option>
+                                                    <option value="2010">2010</option>
+                                                    <option value="2009">2009</option>
+                                                    <option value="2008">2008</option>
+                                                    <option value="2007">2007</option>
+                                                    <option value="2006">2006</option>
+                                                    <option value="2005">2005</option>
+                                                    <option value="2004">2004</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-1">
+                                    <div>&nbsp;</div>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="student_sex[0]" class="student_girl student_gender" value="girl"> girl
+                                    </label><br>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="student_sex[0]" class="student_boy student_gender" value="boy"> boy
+                                    </label>
+        
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="reg_experience">Does your child have prior experience with computer programming?</label>
+                                    <input type="text" id="reg_experience" class="form-control" name="student_experience[]">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="reg_medical_information">Medical Information (optional)</label>
+                                    <input type="text" id="reg_medical_information" class="form-control" name="medical_information[]">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="well">
+        
+                        <div class="form-group">
+                            <label>** If your child is attending class at a CodeAdvantage location, please provide a list of people that you have authorized to sign out your child at the end of class. Our representative will check ID of people listed below on sign out.</label>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="sign_out_name1" id="ger_sign_out_name1">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="sign_out_name2" id="ger_sign_out_name2">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="sign_out_name3" id="ger_sign_out_name3">
+                            </div>
+                        </div>
+                        <p>Self sign-out:</p>
+        
+                        <div class="checkbox">
+        
+                            <label><input type="checkbox" name="sign_out_self" value="1"> I give permission for my child to
+                                sign out from CodeAdvantage classes independently. I understand that once my child is
+                                released from the CodeAdvantage premises, he/she will no longer be supervised by staff. I
+                                also recognize that once my child has signed out, CodeAdvantage is no longer liable for my
+                                child.</label>
+                        </div>
+                        <small>Please tick the box if you allow your child to sign-out independently. For the safety of all
+                            students, no children under 10 will be allowed to sign themselves out.
+                        </small>
+                        <div class="form-group">
+                            <label>Special notes to the program director or instructor</label>
+                            <textarea class="form-control" rows="4" name="note"></textarea>
+                        </div>
+        
+                    </div>
+        
+        
+        
+                    <div class="text-right" style="padding: 20px 0;">
+                        <label><input type="checkbox" name="newsletter" value="1" checked="">&nbsp;Sign me up for the CodeAdvantage newsletter to hear about upcoming classes and events in my neighborhood</label>
+                    </div>
+        
+                    <div style="height: 200px; overflow: auto; border: 1px solid #eee; padding: 5px; background: #fff; font-size: 0.8em; line-height: normal">
+                        <div class="h4 text-center no-margin margin-bottom-10">WAIVER</div>
+                        <p>Registration Policy: All spaces will be filled on a first come first serve basis.</p>
+                        <p>Refund Policy: Due to the limited class size and limited number of classes provided, all payments for the session are non-refundable. Make-up classes can be arranged solely at the discretion of the instructor and based on availability.</p>
+                        <p>Release of Liability: I understand the nature of the activity and believe my child to be qualified, in good health and in proper physical condition to participate in such an activity. In addition to giving my full consent for my child’s participation, I do hereby waive, release and hold harmless CodeAdvantage, its owners, representatives, instructors, directors, and employees for any injury that may be suffered by my child in the normal course of participation. I hereby give my permission to CodeAdvantage to summon trained medical professionals to care for my child in the event that an injury should occur in my absence with the understanding that the family will be notified as soon as possible.</p>
+                        <p>Photograph &amp; Video Release: On occasion CodeAdvantage may use photographs and video to  promote CodeAdvantage to the general public. I understand that I will not receive compensation in any form from the use of my child’s photograph or my child’s photographic likeness and recorded voice. I hereby consent to the use of my child’s photograph, my child’s photographic likeness and recorded voice in any videotape and my name by CodeAdvantage in the CodeAdvantage website and in any promotional posters, flyers, brochures, printed and electronic ads or electronic media. No names of children will be shown.</p>
+                        <p>By placing a check in the check box next to the terms of this Waiver, I hereby certify that I am the legal guardian of the student listed on this form. Furthermore, I have read this waiver and assumption of risk and fully understand and accept its terms. A full version of CodeAdvantage’s Terms and Conditions is included on our website www.codeadvantage.org</p>
+        
+                    </div>
+                    <div class="text-right" style="padding: 20px 0;">
+                        <label><input type="checkbox" name="certify">&nbsp;I hereby certify that I am the legal guardian of the student listed on this form. Furthermore, I have read this release of liability and assumption of risk and fully understand its terms. By putting a check in the check box below, I certify that I accept the Conditions of this Waiver.</label>
+                    </div>
+        
+                    <div style="height: 200px; overflow: auto; border: 1px solid #eee; padding: 5px; background: #fff; font-size: 0.8em; line-height: normal">
+                        <div class="h4 text-center no-margin margin-bottom-10">Terms and Conditions</div>
+                        <ol>
+                            <li>CodeAdvantage is a trade       name of CodeAdvantage LLC, (hereinafter referred to as the COMPANY). The       user of this site or the guardian of the daughter, son or ward,       (hereinafter referred to as the attendee) that will register and attend the       COMPANY’s programs is hereinafter referred to as the PARTICIPANT.&nbsp; The words programs, classes, class may       be used interchangeably to define the services or programs provided by the       COMPANY.</li>
+                            <li>The PARTICIPANT should       assume that everything the PARTICIPANT sees or reads on the Site is       copyrighted and may not be used except as provided in these Terms and       Conditions or in the text on the Site without the written permission of       the COMPANY unless otherwise noted. The COMPANY neither warrants nor       represents that your use of materials displayed on the Site will not       infringe rights of third parties not owned by or affiliated with the       COMPANY.</li>
+                            <li>The COMPANY hopes that the PARTICIPANT       will find this Web site to be useful and reliable; however, the COMPANY       cannot guarantee the following: that the content or other information       provided through the service will always be accurate or up-to-date, that       any of the functions of the service will always be error-free, although       the COMPANY aims to do its best to provide the most accurate information       as possible. If the USER sees errors on this website, please <a href="/contact-our-kids-coding-program" title="contact us">contact us</a> right away.</li>
+                            <li>The PARTICIPANT´s use of       and browsing in the Site are at the PARTICIPANT´s own risk. Neither the       COMPANY, any of its agencies, nor any other party involved in creating,       producing, or delivering the Site is liable for any direct, incidental,       consequential, indirect, or punitive damages arising out of the PARTICIPANT´s       access to, or use of, the Site. Without limiting the foregoing, everything       on the Site is provided to you <strong style="color:#f00">"AS IS" WITHOUT       WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT       LIMITIED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A       PARTICULAR PURPOSE, OR NONINFRINGEMENT</strong>. Please note that some jurisdictions may not       allow the exclusion of implied warranties, so some of the above exclusions       may not apply to the PARTICIPANT. The COMPANY also assumes no       responsibility, and shall not be liable for, any damages to, or viruses that       may infect the PARTICIPANT´s computer equipment or other property on       account of the PARTICIPANT´s access to, use of, or browsing in the Site or       the PARTICIPANT downloading of any materials, data, text, images, video,       or audio from the Site. </li>
+                            <li>Images of people, places,       and products displayed on the Site are either the property of, or used       with permission by, the COMPANY. The use of these images by the PARTICIPANT,       or anyone else authorized by the PARTICIPANT, is prohibited unless       specifically permitted by these Terms and Conditions or specific       permission provided elsewhere on the Site. Any unauthorized use of the       images may violate copyright laws, trademark laws, the laws of privacy and       publicity, and communications regulations and statutes.</li>
+                            <li>The trademarks, logos, and       service marks (collectively the "Trademarks") displayed on the       Site are registered and common law Trademarks of the COMPANY and others.       Nothing contained on the Site should be construed as granting, by       implication or otherwise, any license or right to use any Trademark       displayed on the Site without the written permission of the COMPANY or       such third party that may own the Trademarks displayed on the Site. The PARTICIPANT´s       use of the Trademarks displayed on the Site, or any other content on the       Site, is strictly prohibited. The PARTICIPANT is also advised that the       COMPANY will aggressively enforce its intellectual property rights to the       fullest extent of the law, including the seeking of criminal       prosecution. </li>
+                            <li>This Web site contains       links to other Web sites. The COMPANY is not responsible for the content,       privacy practices, or accuracy of: opinions expressed in or any other       aspects of such Web sites. Such Web sites are not investigated, monitored,       or checked for accuracy or completeness by the COMPANY.</li>
+                            <li>All information contained       on the COMPANY´s website, has been compiled from up to date details and       the COMPANY has taken care to ensure its accuracy. There may however be       occasions when an advertised facility is either modified or unavailable.       Such situations may be dictated by local circumstances, necessity for       maintenance, local construction work, water shortages, adverse weather,       fuel shortages, power cuts, and other circumstances beyond the COMPANY´s       control. If the COMPANY is advised of this, the COMPANY will of course       inform the USER as soon as possible, but the COMPANY cannot be held liable       in such circumstances.</li>
+                            <li>Health Policy: The       PARTICIPANT certifies that the attendee has no medical or other condition       that prohibits full participation in the program.&nbsp; Attendees of the COMPANY’s programs,       camps, events that display any indicators of illness will be sent home and       will be unable to attend the programs until the attendee is in good health       once again.&nbsp; </li>
+                            <li>Medical and Emergency       Policy:&nbsp; It is the sole       responsibility of the PARTICIPANT to ensure that the Company has the       correct emergency contact information to be used in cases of medical and       non-medical emergencies.&nbsp; The       PARTICIPANT understands the risk of injury involved in any outside of the       home and hereby agrees to assume full responsibility for the attendee       while attending COMPANY programs and agrees to hold harmless the COMPANY,       its owners and its employees and to indemnify the COMPANY against       loss.&nbsp; In emergency situations, if       the PARTICIPANT cannot be reached, the PARTICIPANT authorizes the COMPANY,       its agents and employees to secure medical attention for the       attendee.&nbsp; The PARTICIPANT will be       responsible for all costs associated with such medical attention.&nbsp; The PARTICIPANT shall provide the sole       insurance coverage for any medical treatment.</li>
+                            <li>The COMPANY is not       responsible for the personal property of the attendees during the time       that the attendees are in attendance at a COMPANY instructional session or       program.&nbsp; The PARTICIPANT is fully       responsible for all damage to and loss of the personal property of an       attendee regardless of the cause of the damage or loss.&nbsp; The PARTICIPANT accepts full       responsibility for such damage or loss and will not hold the COMPANY liable       in any case of occurrence.</li>
+                            <li>Safety of Attendees:&nbsp; The COMPANY takes safety of attendees       very seriously.&nbsp; Every employee of       the COMPANY has gone through local and national criminal and sex offender       background checks.&nbsp; </li>
+                            <li>Photography, Video and       Testimonials: To attend the programs of the COMPANY, every PARTICIPANT is       required to sign a photograph/media release that is included as part of       the COMPANY’s registration form.&nbsp;       The PARTICIPANT understands that the COMPANY may use any       photographs, videos or testimonials taken of attendees during program       times for the purpose of marketing the COMPANY’s services, for example on       the COMPANY website, in flyers, brochures and other advertisements, in       news or media reports about the COMPANY.&nbsp;       All images, testimonials, audio, video and photos taken during a COMPANY       program are the sole and exclusive property of the COMPANY.&nbsp; The PARTICIPANT agrees to not hold the       COMPANY, its owners or its employees liable for any injury, damages or       negligence claims associated with the images.</li>
+                            <li>Food Policy: The COMPANY       does not serve food or snacks during its programs.&nbsp; Unless indicated in the registration       form for specific programs, no snacks, food, drinks or gum is permitted in       class. </li>
+                            <li>Picking up Attendees from Programs: PARTICIPANTS should promptly  pick up and sign out their attendee at the end of each class.&nbsp; During the registration process, PARTICIPANTS  are asked to provide a list of people authorized by the PARTICIPANT to sign the  PARTICIPANT’s attendee out of class.&nbsp; The  PARTICIPANT will also be asked to create a password that only the program’s  instructor, the child and the individuals authorized by the PARTICIPANT will  know.&nbsp; If the password is given at sign  out to the instructor by an adult, the attendee will be allowed to exit the  class without checking the ID of the authorized. If the password is not given,  ID’s will be thoroughly checked by the instructor before allowing the attendee  to sign out.</li>
+                            <li>Self Sign Out by Attendee: During the registration process,  PARTICIPANTS have the option to allow attendees ages 10 and above to check  themselves out of class and to make it home by themselves.&nbsp; If this option is selected, the attendee can  sign themselves out, and is free to go from the COMPANY’s care without an  adult’s signature.  Please be aware, that in this case, the PARTICIPANT  takes full responsibility and liability for the attendee’s safety and well  being after the attendee has exited the classroom. If this option is not  selected, the attendee will follow our normal check out procedure.</li>
+                            <li>Classroom Work and       Projects: The PARTICIPANT understands that all work created by the       attendee while attending a COMPANY programs may be used in the COMPANY’s       promotional materials such as website, flyers, advertisements, media       outlets, etc.&nbsp; The PARTICIPANT will       not hold the COMPANY, its owners or employees, liable for any damages,       injuries or claims of negligence associated with the publishing of       classroom work or classroom projects.</li>
+                            <li>Billing and Refunds:       Complete payments for all COMPANY programs must be received before the       first day of class.&nbsp; Due to the       limited availability of space in COMPANY programs as well as the high cost       of investments in technical equipment, software and rental costs, all       program fees are non-refundable.&nbsp; </li>
+                            <li>Make up Classes: No make-ups are       scheduled for all coding classes. However attendees may attend another       coding class offering the missed material prior to the next scheduled       class session, availability permitting.  In the event that a student       is unable to attend another class offering the missed material,       instructors will do their best to offer special attention during the next       class session to make up the material but CodeAdvantage cannot guarantee       that all prior class material will be covered. </li>
+                            <li>&nbsp;Cancellation of Classes: The COMPANY       reserves the right to cancel or modify classes and programs and to make       changes to instructors.</li>
+                            <li>Information and Privacy:       The COMPANY may collect information from the PARTICIPANT to facilitate       registration of attendees in the COMPANY programs and to facilitate       payment of the COMPANY services.&nbsp;       This information may include, names, addresses, credit card       information, email addresses, telephone numbers, attendee age and grade       level.&nbsp; Any information stored by       the company is protected by a premium SSL certificate and will not be       sold, transferred or shared with Third Parties other than credit card or       payment processing institutions or organizations on whose property classes       may be conducted.&nbsp; Information may       only be released to comply with the law, enforce COMPANY policies or       protect the COMPANY’s rights, property or safety.&nbsp;&nbsp; </li>
+                            <li>Contact:&nbsp; If there are any questions regarding       these terms and conditions, please contact:&nbsp; CodeAdvantage LLC, 2311 Adam Clayton       Powell Jr. Blvd., New York, NY 10030 or <a href="mailto:office@codeadvantage.org">office@codeadvantage.org</a>. </li>
+                            <li>Agreement to Terms and       Conditions:&nbsp; By clicking on the       check box below or by registering for one of the COMPANY’s programs, the       PARTICIPANT understands and agrees to these Terms and Conditions.</li>
+                        </ol>
+                    </div>
+        
+        
+        
+        
+                    <div class="text-right" style="padding: 20px 0;">
+                        <label><input type="checkbox" name="agree">&nbsp;I agree with CodeAdvantage's terms and conditions</label>
+                        <button class="btn btn-primary" type="button" style="margin: 0 0 0 40px;" onclick="submit_order(this);">
+                            Continue
+                        </button>
+                    </div>
+                </form></div>
+        
+        
+        
+            <script>
+                var check_promo = function(elm){
+                    var code = $(elm).val();
+                    $.ajax({
+                        type: "get",
+                        url: '/promo-validator',
+                        dataType: 'json',
+                        data: {'code':code},
+                        success: function(jsn){
+                            if(jsn.discount) {
+        
+        
+                                var orig = $("#mprice").html();
+                                var np = orig;
+                                if(jsn.fix){
+                                    np = orig-jsn.fix;
+                                } else {
+                                    np = Math.round(orig*((100-jsn.discount)/100));
+                                }
+                                if(np<0){
+                                    np = 0;
+                                }
+                                $("#mprice").parent('span').css({"color":"#CCC", "text-decoration":"line-through"});
+                                if(np) {
+                                    $("#dprice").html('<br>$' + np).css({"color":"#F00"});
+                                }
+                                else {
+                                    $("#dprice").html('<br>FREE').css({"color":"#F00"});
+                                }
+                                $('#pmsg').html("");
+                            }
+                            else {
+                                $("#mprice").parent('span').css({"color":"#000", "text-decoration":"none"});
+                                $("#dprice").html("");
+                                if(code) {
+                                    $('#pmsg').html("Please enter a valid promo code");
+                                }
+        
+        
+                            }
+                        }
+                    });
+        
+                };
+                var studentEnroll = function(sel){
+                    var cnt = $(sel).val();
+                    $('.student_cnt').text(cnt);
+                    var total = 0;
+                    $('.course_price').each(function(){
+                        var prc = $(this).data("price");
+                        var cp = prc*cnt;
+                        if(cnt>1) {
+                            $(this).text(prc + ' x ' + cnt);
+                        }
+                        else {
+                            $(this).text(prc);
+                        }
+                        total += cp;
+                    });
+                    $('#mprice').text(total);
+                    $('#promo_code').blur();
+                    //check_promo();
+        
+                    if(cnt>1){
+                        $('#studentBlock div.well div.child-num').show();
+                    }
+                    else {
+                        $('#studentBlock div.well div.child-num').hide();
+                    }
+        
+                    var tmpl = 0;
+                    var wells = $('#studentBlock div.well');
+                    wells.each(function( i ) {
+                        if(i==0){
+                            tmpl = $(this).clone();
+                        }
+                        if(i>=cnt){
+                            $(this).remove();
+                        }
+                    });
+        
+                    for(c=wells.length;c<cnt;c++){
+                        var ntpl = tmpl.clone();
+                        ntpl.find('.child-num').text('Child ' + cnt);
+                        ntpl.find('input[type="text"],select').val("");
+                        ntpl.find('input[type="radio"]').prop('checked',false);
+                        ntpl.find('input[name="student_sex[0]"]').prop("name","student_sex["+c+"]");
+        
+                        ntpl.clone().appendTo($('#studentBlock'));
+                    }
+        
+                };
+                var update_guardian = function(){
+                    var str = $('#reg_guardian_name').val() + ", " + $('#reg_guardian_phone').val();
+                    $('#ger_sign_out_name1').val(str);
+        
+                };
+                var submit_order = function (btn) {
+        
+                    var frm = $(btn).parents('form').css({'position':"relative"});
+                    var er = false;
+        
+                    $(frm).find('input:required, select:required').each(function () {
+        
+                        if (this.value.length < 1) {
+                            er = 'Please fill in all required fields!';
+                        }
+                    });
+                    var cnt = $(frm).find('.student_girl').length;
+                    if (!er &&
+                        $(frm).find('.student_gender:checked').length != cnt
+                    ) {
+                        er = "Please indicate the child's gender";
+                    }
+                    if (!er && $(frm).find('input[name="agree"]').prop('checked') == false) {
+                        er = 'Please read and accept Terms and Conditions!';
+                    }
+                    if (!er && $(frm).find('input[name="certify"]').prop('checked') == false) {
+                        er = 'Please read and accept Registration Policy!';
+                    }
+                    if (er) {
+                        alert(er);
+                    }
+                    else {
+                        var md = $('<div class="loading">').appendTo(frm);
+                        frm.ajaxSubmit({url: '/checkout', type: 'post', success:function(dat){
+                                $('#order_title').html("You are now registered for the following program");
+                                $('#proceed').html(dat);
+                                $('#payform_proceed').submit();
+        
+                            }});
+        
+                    }
+                };
+            </script>
+        </div>
+            {% else %}
+                <p><strong>We are sorry but registration is already closed for this section.</strong></p>
+                <p>Please go back and see if there is another section or program that interests you.</p>
+                <p>Thanks for your interest in CodeAdvantage.</p>
+        {% endif %}
+        
+        
+
+<!--  -->
+    </div>
+</div>
+
+<div class="theme-footer theme-clear-fix">
+    <div class="theme-footer-top theme-clear-fix" style="background-image:url('/uploads/Untitled-2.png');background-repeat:no-repeat;background-position:bottom;background-size:contain;">
+
+        <div class="theme-main theme-layout-25x25x25x25">
+            <div id="text-31" class="widget_text theme-clear-fix theme-widget theme-layout-column-left">			<div class="textwidget"><div style="color: white; font-size: 80%;">Phone: 833.210.CODE<br />
+                        Email: office@codeadvantage.org<br>Copyright © 2015-{{ year }}<br />CodeAdvantage®<br />
+                        <a style="font-size: 100%;" href="/contact">Contact us</a><br />
+                        <br />
+                        <a href="https://www.facebook.com/codeadvantage.org" target="_blank" rel="noopener noreferrer"><img class="alignnone size-full wp-image-3193" src="/uploads/facebook.png" alt="facebook" width="32" height="32" /></a>
+                        <a href="https://www.instagram.com/codeadvantage" target="_blank" rel="noopener noreferrer"><img class="alignnone size-full wp-image-3193" src="/uploads/inst.png" alt="instagram" width="32"  height="32" /></a>
+                    </div>
+                </div>
+            </div>
+            <div id="text-12" class="widget_text theme-clear-fix theme-widget theme-layout-column-center-left">
+                <div class="textwidget">
+                    <div style="color: white; line-height: 1.5em;">
+                        <a style="font-size: 80%;" href="/about">About</a><br />
+                        <a style="font-size: 80%;" href="/classes">Classes</a><br />
+                        <a style="font-size: 80%;" href="/school-programs">School Programs</a><br />
+                        <a style="font-size: 80%;" href="/private-classes">Private Classes</a><br />
+                        <a style="font-size: 80%;" href="/online-coding-classes-for-kids">Online Coding Classes</a><br />
+                        <a style="font-size: 80%;" href="/about/join-the-team">Join Our Team</a><br />
+                        <a style="font-size: 80%;" href="/contact/program-director">Program Director</a><br />
+                        <a style="font-size: 80%;" href="/coding-champion">Coding Champion</a><br />
+                        <a style="font-size: 80%;" href="/about/faq">FAQ</a><br />
+                        <a style="font-size: 80%;" href="/about/why-coding">Why Coding?</a><br />
+                        <a style="font-size: 80%;" href="/about/press">Press</a><br />
+                        <a style="font-size: 80%;" href="/terms-and-conditions">Terms and Conditions</a><br>
+                        <a style="font-size: 80%;" href="/privacy-policy">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+            <div id="text-32" class="widget_text theme-clear-fix theme-widget theme-layout-column-center-right">			<div class="textwidget"><div style="color: white; font-size: 80%;"><a href="/location/upper-east-side">Upper East Side, NYC.</a> <a href="/location/upper-west-side">Upper West Side, NYC.</a> <a href="/location/manhattan">Manhattan, NY.</a> <a href="/location/brooklyn">Brooklyn, NY.</a> <a href="/location/queens">Queens, NY.</a> <a href="/location/westchester">Westchester, NY.</a> <a href="/location/scarsdale">Scarsdale, NY.</a> <a href="/location/yonkers">Yonkers, NY.</a> <a href="/location/rye">Rye, NY.</a> <a href="/location/new-rochelle">New Rochelle, NY.</a> <a href="/location/larchmont">Larchmont, NY.</a> <a href="/location/mamaroneck">Mamaroneck, NY.</a> <a href="/location/summit">Summit, NJ.</a> <a href="/location/short-hills">Short Hills, NJ.</a> <a href="/location/milburn">Milburn, NJ.</a> <a href="/location/hoboken">Hoboken, NJ.</a> <a href="/location/jersey-city">Jersey City, NJ.</a> <a href="/location/engelwood">Engelwood, NJ.</a> <a href="/location/livingston">Livingston, NJ.</a> <a href="/location/ridgewood">Ridgewood, NJ.</a> <a href="/location/paramus">Paramus, NJ.</a></div>
+                </div>
+            </div><div id="text-33" class="widget_text theme-clear-fix theme-widget theme-layout-column-right">			<div class="textwidget"><div style="color: white; font-size: 80%;"><a href="/location/montclair">Montclair, NJ.</a> <a href="/location/new-brunswick">New Brunswick, NJ.</a> <a href="/location/princeton">Princeton, NJ.</a> <a href="/location/alexandria">Alexandria, VA.</a> <a href="/location/loudoun">Loudoun, VA.</a> <a href="/location/mclean">McLean, VA.</a> <a href="/location/falls-church">Falls Church, VA.</a> <a href="/location/arlington">Arlington, VA.</a> <a href="/location/fairfax">Fairfax, VA.</a> <a href="/location/oakton">Oakton, VA.</a> <a href="/location/vienna">Vienna, VA.</a> <a href="/location/ashburn">Ashburn, VA.</a> <a href="/location/washington">Washington DC.</a> <a href="/location/nw-washington">NW Washington DC.</a> <a href="/location/se-washington">SE Washington DC.</a> <a href="/location/rockville">Rockville, MD.</a> <a href="/location/potomac">Potomac, MD.</a> <a href="/location/montgomery">Montgomery, MD.</a> <a href="/location/bethesda">Bethesda, MD.</a> <a href="/location/sandy-spring">Sandy Spring, MD.</a> <a href="/location/cheverly">Cheverly, MD.</a></div>
+                    <div><a style="font-size: 80%;" href="/all-locations">All Locations</a></div>
+                </div>
+            </div>						</div>
+
+    </div>
+</div>
+<a href="#up" id="theme-go-to-top"></a>
+
+<div class="YouTubePopUp-Wrap videoPopup-on-pageload" style="display: none;">
+    <div class="Video-PopUp-Content vp-on-pageload-wrap"></div>
+</div>
+
+<script type='text/javascript' src='/js/plugins1.js'></script>
+<script type='text/javascript' src='/js/plugins2.js'></script>
+<script type='text/javascript' src='/js/plugins3.js'></script>
+<script type='text/javascript' src='/js/plugins4.js'></script>
+<script type='text/javascript' src='/js/plugins5.js'></script>
+<script type='text/javascript' src='/js/plugins6.js'></script>
+<script type='text/javascript' src='/js/plugins7.js'></script>
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var pbOption = [];
+    pbOption={"config":{"content_width":1050,"is_rtl":0}};;
+    /* ]]> */
+</script>
+<script type='text/javascript' src='/js/plugins8.js'></script>
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var themeOption = [];
+    themeOption={"rightClick":{"enable":"1"},"selection":{"enable":"1"},"fancyboxImage":{"padding":"10","margin":"20","min_width":"100","min_height":"100","max_width":"9999","max_height":"9999","helper_button_enable":"1","autoresize":"1","autocenter":"1","fittoview":"1","arrow":"1","close_button":"1","close_click":"0","next_click":"0","mouse_wheel":"1","autoplay":"0","loop":"1","playspeed":"3000","animation_effect_open":"fade","animation_effect_close":"fade","animation_effect_next":"elastic","animation_effect_previous":"elastic","easing_open":"easeInQuad","easing_close":"easeInQuad","easing_next":"easeInQuad","easing_previous":"easeInQuad","speed_open":"250","speed_close":"250","speed_next":"250","speed_previous":"250"},"fancyboxVideo":{"padding":"10","margin":"20","min_width":"100","min_height":"100","max_width":"9999","max_height":"9999","autoresize":"1","autocenter":"1","fittoview":"1","close_button":"1"},"goToPageTop":{"enable":"1","hash":"up","animation_enable":"1","animation_duration":"500","animation_easing":"easeInCubic"},"config":{"theme_url":"https:\/\/wp.codeadvantage.org\/wp-content\/themes\/fable\/","is_rtl":0,"woocommerce_enable":1}};;
+    /* ]]> */
+</script>
+<script type='text/javascript' src='/js/plugins9.js'></script>
+{% for item in js %}
+    <script type='text/javascript' src='{{ item }}'></script>
+{% endfor %}
+</body>
+
+</html>

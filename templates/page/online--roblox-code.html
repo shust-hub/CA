@@ -1,0 +1,477 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ description }}">
+    <link rel='dns-prefetch' href='//maps.google.com' />
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel='dns-prefetch' href='//s.w.org' />
+    <link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+
+
+    <link rel='stylesheet' id='wp-block-library-group-css' href='/css/style1.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='pb-component-blockquote-group-css' href='/css/style2.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='pb-component-feature-group-css' href='/css/style3.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='pb-component-responsive-nav-group-css' href='/css/style4.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='pb-component-space-group-css' href='/css/style5.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='rs-plugin-settings-group-css' href='/css/style6.css' type='text/css' media='all' />
+
+    <link rel='stylesheet' id='timetable_font_lato-css'  href='//fonts.googleapis.com/css?family=Lato%3A400%2C700&#038;ver=5.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='woocommerce-general-group-css' href='/css/style7.css' type='text/css' media='all' />
+    {% for item in css %}
+        <link rel='stylesheet' href='{{ item }}' type='text/css' media='all' />
+    {% endfor %}
+    <link rel='stylesheet' id='google-font-open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&#038;subset=cyrillic-ext%2Ccyrillic%2Cvietnamese%2Cgreek-ext%2Clatin%2Cgreek%2Clatin-ext&#038;ver=5.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='google-font-dosis-css'  href='//fonts.googleapis.com/css?family=Dosis%3A200%2C300%2Cregular%2C500%2C600%2C700%2C800&#038;subset=latin%2Clatin-ext&#038;ver=5.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='google-font-lato-css'  href='//fonts.googleapis.com/css?family=Lato%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&#038;subset=latin%2Clatin-ext&#038;ver=5.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='olympus-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Noto+Sans%3A400%2C700%2C400i%2C700i%7CPT+Mono%3A400%2C400i%7CUbuntu%3A300%2C400%2C500%2C700%2C300i%2C400i%2C500i%2C700i&#038;subset=greek-ext%2Clatin-ext%2Cvietnamese%2Clatin%2Ccyrillic-ext%2Cdevanagari%2Ccyrillic%2Cgreek&#038;display=swap&#038;ver=1.9.6' type='text/css' media='all' />
+
+    <link rel="stylesheet" href="/css/stylePortal.css" type='text/css'>
+    <!--n2css-->
+    <script type='text/javascript' src='/js/jquery.js'></script>
+    <script type='text/javascript' src='/js/jquery-migrate.min.js'></script>
+    <script type='text/javascript' src='/js/plugins10.js'></script>
+
+    <script type='text/javascript'>
+        var video_popup_unprm_general_settings = {
+            'unprm_r_border': ''
+        };
+    </script>
+
+
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
+    <script type="text/javascript">function setREVStartSize(e){
+            try{ e.c=jQuery(e.c);var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+                if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})
+            }catch(d){console.log("Failure at Presize of Slider:"+d)}
+        };</script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118296305-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-118296305-5');
+        gtag('config', 'AW-945420837');
+    </script>
+
+	
+	<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+ fbq('init', '191358722010157'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+ <img height="1" width="1" 
+src="https://www.facebook.com/tr?id=191358722010157&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+</head>
+
+<body class="home page-template page-template-main page-template-main-php page page-id-404 custom-background pb woocommerce-no-js">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NQBN4JV"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="pb-menu pb pb-menu-template-type-1" id="pb_menu_1356D2CB2EB1BA9E744C3D62316D6262">
+    <div class="pb-main pb-clear-fix">
+        <div class="pb-logo">
+
+            <a href="/" title="CodeAdvantage ">
+                <img src="/images/logor.png" alt="CodeAdvantage "/>
+            </a>
+
+        </div>
+
+        <div class="pb-menu-default">
+            {# не забудь обновить мобильное меню! #}
+            <ul id="menu-code-advantage-menu" class="sf-menu pb-reset-list pb-clear-fix">
+                <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children sf-mega-enable-0  ">
+                    <a href="/classes">Classes</a>
+                    <ul>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/classes/grades"><span></span>Classes by Grade</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/classes/tech-and-arts"><span></span>Technology and Arts Exploration</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/classes/robotics"><span></span>Robotics</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/classes/coding"><span></span>Coding</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children sf-mega-enable-0  ">
+                    <a href="/online-coding-classes-for-kids"><span></span>Online Coding Classes</a>
+                    <ul>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/online-coding-classes-for-kids">Online Coding for Kids</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/online/intro-to-coding"><span></span>3D Video Game Design</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/online/intermediate-coding"><span></span>Scratch</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/online/advanced-coding"><span></span>Design with Python</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/online/web-development"><span></span>Web Development</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/online-trial-coding-classes-for-kids"><span></span>Take A Trial Class</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" menu-item menu-item-type-post_type menu-item-object-page sf-mega-enable-0  ">
+                    <a href="/private-classes"><span></span>Private Classes</a>
+                </li>
+                <li class=" menu-item menu-item-type-post_type menu-item-object-page sf-mega-enable-0  ">
+                    <a href="/school-programs"><span></span>After School</a>
+                </li>
+
+                <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children sf-mega-enable-0  ">
+                    <a href="/about"><span></span>About</a>
+
+                    <ul>
+                       <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/about"><span></span>About us</a>
+
+                        </li>
+
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/about/press"><span></span>In the Press</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/about/testimonials"><span></span>Testimonials</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/about/why-coding"><span></span>Why Coding?</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/about/join-the-team"><span></span>Join the Team</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/about/faq"><span></span>FAQ</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" menu-item menu-item-type-post_type menu-item-object-page sf-mega-enable-0  ">
+                    <a href="/contact"><span></span>Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="pb-menu-responsive">
+            <div id="menu-code-advantage-menu-1" class="pb-clear-fix">
+                <div id="pb_menu_responsive_329AE32EDE8E62CD52ACFDC02FC60D94">
+                    <ul>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
+                            <a href="/classes">Classes</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/classes/grades">-- Classes by Grade</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/classes/tech-and-arts">-- Technology and Arts Exploration</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/classes/robotics">-- Robotics</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/classes/coding">-- Coding</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
+                            <a href="/online-coding-classes-for-kids">Online Coding Classes</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/online-coding-classes-for-kids">-- Online Coding for Kids</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/online/intro-to-coding">-- 3D Video Game Design</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/online/intermediate-coding">-- Scratch</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/online/advanced-coding">-- Design with Python</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/online/web-development">-- Web Development</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/online-trial-coding-classes-for-kids">-- Take A Trial Class</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/private-classes">Private Classes</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/school-programs"><span></span>After School</a>
+                        </li>
+
+
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
+                            <a href="/about">About</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/about">-- About us</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/about/press">-- In the Press</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/about/testimonials">-- Testimonials</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/about/why-coding">-- Why Coding?</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/about/join-the-team">-- Join the Team</a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/about/faq">-- FAQ</a>
+                        </li>
+
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page  ">
+                            <a href="/contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<div class="pb-script-tag">
+    <script type="text/javascript">
+        jQuery(document).ready(function($)
+        {
+            $('#pb_menu_1356D2CB2EB1BA9E744C3D62316D6262').PBMenu({"responsive_mode":"768","sticky_enable":"0","hide_scroll_enable":"0","menu_animation_enable":"1","menu_animation_speed_open":"400","menu_animation_speed_close":"200","menu_animation_delay":"0","scroll_animation_enable":"1","scroll_animation_speed":"1000","scroll_animation_easing":"easeOutQuint","responsive_menu_id":"pb_menu_responsive_329AE32EDE8E62CD52ACFDC02FC60D94","responsive_menu_label":"Menu"});
+        });
+    </script>
+</div>
+
+<div class="theme-page">
+    <div class="theme-page-content theme-clear-fix">
+        
+<!-- start -->
+        
+        <!-- ШАПКА -->
+    <div id="pb_line_5C4CEED8BB57FC7A01632EC1F856D49D"  
+        class="pb-line pb-clear-fix sectionheader" 
+        style="background-position:center,0% 25%;background-repeat:no-repeat;background-image:url('/uploads/RobloxCode-header.png');background-size:cover;padding-top:60px;padding-bottom:60px;">
+        <ul class="pb-layout pb-layout-100 pb-reset-list pb-clear-fix pb-main">
+            <li class="pb-layout-column-left"> <div class="pb-space-line"></div><div><div class="pb-text"><h1 style="color: white; text-align: center;"><span style="background-color: #4ccef0; opacity: 0.9; padding: 10px 10px 10px 10px;">Roblox Code</span></h1></div></div></li>
+        </ul>
+    </div>
+    <div class="pb-script-tag"><script type="text/javascript">jQuery(document).ready(function($){$("#pb_line_5C4CEED8BB57FC7A01632EC1F856D49D").PBLayout({"bg_parallax_speed":"30","bg_parallax_enable":"0","bg_parallax_mobile_enable":"0"},0);});</script> </div>
+
+    <div id="pb_line_BCE452F39DAE4E2F06686F9C606A7C80"  
+        class="pb-line pb-clear-fix" 
+        style="background-repeat:no-repeat;">
+        <ul class="pb-layout pb-layout-100 pb-reset-list pb-clear-fix pb-main">
+            <li class="pb-layout-column-left"> 
+                <div class="pb-space-line"></div>
+                <div>
+                    <div class="pb-space-line"></div>
+                    <div class="pb-space pb-clear-fix" style="height:20px;"></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="pb-script-tag"> <script type="text/javascript">jQuery(document).ready(function($){$("#pb_line_BCE452F39DAE4E2F06686F9C606A7C80").PBLayout({"bg_parallax_speed":"30","bg_parallax_enable":"0","bg_parallax_mobile_enable":"0"},0);});</script></div>
+        <div id="pb_line_815A571A0FBF46047173FC4EEAFEF642"  
+                class="pb-line pb-clear-fix" style="background-repeat:no-repeat;">
+            <ul class="pb-layout pb-layout-66x33 pb-reset-list pb-clear-fix pb-main">
+                <li class="pb-layout-column-left"> 
+                    <div class="pb-space-line"></div>
+                    <div>
+                        <div class="pb-text">
+                            <h4>Roblox Code</h4>
+                            <h6>Ages: 9-11</h6>
+                            <p><span style="font-weight: 400;">                        
+                                Students will design and code their own creations using Roblox 
+                                Studio’s immersive educational tools.
+                                </span>
+                            </p>
+                            <p><span style="font-weight: 400;">
+                                What’s neat about Roblox is that anyone can build a game on it, the platform offers such a vast toolbox which is readily available and welcoming to all skills levels. The programming language used on Roblox is called “Roblox Lua,” a dialect of Lua – which is currently the leading scripting language used in games.
+                            </span></p>
+                        </div>
+
+                        <!-- <div class="pb-text">
+                            <h6>Key Skills students will build in this class:</h6>
+                        </div> -->
+
+                        <div class="pb-text">
+                            <!-- <p style="padding-bottom:0;">
+                                NOTE: Level 2 builds on Level 1
+                            </p> -->
+                            <p><strong style="color: #fe6500;">Level 1: </strong> 
+                                Learn about the difference between Roblox Player and Roblox Studio. Introduction to “Roblox Lua,” and game design.
+                            </p>
+                            <p style="padding-top:0;"><strong style="color: #fe6500; margin-top: 10px;">Level 2: </strong> 
+                                Why Lua? Students explore the benefits of Lua in game design. 
+                            </p>
+                            <p style="padding-top:0;"><strong style="color: #fe6500; margin-top: 10px;">Level 3: </strong> 
+                                More design and Lua.
+                            </p>
+                        </div>
+                        <div class="pb-text">
+                            <h6>Examples of student projects:</h6>
+                            <p>
+                                Creating parkour maps, 2-player games, obstacle course fun
+                            </p>
+                        </div>
+                        <!-- <div class="pb-text">
+                            <p>
+                                It is HIGHLY recommended students have a mouse for this class. It is very difficult to use Roblox tools with only a trackpad.
+                            </p>
+                        </div> -->
+                    </div>
+
+                    <div id="pb_line_80100B5B4705CBFF49ED37E4A222938F"  class="pb-line pb-clear-fix" style="background-repeat:no-repeat;">
+                        <ul class="pb-layout pb-layout-100 pb-reset-list pb-clear-fix pb-main">
+                            <li class="pb-layout-column-left"> 
+                                <div class="pb-space-line"></div>
+                                <div>
+                                    <div class="pb-space-line"></div>
+                                    <div class="pb-space pb-clear-fix" style="height:40px;"></div>
+                                    <!-- <div class="pb-text"><p><span style="font-size: 10pt;">*These are recommended age ranges. We can adjust based on your child’s needs and abilities.</span></p></div> -->
+                                    <div style="height: 30px;" class="pb-space-line"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li> 
+
+                <li class="pb-layout-column-right">
+                    <div class="pb-space-line"></div>
+                    <div>
+                        <div class="pb-text">
+                            <div class="pb-call-to-action pb-clear-fix ">
+                                <div class="pb-call-to-action-box pb-clear-fix" style="margin-top: 0px;">
+                                    <div style="text-align: center;"><a class="pb-window-target-self" href="/contact">Find the right class<i class="pb-button-arrow pb-button-arrow-right"></i></a><input type="hidden" value="&#091;&#093;" /></div>
+                                </div>
+                            </div>
+                            <div class="pb-space pb-clear-fix" style="height:10px;"></div>
+                            <p>
+                                <img class="alignnone size-full wp-image-171" src="/uploads/A15-1050x630.jpg" alt="Minecraft Club" width="1000" height="667" />
+                            </p>
+                        </div>
+                    </div>
+                    <div class="pb-space-line"></div>
+                    <div class="pb-space-line"></div>
+                    <div class="pb-space pb-clear-fix" style="height:10px;"></div>
+                    <div class="pb-text">
+                        <div class="pb-call-to-action pb-clear-fix ">
+                            <div class="pb-call-to-action-box pb-clear-fix" style="margin-top: 0px;">
+                                <div style="text-align: center;">
+                                    <a class="pb-window-target-self" href="/contact">Chat with us<i class="pb-button-arrow pb-button-arrow-right"></i></a><input type="hidden" value="&#091;&#093;" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+<div class="theme-footer theme-clear-fix">
+    <div class="theme-footer-top theme-clear-fix" style="background-image:url('/uploads/Untitled-2.png');background-repeat:no-repeat;background-position:bottom;background-size:contain;">
+
+        <div class="theme-main theme-layout-25x25x25x25">
+            <div id="text-31" class="widget_text theme-clear-fix theme-widget theme-layout-column-left">			<div class="textwidget"><div style="color: white; font-size: 80%;">Phone: 833.210.CODE<br />
+                        Email: office@codeadvantage.org<br>Copyright © 2015-{{ year }}<br />CodeAdvantage®<br />
+                        <a style="font-size: 100%;" href="/contact">Contact us</a><br />
+                        <br />
+                        <a href="https://www.facebook.com/codeadvantage.org" target="_blank" rel="noopener noreferrer"><img class="alignnone size-full wp-image-3193" src="/uploads/facebook.png" alt="facebook" width="32" height="32" /></a>
+                        <a href="https://www.instagram.com/codeadvantage" target="_blank" rel="noopener noreferrer"><img class="alignnone size-full wp-image-3193" src="/uploads/inst.png" alt="instagram" width="32"  height="32" /></a>
+                    </div>
+                </div>
+            </div>
+            <div id="text-12" class="widget_text theme-clear-fix theme-widget theme-layout-column-center-left">
+                <div class="textwidget">
+                    <div style="color: white; line-height: 1.5em;">
+                        <a style="font-size: 80%;" href="/about">About</a><br />
+                        <a style="font-size: 80%;" href="/classes">Classes</a><br />
+                        <a style="font-size: 80%;" href="/school-programs">School Programs</a><br />
+                        <a style="font-size: 80%;" href="/private-classes">Private Classes</a><br />
+                        <a style="font-size: 80%;" href="/online-coding-classes-for-kids">Online Coding Classes</a><br />
+                        <a style="font-size: 80%;" href="/about/join-the-team">Join Our Team</a><br />
+                        <a style="font-size: 80%;" href="/contact/program-director">Program Director</a><br />
+                        <a style="font-size: 80%;" href="/coding-champion">Coding Champion</a><br />
+                        <a style="font-size: 80%;" href="/about/faq">FAQ</a><br />
+                        <a style="font-size: 80%;" href="/about/why-coding">Why Coding?</a><br />
+                        <a style="font-size: 80%;" href="/about/press">Press</a><br />
+                        <a style="font-size: 80%;" href="/terms-and-conditions">Terms and Conditions</a><br>
+                        <a style="font-size: 80%;" href="/privacy-policy">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+            <div id="text-32" class="widget_text theme-clear-fix theme-widget theme-layout-column-center-right">			<div class="textwidget"><div style="color: white; font-size: 80%;"><a href="/location/upper-east-side">Upper East Side, NYC.</a> <a href="/location/upper-west-side">Upper West Side, NYC.</a> <a href="/location/manhattan">Manhattan, NY.</a> <a href="/location/brooklyn">Brooklyn, NY.</a> <a href="/location/queens">Queens, NY.</a> <a href="/location/westchester">Westchester, NY.</a> <a href="/location/scarsdale">Scarsdale, NY.</a> <a href="/location/yonkers">Yonkers, NY.</a> <a href="/location/rye">Rye, NY.</a> <a href="/location/new-rochelle">New Rochelle, NY.</a> <a href="/location/larchmont">Larchmont, NY.</a> <a href="/location/mamaroneck">Mamaroneck, NY.</a> <a href="/location/summit">Summit, NJ.</a> <a href="/location/short-hills">Short Hills, NJ.</a> <a href="/location/milburn">Milburn, NJ.</a> <a href="/location/hoboken">Hoboken, NJ.</a> <a href="/location/jersey-city">Jersey City, NJ.</a> <a href="/location/engelwood">Engelwood, NJ.</a> <a href="/location/livingston">Livingston, NJ.</a> <a href="/location/ridgewood">Ridgewood, NJ.</a> <a href="/location/paramus">Paramus, NJ.</a></div>
+                </div>
+            </div><div id="text-33" class="widget_text theme-clear-fix theme-widget theme-layout-column-right">			<div class="textwidget"><div style="color: white; font-size: 80%;"><a href="/location/montclair">Montclair, NJ.</a> <a href="/location/new-brunswick">New Brunswick, NJ.</a> <a href="/location/princeton">Princeton, NJ.</a> <a href="/location/alexandria">Alexandria, VA.</a> <a href="/location/loudoun">Loudoun, VA.</a> <a href="/location/mclean">McLean, VA.</a> <a href="/location/falls-church">Falls Church, VA.</a> <a href="/location/arlington">Arlington, VA.</a> <a href="/location/fairfax">Fairfax, VA.</a> <a href="/location/oakton">Oakton, VA.</a> <a href="/location/vienna">Vienna, VA.</a> <a href="/location/ashburn">Ashburn, VA.</a> <a href="/location/washington">Washington DC.</a> <a href="/location/nw-washington">NW Washington DC.</a> <a href="/location/se-washington">SE Washington DC.</a> <a href="/location/rockville">Rockville, MD.</a> <a href="/location/potomac">Potomac, MD.</a> <a href="/location/montgomery">Montgomery, MD.</a> <a href="/location/bethesda">Bethesda, MD.</a> <a href="/location/sandy-spring">Sandy Spring, MD.</a> <a href="/location/cheverly">Cheverly, MD.</a></div>
+                    <div><a style="font-size: 80%;" href="/all-locations">All Locations</a></div>
+                </div>
+            </div>						</div>
+
+    </div>
+</div>
+<a href="#up" id="theme-go-to-top"></a>
+
+<div class="YouTubePopUp-Wrap videoPopup-on-pageload" style="display: none;">
+    <div class="Video-PopUp-Content vp-on-pageload-wrap"></div>
+</div>
+
+<script type='text/javascript' src='/js/plugins1.js'></script>
+<script type='text/javascript' src='/js/plugins2.js'></script>
+<script type='text/javascript' src='/js/plugins3.js'></script>
+<script type='text/javascript' src='/js/plugins4.js'></script>
+<script type='text/javascript' src='/js/plugins5.js'></script>
+<script type='text/javascript' src='/js/plugins6.js'></script>
+<script type='text/javascript' src='/js/plugins7.js'></script>
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var pbOption = [];
+    pbOption={"config":{"content_width":1050,"is_rtl":0}};;
+    /* ]]> */
+</script>
+<script type='text/javascript' src='/js/plugins8.js'></script>
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var themeOption = [];
+    themeOption={"rightClick":{"enable":"1"},"selection":{"enable":"1"},"fancyboxImage":{"padding":"10","margin":"20","min_width":"100","min_height":"100","max_width":"9999","max_height":"9999","helper_button_enable":"1","autoresize":"1","autocenter":"1","fittoview":"1","arrow":"1","close_button":"1","close_click":"0","next_click":"0","mouse_wheel":"1","autoplay":"0","loop":"1","playspeed":"3000","animation_effect_open":"fade","animation_effect_close":"fade","animation_effect_next":"elastic","animation_effect_previous":"elastic","easing_open":"easeInQuad","easing_close":"easeInQuad","easing_next":"easeInQuad","easing_previous":"easeInQuad","speed_open":"250","speed_close":"250","speed_next":"250","speed_previous":"250"},"fancyboxVideo":{"padding":"10","margin":"20","min_width":"100","min_height":"100","max_width":"9999","max_height":"9999","autoresize":"1","autocenter":"1","fittoview":"1","close_button":"1"},"goToPageTop":{"enable":"1","hash":"up","animation_enable":"1","animation_duration":"500","animation_easing":"easeInCubic"},"config":{"theme_url":"https:\/\/wp.codeadvantage.org\/wp-content\/themes\/fable\/","is_rtl":0,"woocommerce_enable":1}};;
+    /* ]]> */
+</script>
+<script type='text/javascript' src='/js/plugins9.js'></script>
+{% for item in js %}
+    <script type='text/javascript' src='{{ item }}'></script>
+{% endfor %}
+</body>
+
+</html>

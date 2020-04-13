@@ -1,0 +1,29 @@
+.message-box {
+    background-image: url("/img/background-images/yellow_block.png");
+    background-repeat:repeat;
+    background-position:center;
+    padding: 10px 20px 20px 20px;
+    border-radius: 5px;
+    border: 2px solid #555555;
+}
+.message-box.early-bird {
+    background-image: url("/img/bird.png"), url("/img/background-images/yellow_block.png");
+    background-repeat: no-repeat, repeat;
+    background-position: 99%, center;
+}
+.message-box .title {
+    color: #eb7061;
+    font-size: 35px;
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+}
+.message-box .text {
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 25px;
+    color: #444;
+}

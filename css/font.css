@@ -1,0 +1,21 @@
+p, div { font-family: 'Open Sans'; font-style: normal; font-weight: 400; }
+b, strong { font-family: 'Open Sans'; font-style: normal; font-weight: 700; }
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6
+{ font-family: 'Dosis'; font-style: normal; font-weight: 400; }
+h1 b, h2 b, h3 b, h4 b, h5 b, h6 b, h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong,
+.h1 b, .h2 b, .h3 b, .h4 b, .h5 b, .h6 b, .h1 strong, .h2 strong, .h3 strong, .h4 strong, .h5 strong, .h6 strong{ font-family: 'Dosis'; font-style: normal; font-weight: 500; }
+ul.nav > li > a,
+#top-header-region div {
+    font-family: 'Dosis'; font-style: normal; font-weight: 400; letter-spacing: 1px;
+}
+ul.nav a {
+    font-family: 'Dosis'; font-style: normal; font-weight: 200; letter-spacing: 1px;
+}
+.btn { font-family: 'Dosis'; font-style: normal; font-weight: 500; }
+footer div,
+.alt-font,
+.alt-font p,
+.alt-font div,
+.alt-font b
+{ font-family: 'Dosis'; font-style: normal; font-weight: 500; }

@@ -1,0 +1,248 @@
+.blogContainer {
+  width: 100%;
+  padding-top: 45px;
+}
+
+.blogBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 768px) {
+  .blogBox {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.blogBox__cover {
+  height: 198px;
+  width: 100%;
+  overflow: hidden;
+  border-top: 4px solid orangered;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .blogBox__cover {
+    width: 30%;
+    border-top: none;
+    border-left: 4px solid orangered;
+  }
+}
+
+.blogBox__content {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  background-color: white;
+  padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .blogBox__content {
+    width: 70%;
+    padding: 20px;
+  }
+}
+
+.blogBox__title {
+  margin-bottom: 5px;
+}
+
+.blogBox__date {
+  color: #cfcfcf;
+  font-size: 14px;
+  padding: 0;
+}
+
+.blogBox__readMore {
+  display: block;
+  background-color: orangered;
+  color: white;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+@media (min-width: 768px) {
+  .blogBox__readMore {
+    width: 250px;
+  }
+}
+
+.blogBox__readMore:hover {
+  background-color: #f9e821;
+}
+
+.blogBox__readMore:hover + .blogBox__cover {
+  border-bottom: 4px solid #f9e821;
+}
+
+.blogBox:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.blogPage__container h2 {
+  margin-bottom: 15px;
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+@media (min-width: 768px) {
+  .blogPage__container h2 {
+    font-size: 35px;
+  }
+}
+
+.blogPage__title {
+  margin-bottom: 10px !important;
+  font-weight: bold;
+  color: #707070;
+  margin-top: 30px !important;
+  font-size: 30px !important;
+}
+
+@media (min-width: 768px) {
+  .blogPage__title {
+    font-size: 40px !important;
+  }
+}
+
+.blogPage__Img {
+  height: 350px;
+  width: 100%;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blogPage__calloutBox {
+  background-color: whitesmoke;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-left: 4px solid orangered;
+}
+
+.blogPage__calloutBox h2 {
+  margin-bottom: 15px;
+  margin-top: 0;
+  font-size: 25px;
+}
+
+@media (min-width: 768px) {
+  .blogPage__calloutBox h2 {
+    font-size: 30px;
+  }
+  .blogPage__calloutBox h2 span {
+    font-size: 30px !important;
+  }
+}
+
+.blogPage__calloutBox h2 span {
+  font-size: 25px;
+}
+
+.blogPage__atention {
+  background-color: orangered;
+  padding: 20px 30px;
+  margin: 10px 0;
+  color: white;
+}
+
+.blogPage__date {
+  margin-bottom: 25px;
+}
+
+.blogPage__date i {
+  color: orangered;
+}
+
+.relatedArticles__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.relatedArticles__box:first-child {
+  margin-top: 90px;
+}
+
+@media (min-width: 768px) {
+  .relatedArticles__box:first-child {
+    margin-top: 0;
+  }
+}
+
+.relatedArticles__content {
+  padding: 20px 10px;
+  background-color: orangered;
+  width: 55%;
+}
+
+.relatedArticles__title {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.relatedArticles__date {
+  color: whitesmoke;
+  font-size: 14px;
+}
+
+.relatedArticles__img {
+  height: 200px;
+  width: 45%;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.relatedArticles__ReadMore {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  background-color: #52d0f1;
+  color: white;
+  text-decoration: none;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 16px 20px 16px 20px;
+  text-align: center;
+}
+
+.relatedArticles__ReadMore:hover {
+  background-color: #f9e821;
+}
+/*# sourceMappingURL=styleBlog.css.map */
