@@ -33,6 +33,12 @@
   color: #52d0f1;
 }
 
+.clicked {
+  font-weight: bold;
+  -webkit-text-decoration-color: #52d0f1;
+          text-decoration-color: #52d0f1;
+}
+
 .ClassesFilterButton {
   position: absolute;
   top: 0px;

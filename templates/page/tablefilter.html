@@ -1416,6 +1416,8 @@ src="https://www.facebook.com/tr?id=191358722010157&ev=PageView
                                 height: "toggle"
                             }, 500, function() {
                         });
+                        $(this).toggleClass('clicked');
+                        $('.ClassesFilterButton').removeClass('clicked');
         
                     })
                     $('.ClassesFilterButton').click(function(){
@@ -1424,6 +1426,8 @@ src="https://www.facebook.com/tr?id=191358722010157&ev=PageView
                                 height: "toggle"
                             }, 500, function() {
                         });
+                        $(this).toggleClass('clicked');
+                        $('.GradesFilterButton').removeClass('clicked');
                     })
         
                     $('[data-title="Class"]').each(function () {
@@ -1475,7 +1479,7 @@ src="https://www.facebook.com/tr?id=191358722010157&ev=PageView
                             
                     $(".FilterFormClasses").find("input:checkbox").click(function() {
                         $(this).parents(".filterTable").find(".FilterFormGrades").find("input:checkbox").prop('checked', false);
-                        $(this).parents(".pb-text").find($('tr')).not('.first').hide();
+                        $(this).parents(".pb-text").find($('tr')).not(':first').hide();
                         $('input:checkbox:checked').each(function() {
                             var status = $(this).attr('rel');
                             var value = $(this).val();
