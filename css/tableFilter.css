@@ -1,5 +1,6 @@
 .filterTable {
   position: relative;
+  margin-bottom: 10px;
 }
 
 .filterTable__form {
@@ -11,37 +12,50 @@
 }
 
 .filterForm__wrapper {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-left: -15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.filterForm__wrapper label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .filterTable__btn {
-  color: orangered;
-  text-decoration: underline;
-  -webkit-text-decoration-style: dashed;
-          text-decoration-style: dashed;
+  color: black;
   font-size: smaller;
+  background-color: #cfcfcf;
+  display: block;
+  height: 30px;
+  width: 135px;
+  text-align: center;
+  line-height: 30px;
   cursor: pointer;
 }
 
 .filterTable__btn:hover {
-  color: #52d0f1;
+  background-color: #52d0f1;
+  color: white;
 }
 
 .clicked {
   font-weight: bold;
-  -webkit-text-decoration-color: #52d0f1;
-          text-decoration-color: #52d0f1;
+  background-color: #52d0f1;
+  color: white;
 }
 
 .ClassesFilterButton {
   position: absolute;
   top: 0px;
-  left: 150px;
+  left: 165px;
 }
 /*# sourceMappingURL=tableFilter.css.map */
