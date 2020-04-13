@@ -1399,31 +1399,36 @@ src="https://www.facebook.com/tr?id=191358722010157&ev=PageView
             <script>
                 jQuery(document).ready(function($){
                     $('.GradesFilterButton').click(function(){
+                        $(this).parents().find('.FilterFormClasses').hide();
                         $(this).parent().find('.FilterFormGrades').animate({
                                 height: "toggle"
                             }, 500, function() {
                         });
+                        $(this).toggleClass('clicked');
+                        $('.ClassesFilterButton').removeClass('clicked');
+        
                     })
                     $('.ClassesFilterButton').click(function(){
+                        $(this).parents().find('.FilterFormGrades').hide();
                         $(this).parent().find('.FilterFormClasses').animate({
                                 height: "toggle"
                             }, 500, function() {
                         });
+                        $(this).toggleClass('clicked');
+                        $('.GradesFilterButton').removeClass('clicked');
                     })
-
+        
                     $('[data-title="Class"]').each(function () {
                         let Class =  $('a', this).attr('title');
                         Class=Class.split(' Level')[0];
                         $(this).attr('rel', Class);
                     });
-
-                    $(function() {
+        
                         function detectRange(str) {
                             var parts = str.split("-");
-                            console.log(parts[0]);
                             return [parseInt(parts[0]), parseInt(parts[1])];
                         }
-
+        
                         function inRange(n, r) {
                             var i = r[0];
                             var result = false;
@@ -1434,7 +1439,7 @@ src="https://www.facebook.com/tr?id=191358722010157&ev=PageView
                             }
                             return result;
                         }
-
+        
                     function filterRows(fObj, tObj) {
                         var rows = $("tbody > tr", tObj);
                         rows.hide();
@@ -1458,31 +1463,37 @@ src="https://www.facebook.com/tr?id=191358722010157&ev=PageView
                             }
                         });
                     }
-
+        
                             
                     $(".FilterFormClasses").find("input:checkbox").click(function() {
                         $(this).parents(".filterTable").find(".FilterFormGrades").find("input:checkbox").prop('checked', false);
-                        $('tr').not('.first').hide();
+                        $(this).parents(".pb-text").find($('tr')).not(':first').hide();
                         $('input:checkbox:checked').each(function() {
                             var status = $(this).attr('rel');
                             var value = $(this).val();
                             $('[rel="' + value + '"]').parent('tr').show();
                         });
-                        if(!$(this).is(':checked')){
+                        if ($(this).parents(".FilterFormClasses").find("input:checkbox").filter(':checked').length > 0) {
+                            console.log('checked');
+                        } else {
+                            console.log('nothing checked');
                             $('tr').show();
                         }
                     });
-
+        
                     $(".FilterFormGrades").find("input:checkbox").click(function() {
                         $(this).parents(".filterTable").find(".FilterFormClasses").find("input:checkbox").prop('checked', false);
-                        filterRows($(this).parent(), $("table"));
-                        if(!$(this).is(':checked')){
+                        filterRows($(this).parent(), $(this).parents(".pb-text").find($("table")));
+                        if ($(this).parents(".FilterFormGrades").find("input:checkbox").filter(':checked').length > 0) {
+                            console.log('checked');
+                        } else {
+                            console.log('nothing checked');
                             $('tr').show();
                         }
                     })
-                });
-
-                })
+        });
+        
+                
                 </script>
 
             <div  class="pb-line pb-clear-fix" style="background-repeat:no-repeat;">
