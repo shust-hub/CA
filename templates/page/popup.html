@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <title>CodeAdvantage | Online Computer Coding classes for Kids</title>
+    <meta name="description" content="Our online coding classes lets your kid learn to code while interacting with other students and a live teacher.">
+    <link rel='dns-prefetch' href='maps.google.com' />
+    <link rel='dns-prefetch' href='fonts.googleapis.com' />
+    <link rel='dns-prefetch' href='s.w.org' />
+    <link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+
+
+    <link rel='stylesheet' id='wp-block-library-group-css' href='/css/style1.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='pb-component-blockquote-group-css' href='/css/style2.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='pb-component-feature-group-css' href='/css/style3.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='pb-component-responsive-nav-group-css' href='/css/style4.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='pb-component-space-group-css' href='/css/style5.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='rs-plugin-settings-group-css' href='/css/style6.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/css/popup.css'/>
+
+
+
+
+    <link rel='stylesheet' id='timetable_font_lato-css'  href='fonts.googleapis.com/css?family=Lato%3A400%2C700&#038;ver=5.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='woocommerce-general-group-css' href='/css/style7.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/css/media.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/css/bootstrap-custom.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='google-font-open-sans-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&#038;subset=cyrillic-ext%2Ccyrillic%2Cvietnamese%2Cgreek-ext%2Clatin%2Cgreek%2Clatin-ext&#038;ver=5.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='google-font-dosis-css'  href='https://fonts.googleapis.com/css?family=Dosis%3A200%2C300%2Cregular%2C500%2C600%2C700%2C800&#038;subset=latin%2Clatin-ext&#038;ver=5.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='google-font-lato-css'  href='https://fonts.googleapis.com/css?family=Lato%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&#038;subset=latin%2Clatin-ext&#038;ver=5.2.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='olympus-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Noto+Sans%3A400%2C700%2C400i%2C700i%7CPT+Mono%3A400%2C400i%7CUbuntu%3A300%2C400%2C500%2C700%2C300i%2C400i%2C500i%2C700i&#038;subset=greek-ext%2Clatin-ext%2Cvietnamese%2Clatin%2Ccyrillic-ext%2Cdevanagari%2Ccyrillic%2Cgreek&#038;display=swap&#038;ver=1.9.6' type='text/css' media='all' />
+
+    <!--n2css-->
+    <script type='text/javascript' src='/js/jquery.js'></script>
+    <script type='text/javascript' src='/js/jquery-migrate.min.js'></script>
+    <script type='text/javascript' src='/js/plugins10.js'></script>
+
+    <link rel="shortcut icon" href="/CA/favicon.ico" type="image/vnd.microsoft.icon" />
+
+</head>
+
+<body>
+    <a class="trigger_popup_fricc">Click here to show the popup</a>
+
+    <div class="hover_bkgr_fricc">
+        <span class="helper"></span>
+        <div>
+            <div class="popup">
+                <div class="popupImg"></div>
+                <div id="beforeSuggestion" class="popupContent">
+                    <div class="popupContent__text">
+                        <span>Get</span> 
+                        <span class="largeText">10% OFF</span>
+                        <span>your first class</span>
+                        <p>When you join our mail list</p>
+                    </div>
+                    <form action="" class="popupContent__popupForm">
+                        <!-- <input type="text" class="popupForm__input" placeholder="Your Name" required> -->
+                        <input type="text" class="popupForm__input" placeholder="Your Email" required>
+                        <input class="popupForm__btn" type="submit" value="Sign Up">
+                    </form>
+                </div>
+                <!-- Сообщение после отправки данных -->
+                <div id="afterSuggestion"  style="display: none;" class="popupContent">
+                    <div class="popupContent__text">
+                        <span class="largeText">Thank you!</span>
+                        <span>Check your email for your $10 off code.</span>
+                        <p>Browse our  <a href="/online-coding-classes-for-kids">Online Classes</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="popupCloseButton">&times;</div>
+        </div>
+    </div>
+
+    <script>
+        jQuery(document).ready(function($){
+            $('.hover_bkgr_fricc').show();
+                
+            $(".trigger_popup_fricc").click(function(){
+                $('.hover_bkgr_fricc').show();
+            });
+            $('.popupCloseButton').click(function(){
+                $('.hover_bkgr_fricc').hide();
+            });
+            //Просто для наглядности показывает форму после отправки данных
+            $('.popupForm__btn').click(function(){
+                $('#beforeSuggestion').hide();
+                $('#afterSuggestion').show();
+            });
+        });
+
+
+    </script>
+
+</body>
+
+</html>

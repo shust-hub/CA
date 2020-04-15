@@ -676,3 +676,47 @@ div.theme-footer-top .pb-testimonial ul>li>div>div.pb-testimonial-cite-up,
 .pb-audio a.jp-mute,
 .pb-audio a.jp-unmute{background-size:112px 56px;background-image:url('/wp-content/themes/fable/media/image/public/2x/audio_control.png')}.tabs_box_navigation
 .tabs_box_navigation_icon{background-size:11px 22px;background-image:url('/wp-content/themes/fable/media/image/public/2x/arrow_menu_expand.png')}}
+
+.pb-logo {
+    margin-top: -40px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+@media only screen and (max-width: 767px) {
+    .pb-logo {
+      margin-top: 0;
+    }
+  }
+
+.submenuWrapper{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    z-index: 9999;
+}
+.submenuWrapper .submenuLink{
+    text-align: center;
+    text-decoration: none;
+    padding-left: 20px;
+    color: #8b8b8b;
+    font-size: 15px;
+}
+@media only screen and (max-width: 767px) {
+    .submenuWrapper .submenuLink {
+      display: none;
+    }
+  }
+
+.submenuWrapper .portalBtn {
+    padding: 20px 10px 10px 10px;
+    color: orangered;
+    font-weight: bold;
+    text-decoration: none;
+    min-width: 100px;
+    text-align: center;
+    box-sizing: border-box;
+}
+@media only screen and (max-width: 1069px) and (min-width: 0px){
+   .submenuWrapper .portalBtn {
+     min-width: 70px;
+    } 
+}
