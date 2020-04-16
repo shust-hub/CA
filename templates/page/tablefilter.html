@@ -1382,8 +1382,9 @@ src="https://www.facebook.com/tr?id=191358722010157&ev=PageView
                         function detectRange(str) {
                             var parts = str.split("-");
                             if (parts[0] == 'K'){
+                                console.log("Error K NaN")
                                 parts[0] = '0';
-                                console.log("K:" + parts[0])
+                                
                             }
                             console.log(parts[0],parts[1])
                             console.log(parseInt(parts[0]),parseInt(parts[1]))
