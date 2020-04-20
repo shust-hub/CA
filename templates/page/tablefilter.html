@@ -1531,7 +1531,8 @@ src="https://www.facebook.com/tr?id=191358722010157&ev=PageView
                             $('tr').show();
                         }
                     })
-                    ('[data-title="Class"]').each(function () {
+
+                    $('[data-title="Class"]').each(function () {
                     var atrr = $(this).attr('rel').replace(/\s+/g, '');
                     console.log(atrr);
                     switch (atrr){
