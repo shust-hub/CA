@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="/CA/css/styleBlog.css" type='text/css'>
     <link rel="stylesheet" href="/CA/css/style_reg.css" type='text/css'>
     <link rel="stylesheet" href="/CA/css/tableFilter.css?v=1" type='text/css'>
+    <link rel="stylesheet" href="/CA/css/tooltipster/css/tooltipster.bundle.css">
     <link rel="stylesheet" href="/CA//css/tooltipster/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-shadow.min.css">
 
     <!--n2css-->
@@ -1530,7 +1531,7 @@ src="https://www.facebook.com/tr?id=191358722010157&ev=PageView
                             $('tr').show();
                         }
                     })
-                                $('[data-title="Class"]').each(function () {
+                    ('[data-title="Class"]').each(function () {
                     var atrr = $(this).attr('rel').replace(/\s+/g, '');
                     console.log(atrr);
                     switch (atrr){
@@ -1550,7 +1551,7 @@ src="https://www.facebook.com/tr?id=191358722010157&ev=PageView
                             break;
                         case 'WebDevelopment': $(this).find('a').attr('data-tooltip-content', "#tooltip_WebDevelopment")
                             break;
-                        default: $(this).find('a').attr('data-tooltip-content', "#tooltip_content2");
+                        default: console.log("err")
                             break;
                     }
                     $(this).find('a').addClass("tooltip");
