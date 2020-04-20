@@ -34,8 +34,11 @@
     <link rel="stylesheet" href="/CA/css/stylePortal.css" type='text/css'>
     <link rel="stylesheet" href="/CA/css/styleBlog.css" type='text/css'>
     <link rel="stylesheet" href="/CA/css/style_reg.css" type='text/css'>
-    <link rel="stylesheet" href="/CA/css/tableFilter.css" type='text/css'>
+    <link rel="stylesheet" href="/CA/css/tableFilter.css?v=1" type='text/css'>
+    <link rel="stylesheet" href="/CA//css/tooltipster/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-shadow.min.css">
+
     <!--n2css-->
+    <script src='CA/css/tooltipster/js/tooltipster.bundle.js'></script>
     <script type='text/javascript' src='/CA/js/jquery.js'></script>
     <script type='text/javascript' src='/CA/js/jquery-migrate.min.js'></script>
     <script type='text/javascript' src='/CA/js/plugins10.js'></script>
@@ -878,7 +881,7 @@ src="https://www.facebook.com/tr?id=191358722010157&ev=PageView
                                                         <div class="GradesFilterButton  filterTable__btn">Filter by Grade Level</div> 
                                                         <form name="FilterFormGrades" class="FilterFormGrades filterTable__form" action="" method="">
                                                             <div class="filterForm__wrapper">
-                                                                <label for="filter_1"><input type="checkbox" name="filterStatus" value="0" />K</label>
+                                                                <label for="filter_0"><input type="checkbox" name="filterStatus" value="0" />K</label>
                                                                 <label for="filter_1"><input type="checkbox" name="filterStatus" value="1st" />1st</label>
                                                                 <label for="filter_2"><input type="checkbox" name="filterStatus" value="2nd" />2nd</label>
                                                                 <label for="filter_3"><input type="checkbox" name="filterStatus" value="3rd" />3rd</label>
@@ -1351,6 +1354,79 @@ src="https://www.facebook.com/tr?id=191358722010157&ev=PageView
                     </li>
                 </ul>
             </div>
+            <div  style="display: none;">
+                <div class="tooltip_templates" id="tooltip_ScratchJr">
+                    <span class="tooltipTitle">Scratch Jr</span>
+                    <span class="tooltipSubTitle">Ages: 5-7</span>
+                    <p>Learning to code at any age is beneficial to students.
+                        Similar to learning another language, early exposure can help a child pick
+                        it up with confidence and ease With coding, the earlier children learn coding fundamentals - they can apply it to any programming language they study over time.            
+                    </p>
+                </div>
+            </div>
+            <div  style="display: none;">
+                <div class="tooltip_templates" id="tooltip_3DVideoGameDesign">
+                    <span class="tooltipTitle">3D Video Game Design</span>
+                    <span class="tooltipSubTitle">Ages: 6-8</span>
+                    <p>
+                        One of the best ways to get kids excited is to allow them to create something of their own. In this exciting Intro to Coding, students bring their imaginations to life in full, 3D color!          
+                    </p>
+                </div>
+            </div>
+            <div  style="display: none;">
+                <div class="tooltip_templates" id="tooltip_MinecraftClub">
+                    <span class="tooltipTitle">Minecraft Club</span>
+                    <span class="tooltipSubTitle">Ages: 6-8</span>
+                    <p>
+                        In this course kids will be able to recreate a number of real life structures in-game, while learning about a variety of important topics including architecture, physics, and circuitry. Students will love learning how to make a farmhouse, a roller coaster, and even a Rube Goldberg machine  
+                    </p>
+                </div>
+            </div>
+            <div  style="display: none;">
+                <div class="tooltip_templates" id="tooltip_Scratch">
+                    <span class="tooltipTitle">Scratch</span>
+                    <span class="tooltipSubTitle"> Ages: 8-10</span>
+                    <p>
+                        This class provides a powerful learning tool for budding programmers– using an advanced block coding format, Scratch teaches fundamental programming concepts also used in more complex languages such as Java and Python.        
+                    </p>
+                </div>
+            </div>
+            <div  style="display: none;">
+                <div class="tooltip_templates" id="tooltip_RobloxBuild">
+                    <span class="tooltipTitle">Roblox Build</span>
+                    <span class="tooltipSubTitle">Ages: 6-8</span>
+                    <p>
+                        Build and play in your own 3D worlds with Roblox Studio! Students will have the chance to stretch their creative minds by building games such as a fun obstacle course and a high speed racing game.        
+                    </p>
+                </div>
+            </div>
+            <div  style="display: none;">
+                <div class="tooltip_templates" id="tooltip_RobloxCode">
+                    <span class="tooltipTitle">Roblox Code</span>
+                    <span class="tooltipSubTitle">Ages: 9-11</span>
+                    <p>
+                        In this course, students will design, code and play their own 3D worlds with Roblox Studio! Students code using the programming language Lua which is currently the leading scripting language used in games. Roblox’s special version of this language – Roblox Lua, enhances the experience as students manipulate environments and program while having fun.      
+                    </p>
+                </div>
+            </div>
+            <div  style="display: none;">
+                <div class="tooltip_templates" id="tooltip_WebDevelopment">
+                    <span class="tooltipTitle">Web Development</span>
+                    <span class="tooltipSubTitle">Ages: 10-15</span>
+                    <p>
+                        This course emphasizes components of both creative design and technical learning – encouraging students to embrace teamwork, creativity, and problem-solving as they progress on their coding journey!
+                    </p>
+                </div>
+            </div>
+            <div  style="display: none;">
+                <div class="tooltip_templates" id="tooltip_Python">
+                    <span class="tooltipTitle">Python</span>
+                    <span class="tooltipSubTitle">Ages: 10-15</span>
+                    <p>
+                        This versatile and widely used programming language is a great next step for experienced programmers. It also offers a “on-ramp” to middle school students ready to learn to code! With user-friendly interfaces and syntax, Python is a powerful, “typed” language that will allow students to build a series of applications and games.
+                    </p>
+                </div>
+            </div>
             <script>
                 jQuery(document).ready(function($){
                     $('.GradesFilterButton').click(function(){
@@ -1453,9 +1529,39 @@ src="https://www.facebook.com/tr?id=191358722010157&ev=PageView
                             $('tr').show();
                         }
                     })
+                                $('[data-title="Class"]').each(function () {
+                    var atrr = $(this).attr('rel').replace(/\s+/g, '');
+                    console.log(atrr);
+                    switch (atrr){
+                        case 'ScratchJr': $(this).find('a').attr('data-tooltip-content', "#tooltip_ScratchJr")
+                                break;
+                        case '3DVideoGameDesign': $(this).find('a').attr('data-tooltip-content', "#tooltip_3DVideoGameDesign")
+                                break;
+                        case 'Scratch': $(this).find('a').attr('data-tooltip-content', "#tooltip_Scratch")
+                                break;
+                        case 'MinecraftClub': $(this).find('a').attr('data-tooltip-content', "#tooltip_MinecraftClub")
+                            break;
+                        case 'RobloxBuild': $(this).find('a').attr('data-tooltip-content', "#tooltip_RobloxBuild")
+                            break;
+                        case 'RobloxCode': $(this).find('a').attr('data-tooltip-content', "#tooltip_RobloxCode")
+                            break;
+                        case 'Python': $(this).find('a').attr('data-tooltip-content', "#tooltip_Python")
+                            break;
+                        case 'WebDevelopment': $(this).find('a').attr('data-tooltip-content', "#tooltip_WebDevelopment")
+                            break;
+                        default: $(this).find('a').attr('data-tooltip-content', "#tooltip_content2");
+                            break;
+                    }
+                    $(this).find('a').addClass("tooltip");
+            });
+            
+
+            $('.tooltip').tooltipster({
+                theme: 'tooltipster-shadow',
+                contentCloning: true
+            });
         });
-        
-                
+
                 </script>
 
             <div  class="pb-line pb-clear-fix" style="background-repeat:no-repeat;">
