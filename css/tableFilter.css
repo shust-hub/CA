@@ -31,8 +31,12 @@
 }
 
 #responsiveTable {
+  margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 10px !important;
   overflow: auto !important;
+  -webkit-box-shadow: 0 0 25px rgba(224, 224, 224, 0.9);
+          box-shadow: 0 0 25px rgba(224, 224, 224, 0.9);
 }
 
 #responsiveTable .table {
@@ -40,11 +44,9 @@
   border-collapse: collapse !important;
   overflow: hidden;
   position: relative;
-  -webkit-box-shadow: 0 0 25px rgba(224, 224, 224, 0.9);
-          box-shadow: 0 0 25px rgba(224, 224, 224, 0.9);
-  margin-top: 20px;
   border-radius: 10px;
   background: white;
+  margin-bottom: 0 !important;
 }
 
 @media only screen and (min-width: 801px) {

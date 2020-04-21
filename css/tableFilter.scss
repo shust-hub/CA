@@ -30,19 +30,19 @@
 }
 
 #responsiveTable{
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 10px!important;
     overflow: auto!important;
+    box-shadow: 0 0 25px rgba(#E0E0E0,0.9);
     .table {
-        // @media only screen and (min-width: 801px){
-            border-spacing: 3!important;
-            border-collapse: collapse!important;
-            overflow: hidden;
-            position: relative;
-        // }
-        box-shadow: 0 0 25px rgba(#E0E0E0,0.9);
-        margin-top: 20px;
+        border-spacing: 3!important;
+        border-collapse: collapse!important;
+        overflow: hidden;
+        position: relative;
         border-radius: 10px;
         background: white;
+        margin-bottom: 0!important;
     }
 
     .table td, .table th {
