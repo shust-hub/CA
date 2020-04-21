@@ -13,7 +13,8 @@
     border: none !important;
   }
   #responsiveTable tr {
-    border: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
     vertical-align: middle !important;
     padding: 10px;
   }
@@ -29,27 +30,21 @@
   }
 }
 
+#responsiveTable {
+  border-radius: 10px !important;
+  overflow: auto !important;
+}
+
 #responsiveTable .table {
+  border-spacing: 3 !important;
+  border-collapse: collapse !important;
+  overflow: hidden;
+  position: relative;
   -webkit-box-shadow: 0 0 25px rgba(224, 224, 224, 0.9);
           box-shadow: 0 0 25px rgba(224, 224, 224, 0.9);
   margin-top: 20px;
   border-radius: 10px;
   background: white;
-}
-
-@media only screen and (min-width: 801px) {
-  #responsiveTable .table {
-    border-spacing: 1 !important;
-    border-collapse: collapse !important;
-    overflow: hidden;
-    position: relative;
-  }
-}
-
-@media only screen and (min-width: 801px) {
-  #responsiveTable .table * {
-    position: relative;
-  }
 }
 
 @media only screen and (min-width: 801px) {
@@ -66,6 +61,18 @@
   #responsiveTable .table thead tr {
     height: 60px;
   }
+}
+
+#responsiveTable .table thead tr td:first-child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-left: 3px solid #fe6500;
+}
+
+#responsiveTable .table thead tr td:last-child {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-right: 3px solid #fe6500;
 }
 
 @media only screen and (min-width: 801px) {
