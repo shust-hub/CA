@@ -1,3 +1,118 @@
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+  vertical-align: middle;
+}
+
+@media only screen and (min-width: 801px) {
+  .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    padding: 15px 10px !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #responsiveTable {
+    border: none !important;
+  }
+  #responsiveTable tr {
+    border: none !important;
+    vertical-align: middle !important;
+    padding: 10px;
+  }
+  #responsiveTable td {
+    color: #707070;
+    vertical-align: middle !important;
+    padding: 15px 0;
+  }
+  #responsiveTable td:before {
+    color: #fe6500;
+    top: 50% !important;
+    margin-top: -10px;
+  }
+}
+
+#responsiveTable .table {
+  -webkit-box-shadow: 0 0 25px rgba(224, 224, 224, 0.9);
+          box-shadow: 0 0 25px rgba(224, 224, 224, 0.9);
+  margin-top: 20px;
+  border-radius: 10px;
+  background: white;
+}
+
+@media only screen and (min-width: 801px) {
+  #responsiveTable .table {
+    border-spacing: 1 !important;
+    border-collapse: collapse !important;
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  #responsiveTable .table * {
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  #responsiveTable .table td, #responsiveTable .table th {
+    padding-left: 8px;
+  }
+}
+
+#responsiveTable .table thead tr {
+  background: #fe6500;
+}
+
+@media only screen and (min-width: 801px) {
+  #responsiveTable .table thead tr {
+    height: 60px;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  #responsiveTable .table tbody tr {
+    height: 50px;
+  }
+}
+
+#responsiveTable .table tbody tr:last-child {
+  border: 0;
+}
+
+@media only screen and (min-width: 801px) {
+  #responsiveTable .table td, #responsiveTable .table th {
+    text-align: left;
+  }
+}
+
+#responsiveTable .table thead th {
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: unset;
+  border-bottom: none !important;
+}
+
+#responsiveTable tbody tr:nth-child(even) {
+  background-color: #F8F8F8;
+}
+
+#responsiveTable tbody tr {
+  font-size: 15px;
+  color: #808080;
+  line-height: 1.2;
+  font-weight: unset;
+}
+
+#responsiveTable tbody tr td {
+  border-top: none !important;
+}
+
+#responsiveTable tbody tr:hover {
+  color: #555555;
+  background-color: #F0F0F0;
+  cursor: pointer;
+}
+
 .filterTable {
   position: relative;
   margin-bottom: 10px;
@@ -35,10 +150,10 @@
   font-size: smaller;
   background-color: #cfcfcf;
   display: block;
-  height: 40px;
-  width: 145px;
+  height: 30px;
+  width: 135px;
   text-align: center;
-  line-height: 40px;
+  line-height: 30px;
   cursor: pointer;
 }
 
@@ -57,5 +172,16 @@
   position: absolute;
   top: 0px;
   left: 165px;
+}
+
+.pb-logo {
+  margin-top: -25px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media only screen and (max-width: 767px) {
+  .pb-logo {
+    margin-top: 0;
+  }
 }
 /*# sourceMappingURL=tableFilter.css.map */

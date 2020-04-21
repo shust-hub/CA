@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="/CA/css/stylePortal.css" type='text/css'>
     <link rel="stylesheet" href="/CA/css/styleBlog.css" type='text/css'>
     <link rel="stylesheet" href="/CA/css/style_reg.css" type='text/css'>
-    <link rel="stylesheet" href="/CA/css/tableFilter.css?v=1" type='text/css'>
+    <link rel="stylesheet" href="/CA/css/tableFilter.css?v=2" type='text/css'>
     <link rel="stylesheet" href="/CA/css/tooltipster/css/tooltipster.bundle.css">
     <link rel="stylesheet" href="/CA//css/tooltipster/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-shadow.min.css">
 
@@ -1536,23 +1536,31 @@ src="https://www.facebook.com/tr?id=191358722010157&ev=PageView
                     var atrr = $(this).attr('rel').replace(/\s+/g, '');
                     console.log(atrr);
                     switch (atrr){
-                        case 'ScratchJr': $(this).find('a').attr('data-tooltip-content', "#tooltip_ScratchJr")
+                        case 'ScratchJr': $(this).find('a').attr('data-tooltip-content', "#tooltip_ScratchJr");
+                                          $(this).parent('tr').css({"border-left":"6px solid #f0e247","border-right":"6px solid #d35347"});
                                 break;
-                        case '3DVideoGameDesign': $(this).find('a').attr('data-tooltip-content', "#tooltip_3DVideoGameDesign")
+                        case '3DVideoGameDesign': $(this).find('a').attr('data-tooltip-content', "#tooltip_3DVideoGameDesign");
+                                          $(this).parent('tr').css({"border-left":"6px solid #f0e247","border-right":"6px solid #f0e247"});
                                 break;
-                        case 'Scratch': $(this).find('a').attr('data-tooltip-content', "#tooltip_Scratch")
+                        case 'Scratch': $(this).find('a').attr('data-tooltip-content', "#tooltip_Scratch");
+                                          $(this).parent('tr').css({"border-left":"6px solid #d35347","border-right":"6px solid #d35347"});
                                 break;
-                        case 'MinecraftClub': $(this).find('a').attr('data-tooltip-content', "#tooltip_MinecraftClub")
+                        case 'MinecraftClub': $(this).find('a').attr('data-tooltip-content', "#tooltip_MinecraftClub");
+                                          $(this).parent('tr').css({"border-left":"6px solid #f0e247","border-right":"6px solid #f0e247"});
                             break;
-                        case 'RobloxBuild': $(this).find('a').attr('data-tooltip-content', "#tooltip_RobloxBuild")
+                        case 'RobloxBuild': $(this).find('a').attr('data-tooltip-content', "#tooltip_RobloxBuild");
+                                          $(this).parent('tr').css({"border-left":"6px solid #f0e247","border-right":"6px solid #f0e247"});
                             break;
-                        case 'RobloxCode': $(this).find('a').attr('data-tooltip-content', "#tooltip_RobloxCode")
+                        case 'RobloxCode': $(this).find('a').attr('data-tooltip-content', "#tooltip_RobloxCode");
+                                          $(this).parent('tr').css({"border-left":"6px solid #5cb8d7","border-right":"6px solid #5cb8d7"});
                             break;
-                        case 'Python': $(this).find('a').attr('data-tooltip-content', "#tooltip_Python")
+                        case 'Python': $(this).find('a').attr('data-tooltip-content', "#tooltip_Python");
+                                          $(this).parent('tr').css({"border-left":"6px solid #5cb8d7","border-right":"6px solid #5cb8d7"});
                             break;
-                        case 'WebDevelopment': $(this).find('a').attr('data-tooltip-content', "#tooltip_WebDevelopment")
+                        case 'WebDevelopment': $(this).find('a').attr('data-tooltip-content', "#tooltip_WebDevelopment");
+                                          $(this).parent('tr').css({"border-left":"6px solid #5cb8d7","border-right":"6px solid #5cb8d7"});
                             break;
-                        default: console.log("err")
+                        default: $(this).find('a').attr('data-tooltip-content', "#tooltip_content2");
                             break;
                     }
                     $(this).find('a').addClass("tooltip");

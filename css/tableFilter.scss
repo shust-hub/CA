@@ -1,3 +1,108 @@
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+    vertical-align: middle;
+    @media only screen and (min-width: 801px){
+        padding: 15px 10px!important;
+    }
+}
+
+
+
+@media only screen and (max-width: 800px){
+    #responsiveTable {
+        border: none!important;
+    }
+    #responsiveTable tr{
+        border: none!important;
+        vertical-align: middle!important;
+        padding: 10px;
+    }
+    #responsiveTable td {
+        color:  #707070;
+        vertical-align: middle!important;
+        padding: 15px 0;
+        &:before{
+            color: #fe6500;
+            top: 50%!important;
+            margin-top: -10px;
+        }
+    }
+}
+
+#responsiveTable{
+    .table {
+        @media only screen and (min-width: 801px){
+            border-spacing: 1!important;
+            border-collapse: collapse!important;
+            overflow: hidden;
+            position: relative;
+        }
+        box-shadow: 0 0 25px rgba(#E0E0E0,0.9);
+        margin-top: 20px;
+        border-radius: 10px;
+        background: white;
+    }
+
+    .table * {
+        @media only screen and (min-width: 801px){
+            position: relative;
+        }
+    }
+    .table td, .table th {
+        @media only screen and (min-width: 801px){
+            padding-left: 8px;
+        }
+    }
+    .table thead tr {
+        @media only screen and (min-width: 801px){
+            height: 60px;
+        }
+        background: #fe6500;
+    }
+    .table tbody tr {
+        @media only screen and (min-width: 801px){
+            height: 50px;
+        }
+    }
+    
+    .table tbody tr:last-child {
+        border: 0;
+    }
+    .table td, .table th {
+        @media only screen and (min-width: 801px){
+            text-align: left;
+        }
+    }
+
+    .table thead th{
+        font-size: 18px;
+        color: #fff;
+        line-height: 1.2;
+        font-weight: unset;
+        border-bottom: none!important;
+    }
+    
+    tbody tr:nth-child(even) {
+        background-color: #F8F8F8;
+    }
+    
+    tbody tr {
+        font-size: 15px;
+        color: #808080;
+        line-height: 1.2;
+        font-weight: unset;
+    }
+
+    tbody tr td{
+        border-top: none!important;
+    }
+    
+    tbody tr:hover {
+        color: #555555;
+        background-color: #F0F0F0;
+        cursor: pointer;
+    }
+}
+////////////////////////////////////////////////
 .filterTable{
     position: relative;
     margin-bottom: 10px;
@@ -23,10 +128,10 @@
     font-size: smaller;
     background-color:#cfcfcf;
     display: block;
-    height: 40px;
-    width: 145px;
+    height: 30px;
+    width: 135px;
     text-align: center;
-    line-height: 40px;
+    line-height: 30px;
     cursor: pointer;
     &:hover{
         background-color: #52d0f1;
@@ -43,4 +148,14 @@
     position: absolute;
     top: 0px;
     left: 165px;
+}
+
+.pb-logo {
+    margin-top: -25px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+@media only screen and (max-width:767px) {
+    .pb-logo {
+        margin-top: 0;
+    }
 }
