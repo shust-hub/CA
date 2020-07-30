@@ -1276,12 +1276,14 @@ aside {
       position: absolute;
   }
 
-  #onlinePageHeader  h1{
+  #onlinePageHeader  .h1{
+    display: block;
     color: white;
     font-size: 3rem;
     font-weight: bold;
     z-index: 9999999;
     margin-bottom: 20px;
+    background-color: transparent;
   }
   
   #onlinePageHeader .btn {
