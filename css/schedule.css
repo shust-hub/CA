@@ -1,0 +1,212 @@
+#cart .cart{
+
+  display: block;
+
+  position: fixed;
+
+  width: 100px;
+
+  height: 100px;
+
+  right: 30px;
+
+  top: 30px;
+
+  background-image: url('/images/cart-blue.svg');
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  z-index: 102;
+
+}
+
+#cart .notice{
+
+  position: absolute;
+
+  top: -5px;
+
+  right: -5px;
+
+  width: 35px;
+
+  height: 35px;
+
+  background-color: red;
+
+  border: 3px solid white;
+
+  border-radius: 50%;
+
+  color: white;
+
+  text-align: center;
+
+  font-family: 'Roboto', sans-serif;
+
+  font-size: 1.3em;
+
+  line-height: 1.6em;
+
+  font-weight: bold;
+
+  /* display: none; */
+
+}
+
+@keyframes pulse-red {
+
+  0% {
+
+    box-shadow: 0 0 0 0 rgba(249,58,36, 0.7);
+
+
+
+  }
+
+  50% {
+
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+
+  }
+
+
+
+  80% {
+
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+
+  }
+
+  100% {
+
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+
+  }
+
+}
+
+#cart .cart:hover .notice{
+
+  animation: pulse-red 3s infinite;
+
+}
+
+
+
+.swal2-actions button {
+
+  width: auto;
+
+}
+
+@media only screen and (max-width: 800px) {
+
+
+
+  /* Force table to not be like tables anymore */
+
+  #responsiveTable table,
+
+  #responsiveTable thead,
+
+  #responsiveTable tbody,
+
+  #responsiveTable th,
+
+  #responsiveTable td,
+
+  #responsiveTable tr {
+
+    display: block;
+
+  }
+
+
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+
+  #responsiveTable thead tr {
+
+    position: absolute;
+
+    top: -9999px;
+
+    left: -9999px;
+
+  }
+
+
+
+  #responsiveTable tr { border: 1px solid #ccc; }
+
+
+
+  #responsiveTable td {
+
+    /* Behave  like a "row" */
+
+    border: none;
+
+    border-bottom: 1px solid #eee;
+
+    position: relative;
+
+    padding-left: 50%!important;
+
+    white-space: normal;
+
+    text-align:left;
+
+  }
+
+
+
+  #responsiveTable td:before {
+
+    /* Now like a table header */
+
+    position: absolute;
+
+    /* Top/left values mimic padding */
+
+    top: 6px;
+
+    left: 6px;
+
+    width: 45%;
+
+    padding-right: 10px;
+
+    white-space: nowrap;
+
+    text-align:left;
+
+    font-weight: bold;
+
+  }
+
+
+
+  /*
+
+  Label the data
+
+  */
+
+  #responsiveTable td:before { content: attr(data-title); }
+
+}
+
+/* График */
+.gradeImg{
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+}
+
+/* Баннер  */
+.SpecialOffers div p{ transition: all .2s ease-in-out; }
+.SpecialOffers div:hover p{ transform: scale(1.1); }

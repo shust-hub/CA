@@ -105,7 +105,11 @@
 
     tbody tr td{
         border-top: none!important;
+        @media only screen and (min-width: 801px){
+            max-width: 400px;
+        }
     }
+
     
     tbody tr:hover {
         color: #555555;
@@ -139,10 +143,10 @@
     font-size: smaller;
     background-color:#cfcfcf;
     display: block;
-    height: 30px;
-    width: 135px;
+    height: 40px;
+    width: 145px;
     text-align: center;
-    line-height: 30px;
+    line-height: 40px;
     cursor: pointer;
     &:hover{
         background-color: #52d0f1;
@@ -159,14 +163,4 @@
     position: absolute;
     top: 0px;
     left: 165px;
-}
-
-.pb-logo {
-    margin-top: -25px;
-    background-color: rgba(255, 255, 255, 0.1);
-}
-@media only screen and (max-width:767px) {
-    .pb-logo {
-        margin-top: 0;
-    }
 }

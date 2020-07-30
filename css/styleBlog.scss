@@ -17,13 +17,13 @@
         height: 198px;
         width: 100%;
         overflow: hidden;
-        border-top: 4px solid orangered;
+        border-top: 4px solid #fe6500;
         object-fit: cover;
 
         @media (min-width: 768px)  {
             width: 30%;
             border-top: none;
-            border-left: 4px solid orangered;
+            border-left: 4px solid #fe6500;
         }
     }
 
@@ -53,7 +53,7 @@
 
     &__readMore {
         display: block;
-        background-color: orangered;
+        background-color: #fe6500;
         color: white;
         height: 50px;
         width: 100%;
@@ -92,6 +92,52 @@
                 font-size: 35px;
             }
         }
+        h3{
+            margin-bottom: 12px;
+            margin-top: 17px;
+            font-size: 21px;
+            @media (min-width: 768px)  {
+                font-size: 31px;
+            }
+        }
+        h4{
+            margin-bottom: 10px;
+            margin-top: 15px;
+            font-size: 18px;
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1em;
+            @media (min-width: 768px)  {
+                font-size: 28px;
+            }
+        }
+        ol {
+            counter-reset:li; 
+            margin-left:0; 
+            padding-left:0; 
+        }
+        ol > li {
+            position:relative; 
+            margin:0 0 6px 2em; 
+            padding:4px 0; 
+            list-style:none; 
+        }
+        ol > li:before {
+            content:counter(li) "."; 
+            counter-increment:li; 
+            position:absolute;
+            left:-2em;
+            color:#fe6500;
+            font-weight:bold;
+            text-align:center;
+        }
+        li ol,
+        ol ol li:last-child {margin-bottom:0;}
+        li > p {
+            padding: 0!important;
+        }
+        
     }
 
     &__title {
@@ -110,8 +156,6 @@
         width: 100%;
         overflow: hidden;
         object-fit: cover;
-        
-
     }
 
     &__calloutBox{
@@ -119,7 +163,7 @@
         padding: 20px 30px;
         margin-bottom: 20px;
         margin-top: 20px;
-        border-left: 4px solid orangered;
+        border-left: 4px solid #fe6500;
 
         h2{
             margin-bottom: 15px;
@@ -137,20 +181,109 @@
             }
         }
 
+        h3{
+            margin-bottom: 13px;
+            margin-top: 0;
+            font-size: 22px;
+
+            @media (min-width: 768px)  {
+                font-size: 37px;
+                span{
+                    font-size: 37px!important;
+                }
+            }
+            span{
+                font-size: 22px;
+            }
+        }
+
     }
 
     &__atention {
-        background-color: orangered;
+        background-color: #fe6500;
         padding: 20px 30px;
         margin: 10px 0;
         color: white;
+
+        h1, h2, h3, h4, h5{
+            color: white!important;
+        }
+
+        a{
+            color: white!important;
+        }
     }
 
     &__date{
         i{
-            color: orangered;
+            color: #fe6500;
         }
         margin-bottom: 25px;
+    }
+
+    &__blockquote{
+       margin-bottom: 20px;
+       margin-top: 15px;
+       width: 100%;
+       display: flex;
+
+       cite {
+        font-size: 14px;
+        line-height: 10px;
+        text-align: left;
+        color: #A0A0A0;
+        font-style: normal;
+        margin-top: -5px;
+    }
+    cite:before {
+        content: '— ';
+    }
+       img{
+           display: block;
+           right: 0;
+            position: relative;
+            width: 70px;
+            height: 70px;
+            overflow: hidden;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 25px;
+        }
+
+       blockquote{
+        margin: 15px 15px 30px 15px;
+        padding: 25px 25px 35px;
+        font-size: 16px;
+        background: whitesmoke;
+        border-left: 4px solid;
+        border-color:  #fe6500;
+        position: relative;
+
+        &::after {
+            right: 100%;
+            top: 95px;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-color: rgba(0, 0, 0, 0);
+            border-right-color: #fe6500;
+            border-width: 10px;
+        }
+        p{
+            font-style: italic;
+            margin-top: 20px;
+        }
+       p::before {
+            content: "“";
+            font-family: Georgia;
+            font-size: 40px;
+            line-height: 0;
+            display: inline-block;
+        }
+       }
     }
 }
 
@@ -176,7 +309,7 @@
 
     &__content{
         padding: 20px 10px;
-        background-color: orangered;
+        background-color: #fe6500;
         width: 55%;
     }
 

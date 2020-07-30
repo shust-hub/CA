@@ -24,3 +24,58 @@ ul{}.pb-counter-box ul>li{}.pb-counter-box ul>li>div{text-align:center}.pb-count
 15px 10px 0px;padding:15px
 20px 15px 20px}body.rtl p.pb-dropcap>span.pb-dropcap-first-letter{float:right;margin:4px
 0px 10px 15px}
+
+
+.header-responsive {
+    padding: 5px 0;
+}
+.title-responsive {
+    font-size: 35px;
+}
+
+@media screen and (min-width: 781px) {
+    .header-responsive {
+        padding: 15px 0;
+    }
+    .title-responsive {
+        font-size: 50px;
+    }
+}
+@media screen and (min-width: 960px) {
+    .header-responsive {
+        padding: 20px 0;
+    }
+    .title-responsive {
+        font-size: 55px;
+    }
+}
+
+#newOrderForm select:invalid {
+    background-color: #fef3f3;
+    border-color: #f2d5d5;
+    color:    #F00;
+}
+#newOrderForm input:invalid::placeholder {
+    color:    #F00;
+}
+#newOrderForm input:invalid {
+    background-color: #fef3f3;
+    border-color: #f2d5d5;
+}
+#newOrderForm input:invalid::placeholder {
+    color:    #F00;
+}
+.loading {
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255,255,255,0.8) url("/images/loading.svg") center no-repeat;
+}
+.swal2-actions button {
+    width: auto;
+}
+#registrationFormBlock ul>li {
+    background-image: none;
+}

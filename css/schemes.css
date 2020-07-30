@@ -1,0 +1,854 @@
+#schemes {
+  /* @media screen and (min-width: 1001px) {
+        div.box-font {
+        font-size: 20px;
+        }
+        
+    } */
+}
+
+#schemes .schemeLegend {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#schemes .schemeLegend .schemeLegend__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#schemes .schemeLegend .schemeLegend__item p {
+  font-size: 14px;
+  margin-right: 25px;
+  padding: 2px 0 0;
+}
+
+#schemes .schemeLegend .schemeLegend__item .schemeLegend__box {
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  background-color: rgba(235, 111, 97, 0.95);
+  margin-right: 7px;
+}
+
+#schemes .schemeLegend .schemeLegend__item .schemeLegend__box--yellow {
+  background-color: rgba(240, 226, 71, 0.95);
+}
+
+#schemes .schemeLegend .schemeLegend__item .schemeLegend__box--blue {
+  background-color: rgba(76, 206, 240, 0.95);
+}
+
+#schemes .wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 3rem;
+      grid-template-rows: 3rem;
+  grid-auto-rows: auto;
+}
+
+#schemes .wrapper .border {
+  border-right: 1px solid grey;
+}
+
+#schemes .box-text, #schemes .box-text-sm {
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0.3rem;
+  padding: 0.3rem;
+}
+
+#schemes .box-text a, #schemes .box-text-sm a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold !important;
+  font-size: 14px;
+  display: block;
+}
+
+#schemes .heading {
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+#schemes .blue-box {
+  background-color: rgba(235, 111, 97, 0.95);
+}
+
+#schemes .green-box {
+  background-color: rgba(240, 226, 71, 0.95);
+}
+
+#schemes .purple-box {
+  background-color: rgba(76, 206, 240, 0.95);
+}
+
+#schemes .green-box a {
+  color: #707070;
+}
+
+#schemes .box-text:hover, #schemes .box-text-sm:hover {
+  -webkit-filter: brightness(108%);
+          filter: brightness(108%);
+}
+
+#schemes .grade.wrapper {
+  -ms-grid-columns: ([col] 10%)[10];
+      grid-template-columns: repeat(10, [col] 10%);
+}
+
+#schemes .grade .pk {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 7;
+  grid-row: 1 / 8;
+}
+
+#schemes .grade .k {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 7;
+  grid-row: 1 / 8;
+}
+
+#schemes .grade .one {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 7;
+  grid-row: 1 / 8;
+}
+
+#schemes .grade .two {
+  -ms-grid-column: 4;
+  grid-column: 4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 7;
+  grid-row: 1 / 8;
+}
+
+#schemes .grade .three {
+  -ms-grid-column: 5;
+  grid-column: 5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 7;
+  grid-row: 1 / 8;
+}
+
+#schemes .grade .four {
+  -ms-grid-column: 6;
+  grid-column: 6;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 7;
+  grid-row: 1 / 8;
+}
+
+#schemes .grade .five {
+  -ms-grid-column: 7;
+  grid-column: 7;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 7;
+  grid-row: 1 / 8;
+}
+
+#schemes .grade .six {
+  -ms-grid-column: 8;
+  grid-column: 8;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 7;
+  grid-row: 1 / 8;
+}
+
+#schemes .grade .seven {
+  -ms-grid-column: 9;
+  grid-column: 9;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 7;
+  grid-row: 1 / 8;
+}
+
+#schemes .grade .eight {
+  -ms-grid-column: 10;
+  grid-column: 10;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 7;
+  grid-row: 1 / 8;
+}
+
+#schemes .grade .awe {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+#schemes .grade .kodu {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 5;
+  grid-column: 3 / 8;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+#schemes .grade .python {
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 3;
+  grid-column: 8 / 11;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+#schemes .grade .techie {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+#schemes .grade .scratch {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
+  grid-column: 5 / 8;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+#schemes .grade .club {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-column: 3 / 6;
+  -ms-grid-row: 4;
+  grid-row: 4;
+}
+
+#schemes .grade .modding {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 5;
+  grid-column: 6 / 11;
+  -ms-grid-row: 4;
+  grid-row: 4;
+}
+
+#schemes .grade .web {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 5;
+  grid-column: 6 / 11;
+  -ms-grid-row: 5;
+  grid-row: 5;
+}
+
+#schemes .grade .kidbots {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3 / 5;
+  -ms-grid-row: 6;
+  grid-row: 6;
+}
+
+#schemes .grade .anibots {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
+  grid-column: 5 / 8;
+  -ms-grid-row: 6;
+  grid-row: 6;
+}
+
+#schemes .grade .spacebots {
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 3;
+  grid-column: 8 / 11;
+  -ms-grid-row: 6;
+  grid-row: 6;
+}
+
+#schemes .grade .earthbot {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
+  grid-column: 5 / 8;
+  -ms-grid-row: 7;
+  grid-row: 7;
+}
+
+#schemes .grade .robot {
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 3;
+  grid-column: 8 / 11;
+  -ms-grid-row: 7;
+  grid-row: 7;
+}
+
+#schemes .online.wrapper {
+  -ms-grid-columns: ([col] 11%)[9];
+      grid-template-columns: repeat(9, [col] 11%);
+}
+
+#schemes .online .k {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 9;
+  grid-row: 1 / 10;
+}
+
+#schemes .online .one {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 9;
+  grid-row: 1 / 10;
+}
+
+#schemes .online .two {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 9;
+  grid-row: 1 / 10;
+}
+
+#schemes .online .three {
+  -ms-grid-column: 4;
+  grid-column: 4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 9;
+  grid-row: 1 / 10;
+}
+
+#schemes .online .four {
+  -ms-grid-column: 5;
+  grid-column: 5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 9;
+  grid-row: 1 / 10;
+}
+
+#schemes .online .five {
+  -ms-grid-column: 6;
+  grid-column: 6;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 9;
+  grid-row: 1 / 10;
+}
+
+#schemes .online .six {
+  -ms-grid-column: 7;
+  grid-column: 7;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 9;
+  grid-row: 1 / 10;
+}
+
+#schemes .online .seven {
+  -ms-grid-column: 8;
+  grid-column: 8;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 9;
+  grid-row: 1 / 10;
+}
+
+#schemes .online .eight {
+  -ms-grid-column: 9;
+  grid-column: 9;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 9;
+  grid-row: 1 / 10;
+}
+
+#schemes .online .scratchJr {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+#schemes .online .VGD3d {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / 5;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+#schemes .online .scratch {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-column: 4 / 7;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+#schemes .online .minecraftJavaMods {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-column: 4 / 7;
+  -ms-grid-row: 5;
+  grid-row: 5;
+}
+
+#schemes .online .modding {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 4;
+  grid-column: 6 / 10;
+  -ms-grid-row: 6;
+  grid-row: 6;
+}
+
+#schemes .online .club {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / 5;
+  -ms-grid-row: 6;
+  grid-row: 6;
+}
+
+#schemes .online .robloxB {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / 5;
+  -ms-grid-row: 7;
+  grid-row: 7;
+}
+
+#schemes .online .robloxC {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
+  grid-column: 5 / 8;
+  -ms-grid-row: 7;
+  grid-row: 7;
+}
+
+#schemes .online .python {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 4;
+  grid-column: 6 / 10;
+  -ms-grid-row: 8;
+  grid-row: 8;
+}
+
+#schemes .online .web {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 4;
+  grid-column: 6 / 10;
+  -ms-grid-row: 9;
+  grid-row: 9;
+}
+
+#schemes .age-online.wrapper {
+  -ms-grid-columns: ([col] 11%)[9];
+      grid-template-columns: repeat(9, [col] 11%);
+}
+
+#schemes .age-online .age5 {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 9;
+  grid-row: 1 / 10;
+}
+
+#schemes .age-online .age6 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 9;
+  grid-row: 1 / 10;
+}
+
+#schemes .age-online .age7 {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 9;
+  grid-row: 1 / 10;
+}
+
+#schemes .age-online .age8 {
+  -ms-grid-column: 4;
+  grid-column: 4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 9;
+  grid-row: 1 / 10;
+}
+
+#schemes .age-online .age9 {
+  -ms-grid-column: 5;
+  grid-column: 5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 9;
+  grid-row: 1 / 10;
+}
+
+#schemes .age-online .age10 {
+  -ms-grid-column: 6;
+  grid-column: 6;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 9;
+  grid-row: 1 / 10;
+}
+
+#schemes .age-online .age11 {
+  -ms-grid-column: 7;
+  grid-column: 7;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 9;
+  grid-row: 1 / 10;
+}
+
+#schemes .age-online .age12 {
+  -ms-grid-column: 8;
+  grid-column: 8;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 9;
+  grid-row: 1 / 10;
+}
+
+#schemes .age-online .age13 {
+  -ms-grid-column: 9;
+  grid-column: 9;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 9;
+  grid-row: 1 / 10;
+}
+
+#schemes .age-online .scratchJr {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+#schemes .age-online .VGD3d {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / 5;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+#schemes .age-online .scratch {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-column: 4 / 7;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+#schemes .age-online .minecraftJavaMods {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-column: 4 / 7;
+  -ms-grid-row: 5;
+  grid-row: 5;
+}
+
+#schemes .age-online .modding {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 4;
+  grid-column: 6 / 10;
+  -ms-grid-row: 6;
+  grid-row: 6;
+}
+
+#schemes .age-online .club {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / 5;
+  -ms-grid-row: 6;
+  grid-row: 6;
+}
+
+#schemes .age-online .robloxB {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / 5;
+  -ms-grid-row: 7;
+  grid-row: 7;
+}
+
+#schemes .age-online .robloxC {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
+  grid-column: 5 / 8;
+  -ms-grid-row: 7;
+  grid-row: 7;
+}
+
+#schemes .age-online .python {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 4;
+  grid-column: 6 / 10;
+  -ms-grid-row: 8;
+  grid-row: 8;
+}
+
+#schemes .age-online .web {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 4;
+  grid-column: 6 / 10;
+  -ms-grid-row: 9;
+  grid-row: 9;
+}
+
+#schemes .age.wrapper {
+  -ms-grid-columns: ([col] 11%)[9];
+      grid-template-columns: repeat(9, [col] 11%);
+}
+
+#schemes .age .age5 {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 7;
+  grid-row: 1 / 8;
+}
+
+#schemes .age .age6 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 7;
+  grid-row: 1 / 8;
+}
+
+#schemes .age .age7 {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 7;
+  grid-row: 1 / 8;
+}
+
+#schemes .age .age8 {
+  -ms-grid-column: 4;
+  grid-column: 4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 7;
+  grid-row: 1 / 8;
+}
+
+#schemes .age .age9 {
+  -ms-grid-column: 5;
+  grid-column: 5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 7;
+  grid-row: 1 / 8;
+}
+
+#schemes .age .age10 {
+  -ms-grid-column: 6;
+  grid-column: 6;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 7;
+  grid-row: 1 / 8;
+}
+
+#schemes .age .age11 {
+  -ms-grid-column: 7;
+  grid-column: 7;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 7;
+  grid-row: 1 / 8;
+}
+
+#schemes .age .age12 {
+  -ms-grid-column: 8;
+  grid-column: 8;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 7;
+  grid-row: 1 / 8;
+}
+
+#schemes .age .age13 {
+  -ms-grid-column: 9;
+  grid-column: 9;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 7;
+  grid-row: 1 / 8;
+}
+
+#schemes .age .awe {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+#schemes .age .kodu {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-column: 2 / 7;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+#schemes .age .python {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 3;
+  grid-column: 7 / 10;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+#schemes .age .techie {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+#schemes .age .scratch {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-column: 4 / 7;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+#schemes .age .club {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / 5;
+  -ms-grid-row: 4;
+  grid-row: 4;
+}
+
+#schemes .age .modding {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 5;
+  grid-column: 5 / 10;
+  -ms-grid-row: 4;
+  grid-row: 4;
+}
+
+#schemes .age .web {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 5;
+  grid-column: 5 / 10;
+  -ms-grid-row: 5;
+  grid-row: 5;
+}
+
+#schemes .age .kidbots {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / 4;
+  -ms-grid-row: 6;
+  grid-row: 6;
+}
+
+#schemes .age .anibots {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-column: 4 / 7;
+  -ms-grid-row: 6;
+  grid-row: 6;
+}
+
+#schemes .age .spacebots {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 3;
+  grid-column: 7 / 10;
+  -ms-grid-row: 6;
+  grid-row: 6;
+}
+
+#schemes .age .earthbot {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-column: 4 / 7;
+  -ms-grid-row: 7;
+  grid-row: 7;
+}
+
+#schemes .age .robot {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 3;
+  grid-column: 7 / 10;
+  -ms-grid-row: 7;
+  grid-row: 7;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 601px) {
+  #schemes .box-text a {
+    font-size: 12px;
+  }
+  #schemes .box-text-sm a {
+    font-size: 10px;
+  }
+  #schemes .heading {
+    font-size: 1.2rem;
+  }
+  #schemes .schemeLegend .schemeLegend__item p {
+    font-size: 12px;
+  }
+  #schemes .schemeLegend .schemeLegend__item .schemeLegend__box {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #schemes .schemeLegend .schemeLegend__item p {
+    font-size: 12px;
+  }
+  #schemes .schemeLegend .schemeLegend__item .schemeLegend__box {
+    width: 18px;
+    height: 18px;
+  }
+  #schemes .box-text a {
+    font-size: 12px;
+  }
+  #schemes .box-text-sm a {
+    font-size: 10px;
+  }
+  #schemes .wrapper {
+    -ms-grid-rows: 1.5rem;
+        grid-template-rows: 1.5rem;
+  }
+  #schemes .heading {
+    font-size: 0.8rem;
+  }
+  #schemes .blue-box {
+    margin: 0.1rem;
+    padding: 0.1rem;
+  }
+  #schemes .green-box {
+    margin: 0.1rem;
+    padding: 0.1rem;
+  }
+  #schemes .purple-box {
+    margin: 0.1rem;
+    padding: 0.1rem;
+  }
+}
+
+#schemes a {
+  width: 100%;
+}
+/*# sourceMappingURL=schemes.css.map */

@@ -117,7 +117,3 @@ li{padding:0px}.pb-menu .pb-menu-responsive .nav-toggle{overflow:hidden;position
 body.rtl .pb-menu .pb-menu-default>.sf-menu li.sf-mega-enable-1 .sf-mega{right:0px;left:auto}body.rtl .pb-menu .pb-menu-default>.sf-menu>li{float:right}body.rtl .pb-menu .pb-menu-default>.sf-menu li.sf-mega-enable-0 ul
 ul{right:100%;left:auto}body.rtl .pb-menu .pb-logo{float:right}body.rtl .pb-menu.pb-menu-responsive-mode .pb-logo{float:none}body.rtl .pb-menu .pb-menu-default{float:left}body.rtl .pb-menu.pb-menu-sticky{right:0px;left:auto}body.rtl .pb-menu .pb-menu-responsive
 a{text-align:right}body.rtl .pb-menu .pb-menu-responsive .nav-toggle>span{left:0px;right:auto}
-
-.pb-menu .pb-menu-default>.sf-menu>li>a {
-    padding: 10px 10px 25px 10px;
-}

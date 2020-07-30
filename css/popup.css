@@ -1,8 +1,4 @@
-body {
-  height: 100vh;
-  background-image: url("/images/wall.PNG");
-  background-size: cover;
-}
+
 
 /* Popup box BEGIN */
 .hover_bkgr_fricc {
@@ -189,4 +185,3 @@ body {
 .popup .popupContent__popupForm .popupForm__btn:hover {
   background: #FE6500;
 }
-/*# sourceMappingURL=popup.css.map */

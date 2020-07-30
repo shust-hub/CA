@@ -116,6 +116,12 @@
   border-top: none !important;
 }
 
+@media only screen and (min-width: 801px) {
+  #responsiveTable tbody tr td {
+    max-width: 400px;
+  }
+}
+
 #responsiveTable tbody tr:hover {
   color: #555555;
   background-color: #F0F0F0;
@@ -159,10 +165,10 @@
   font-size: smaller;
   background-color: #cfcfcf;
   display: block;
-  height: 30px;
-  width: 135px;
+  height: 40px;
+  width: 145px;
   text-align: center;
-  line-height: 30px;
+  line-height: 40px;
   cursor: pointer;
 }
 
@@ -181,16 +187,5 @@
   position: absolute;
   top: 0px;
   left: 165px;
-}
-
-.pb-logo {
-  margin-top: -25px;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-@media only screen and (max-width: 767px) {
-  .pb-logo {
-    margin-top: 0;
-  }
 }
 /*# sourceMappingURL=tableFilter.css.map */
