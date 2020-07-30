@@ -1092,6 +1092,16 @@ aside {
   }
 }
 
+.sectionheader{
+  text-align: center;
+}
+.sectionheader h1{
+  display: inline-block;
+  color: #fff;
+  background-color: rgba(76,206,240, .9);
+  padding: 0 50px;
+}
+
 .headerUnderline{
   background: #B3E5FC;
   text-align: center;
@@ -1204,7 +1214,7 @@ aside {
   margin: 0 5px;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, .h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+.h1, .h2, .h3, .h4, .h5, .h6, .h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a{
   margin-bottom: .5rem;
   font-weight: 500;
   line-height: 1.2!important;
@@ -1281,3 +1291,50 @@ aside {
     font-size: 1.25rem;
   }
 
+  .callToAction{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .callToAction .callToAction__block{
+    width: 31%;
+    background-color: #F5F5F5;
+    padding: 15px 20px 70px;
+    border: 2px solid  #F5F5F5;
+    position: relative;
+  }
+  .callToAction .callToAction__block .btn {
+    position: absolute;
+    bottom: 15px;
+  }
+
+  .callToAction .callToAction__block .h5 {
+    margin-bottom: 20px!important;
+  }
+
+  .callToAction .callToAction__block li {
+    list-style: none;
+    padding-left: 25px;
+    position: relative;
+  }
+
+  .callToAction .callToAction__block li:before {
+    content: "☑ ";
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    vertical-align: middle;
+    line-height: 22px;
+    color: #FE6500;
+}
+
+  @media only screen and (max-width: 767px){
+    .callToAction{
+      display: block;
+    }
+    .callToAction .callToAction__block{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+  }
