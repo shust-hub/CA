@@ -1561,6 +1561,26 @@ aside {
   .containerProgress .cardProgress .face.face2 .content p {
     color: #707070;
   }
+  .containerProgress .cardProgress .face.face2 .content li {
+    list-style: none;
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 0;
+  }
+  
+  .containerProgress .cardProgress .face.face2 .content li p{
+    padding: 5px 5px 0 5px;
+  }
+  
+  .containerProgress .cardProgress .face.face2 .content li:before {
+    content: "☑ ";
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    vertical-align: middle;
+    line-height: 37px;
+    color: #FE6500;
+  }
   .containerProgress .cardProgress .face.face2 .content h5 {
     color:  #4ccef0;
   }
