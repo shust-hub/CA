@@ -1598,9 +1598,12 @@ aside {
     text-decoration: none;
     margin-left: 15px;
   }
+  .questionLink a:hover {
+    text-decoration: underline;
+  }
 
-  .questionLink a:before{
-    content: "?";
+  .questionLink a:before:before {
+    content: "·";
     position: absolute;
     left: 0;
     font-size: 18px;
@@ -1609,7 +1612,11 @@ aside {
     line-height: 20px;
     color: #FE6500;
   }
-
-  .questionLink a:hover {
-    text-decoration: underline;
+  
+  .questionLink a:before:nth-child(3n+1):before {
+    color: #f0e652;
+  }
+  
+  .questionLink a:before:nth-child(3n+3):before {
+    color: #4ccef0;
   }
