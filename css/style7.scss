@@ -1613,30 +1613,23 @@ aside {
     color: #FE6500;
   }
   
-  .questionLink a:before:nth-child(3n+1):before {
-    color: #f0e652!important;
-  }
-  
-  .questionLink a:before:nth-child(3n+3):before {
-    color: #4ccef0!important;
-  }
 
   .menu-item-special{
-    color: #eb6f61;
-    background-color: #fff;
+    color: #eb6f61!important;
+    background-color: #fff!important;
   }
 
   .menu-item-special a{
-    color:  #eb6f61;
-    background-color: #fff;
+    color:  #eb6f61!important;
+    background-color: #fff!important;
   }
 
   .menu-item-special:hover{
-    color: #4ccef0;
-    background-color: #fff;
+    color: #4ccef0!important;
+    background-color: #fff!important;
   }
 
   .menu-item-special a:hover{
-    color: #4ccef0;
-    background-color: #fff;
+    color: #4ccef0!important;
+    background-color: #fff!important;
   }
