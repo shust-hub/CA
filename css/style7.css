@@ -4669,10 +4669,10 @@ aside {
   content: "·";
   position: absolute;
   left: 0;
-  font-size: 18px;
+  font-size: 35x;
   font-weight: bold;
   vertical-align: middle;
-  line-height: 20px;
+  line-height: 15px;
   color: #FE6500;
 }
 
