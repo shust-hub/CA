@@ -960,6 +960,10 @@ div.theme-footer-top .pb-testimonial ul>li>div>div.pb-testimonial-cite-up,
   padding: 30px 0;
 }
 
+article.halfColumn{
+  width: 100%;
+}
+
 aside {
   padding-left: 2em;
   background-color: transparent!important;
@@ -1583,4 +1587,29 @@ aside {
   }
   .containerProgress .cardProgress .face.face2 .content h5 {
     color:  #4ccef0;
+  }
+
+
+  .questionLink {
+    position: relative;
+  }
+  .questionLink a{
+    color: #707070;
+    text-decoration: none;
+    margin-left: 15px;
+  }
+
+  .questionLink a:before{
+    content: "?";
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+    font-weight: bold;
+    vertical-align: middle;
+    line-height: 20px;
+    color: #FE6500;
+  }
+
+  .questionLink a:hover {
+    text-decoration: underline;
   }
