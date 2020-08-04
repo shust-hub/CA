@@ -4676,14 +4676,10 @@ aside {
   color: #FE6500;
 }
 
-.menu-item-special {
-  color: #eb6f61 !important;
-  background-color: #fff !important;
-}
-
 .menu-item-special a {
   color: #eb6f61 !important;
   background-color: #fff !important;
+  font-weight: bold !important;
 }
 
 .menu-item-special:hover {
