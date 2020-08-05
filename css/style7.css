@@ -3688,7 +3688,7 @@ span {
 }
 
 .submenuWrapper .portalBtn {
-  padding: 20px 22px 10px 20px;
+  padding: 20px 10px 10px 20px;
   color: #4ccef0;
   font-weight: bold;
   text-decoration: none;
@@ -4138,6 +4138,7 @@ aside {
 
 .blockquote {
   margin: 2em 0;
+  padding-top: 2em;
 }
 
 .blockquote p {
