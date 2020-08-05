@@ -1112,6 +1112,11 @@ aside {
   margin: 0 20px;
 }
 
+.pressBlock a img:hover{
+  margin: 0 20px;
+  filter: brightness(1.75);
+}
+
 .leftimg {
   float:left; 
   margin: 7px 7px 7px 0; 
