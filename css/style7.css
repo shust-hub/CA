@@ -4089,6 +4089,7 @@ aside {
   list-style: none;
   padding-left: 25px;
   position: relative;
+  margin: 0;
 }
 
 .sideBanner li:before {
@@ -4136,7 +4137,7 @@ aside {
 }
 
 .blockquote {
-  margin: 3em 0;
+  margin: 2em 0;
 }
 
 .blockquote p {
