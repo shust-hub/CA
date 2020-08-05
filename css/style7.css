@@ -4030,8 +4030,8 @@ aside {
   background-color: #FE6500 !important;
 }
 
-.listNum li {
-  padding-left: 25px;
+.listNum {
+  padding-left: 15px;
 }
 
 .listNum li p {
