@@ -4030,6 +4030,14 @@ aside {
   background-color: #FE6500 !important;
 }
 
+.listNum li {
+  padding-left: 25px;
+}
+
+.listNum li p {
+  padding: 5px 5px 0 5px;
+}
+
 .listCheck li {
   list-style: none;
   padding-left: 25px;
