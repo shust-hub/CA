@@ -4485,13 +4485,12 @@ aside {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
 }
 
 .blockPriceWrapper .blockPrice .blockPrice__item {
   padding: 20px 35px 35px;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
 }
 
 .blockStepWrapper .blockPrice .blockPrice__item {
