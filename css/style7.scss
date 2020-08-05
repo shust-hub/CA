@@ -1432,10 +1432,10 @@ aside {
  .blockPrice{
     display: flex;
     justify-content: center;
+    flex-grow:1;
   }
   .blockPriceWrapper .blockPrice .blockPrice__item{
     padding: 20px 35px 35px;
-    width: 100%;
   }
   .blockStepWrapper .blockPrice .blockPrice__item{
     padding: 20px 35px;
