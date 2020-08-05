@@ -4489,6 +4489,7 @@ aside {
 
 .blockPriceWrapper .blockPrice .blockPrice__item {
   padding: 20px 35px 35px;
+  width: 100%;
 }
 
 .blockStepWrapper .blockPrice .blockPrice__item {
