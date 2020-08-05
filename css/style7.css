@@ -4141,9 +4141,14 @@ aside {
   transition: background-color 1s linear;
 }
 
+.pressBlock a img {
+  -webkit-transition: background-color 1s linear;
+  transition: background-color 1s linear;
+}
+
 .pressBlock a img:hover {
-  -webkit-filter: brightness(50%);
-          filter: brightness(50%);
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
 }
 
 .leftimg {

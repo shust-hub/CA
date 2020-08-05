@@ -1113,8 +1113,12 @@ aside {
   transition: background-color 1s linear;
 }
 
+.pressBlock a img{
+  transition: background-color 1s linear;
+}
+
 .pressBlock a img:hover{
-  filter: brightness(50%);
+  filter: brightness(120%);
 
 }
 
