@@ -4137,12 +4137,13 @@ aside {
 
 .pressBlock a {
   margin: 0 20px;
+  -webkit-transition: background-color 1s linear;
+  transition: background-color 1s linear;
 }
 
 .pressBlock a img:hover {
-  margin: 0 20px;
-  -webkit-filter: brightness(1.75);
-          filter: brightness(1.75);
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
 }
 
 .leftimg {

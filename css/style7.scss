@@ -1110,11 +1110,12 @@ aside {
 
 .pressBlock a{
   margin: 0 20px;
+  transition: background-color 1s linear;
 }
 
 .pressBlock a img:hover{
-  margin: 0 20px;
-  filter: brightness(1.75);
+  filter: brightness(50%);
+
 }
 
 .leftimg {
