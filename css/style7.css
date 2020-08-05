@@ -4137,8 +4137,6 @@ aside {
 
 .pressBlock a {
   margin: 0 20px;
-  -webkit-transition: background-color 1s linear;
-  transition: background-color 1s linear;
 }
 
 .pressBlock a img {
@@ -4338,6 +4336,11 @@ aside {
 .socLinksBlock img {
   width: 60px;
   margin: 0 5px;
+}
+
+.socLinksBlock img:hover {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, .h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a {
