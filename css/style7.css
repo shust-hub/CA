@@ -4137,6 +4137,12 @@ aside {
       flex-wrap: wrap;
 }
 
+.pressBlock--left {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
 .pressBlock a {
   margin: 0 20px;
 }
