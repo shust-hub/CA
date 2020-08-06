@@ -3671,6 +3671,7 @@ span {
       -ms-flex-pack: end;
           justify-content: flex-end;
   z-index: 9999;
+  padding: 20px 0 10px 0;
 }
 
 .submenuWrapper .submenuLink {
@@ -3688,8 +3689,9 @@ span {
 }
 
 .submenuWrapper .portalBtn {
-  padding: 20px 10px 10px 20px;
-  color: #4ccef0;
+  padding: 10px;
+  background-color: #4ccef0;
+  color: #fff;
   font-weight: bold;
   text-decoration: none;
   min-width: 100px;
