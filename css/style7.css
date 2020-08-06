@@ -4147,6 +4147,10 @@ aside {
   margin: 0 20px;
 }
 
+.pressBlock--left a {
+  margin: 0 20px 0 0;
+}
+
 .pressBlock a img {
   -webkit-transition: background-color 1s linear;
   transition: background-color 1s linear;
