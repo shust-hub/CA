@@ -3701,12 +3701,12 @@ span {
 }
 
 .submenuWrapper .portalBtn:hover {
-  color: orangered;
+  background-color: #fe6500;
 }
 
 @media only screen and (max-width: 1069px) and (min-width: 0px) {
   .submenuWrapper .portalBtn {
-    padding: 20px 10px 10px 20px;
+    padding: 10px;
   }
 }
 
@@ -4164,14 +4164,6 @@ aside {
 .blockquote p {
   color: #0277BD;
   font-size: 110%;
-}
-
-.blockquote p::before {
-  content: "“";
-  font-family: Georgia;
-  font-size: 40px;
-  line-height: 0;
-  display: inline-block;
 }
 
 @media (min-width: 576px) {

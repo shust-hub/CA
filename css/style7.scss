@@ -719,11 +719,11 @@ div.theme-footer-top .pb-testimonial ul>li>div>div.pb-testimonial-cite-up,
     box-sizing: border-box;
 }
 .submenuWrapper .portalBtn:hover{
-  color: orangered;
+  background-color: #fe6500;
 }
 @media only screen and (max-width: 1069px) and (min-width: 0px){
    .submenuWrapper .portalBtn {
-    padding: 20px 10px 10px 20px;
+    padding: 10px;
     } 
 }
 @media only screen and (max-width: 767px) {
@@ -1139,13 +1139,13 @@ aside {
   font-size: 110%;
 }
 
-.blockquote p::before {
-    content: "“";
-    font-family: Georgia;
-    font-size: 40px;
-    line-height: 0;
-    display: inline-block;
-}
+// .blockquote p::before {
+//     content: "“";
+//     font-family: Georgia;
+//     font-size: 40px;
+//     line-height: 0;
+//     display: inline-block;
+// }
 
 @media (min-width: 576px){
   .container{
