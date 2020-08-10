@@ -4114,6 +4114,11 @@ aside {
 
 .sideBanner li a {
   color: white;
+  text-decoration: none;
+}
+
+.sideBanner li a:hover {
+  text-decoration: underline;
 }
 
 .sideBanner .sideBanner__down input {
