@@ -1509,7 +1509,7 @@ aside {
     max-width: 500px;  
     transform: translate(-50%, -50%);
     left: 50%;
-    width: 500px;  
+    width: 100%;  
   }
 
   .blockStepWrapper .blockPriceLine{
@@ -1714,9 +1714,7 @@ aside {
 #onlinePage{
   .rows{
     margin-top: -40px;
-    margin-bottom
-    
-    : -40px;
+    margin-bottom: -40px;
   }
   @media only screen and (max-width: 767px){
     .rows{
