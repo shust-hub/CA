@@ -4763,6 +4763,10 @@ aside {
   background-image: url("/CA/uploads/friends-header.png");
 }
 
+.myFriendsPage .h1 {
+  margin-top: 35px;
+}
+
 #onlinePage .rows {
   margin-top: -40px;
   margin-bottom: -40px;
