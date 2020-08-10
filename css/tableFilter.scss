@@ -135,10 +135,10 @@
         margin-bottom: 0!important;
         width: 100%;
         table-layout: fixed;
-        @media only screen and (max-width: 768px) and (min-width: 0px) {
-            overflow: scroll!important;
-            width: 900px;
-          }
+        // @media only screen and (max-width: 768px) and (min-width: 0px) {
+        //     overflow: scroll!important;
+        //     width: 900px;
+        //   }
     }
 
     thead tr th:first-child,
@@ -147,6 +147,11 @@
         min-width: 40%;
         max-width: 40%;
         word-break: break-all;
+        @media only screen and (max-width: 768px) and (min-width: 0px) {
+            width: 20%;
+            min-width: 20%;
+            max-width: 20%;
+          }
     }
 
     table, th, td {
@@ -195,6 +200,9 @@
         line-height: 1.2;
         font-weight: unset;
         border-bottom: none!important;
+        @media only screen and (max-width: 768px) and (min-width: 0px) {
+            font-size: 14px;
+          }
     }
     
     tbody tr:nth-child(even) {
@@ -206,6 +214,10 @@
         color: #808080;
         line-height: 1.2;
         font-weight: unset;
+
+        @media only screen and (max-width: 768px) and (min-width: 0px) {
+            font-size: 12px;
+          }
     }
 
     tbody tr td{

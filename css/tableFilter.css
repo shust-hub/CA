@@ -149,19 +149,21 @@
   table-layout: fixed;
 }
 
-@media only screen and (max-width: 768px) and (min-width: 0px) {
-  #techTable .table {
-    overflow: scroll !important;
-    width: 900px;
-  }
-}
-
 #techTable thead tr th:first-child,
 #techTable tbody tr td:first-child {
   width: 40%;
   min-width: 40%;
   max-width: 40%;
   word-break: break-all;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 0px) {
+  #techTable thead tr th:first-child,
+  #techTable tbody tr td:first-child {
+    width: 20%;
+    min-width: 20%;
+    max-width: 20%;
+  }
 }
 
 #techTable table, #techTable th, #techTable td {
@@ -209,6 +211,12 @@
   border-bottom: none !important;
 }
 
+@media only screen and (max-width: 768px) and (min-width: 0px) {
+  #techTable .table thead th {
+    font-size: 14px;
+  }
+}
+
 #techTable tbody tr:nth-child(even) {
   background-color: #F8F8F8;
 }
@@ -218,6 +226,12 @@
   color: #808080;
   line-height: 1.2;
   font-weight: unset;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 0px) {
+  #techTable tbody tr {
+    font-size: 12px;
+  }
 }
 
 #techTable tbody tr td {
