@@ -4762,4 +4762,19 @@ aside {
   padding: 100px 0;
   background-image: url("/CA/uploads/friends-header.png");
 }
+
+#onlinePage .rows {
+  margin-top: -40px;
+  margin-bottom: -40px;
+}
+
+@media only screen and (max-width: 767px) {
+  #onlinePage .rows {
+    margin-top: -60px;
+  }
+  #onlinePage .rows aside {
+    margin-top: -60px;
+    margin-bottom: 60px;
+  }
+}
 /*# sourceMappingURL=style7.css.map */
