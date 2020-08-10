@@ -4745,7 +4745,7 @@ aside {
 
 .privateClassesPage {
   background-image: url(/CA/uploads/private-header.png);
-  background-position: center center;
+  background-position: 50% 0%;
   background-size: cover;
   padding: 60px 0;
 }
