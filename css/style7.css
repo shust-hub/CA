@@ -4087,6 +4087,10 @@ aside {
   margin-bottom: 15px;
 }
 
+.sideBanner .sideBanner__down a {
+  color: white;
+}
+
 .sideBanner h2,
 .sideBanner h3,
 .sideBanner h4,
