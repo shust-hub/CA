@@ -233,10 +233,24 @@
 
 #techTable .yes {
   color: #34a853 !important;
+  font-size: 1.8em;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 0px) {
+  #techTable .yes {
+    font-size: 1.3em;
+  }
 }
 
 #techTable .no {
   color: #ea4335 !important;
+  font-size: 1.8em;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 0px) {
+  #techTable .no {
+    font-size: 1.3em;
+  }
 }
 
 .filterTable {
