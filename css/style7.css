@@ -4689,12 +4689,12 @@ aside {
 
 .questionLink {
   position: relative;
+  padding-left: 20px;
 }
 
 .questionLink a {
   color: #707070;
   text-decoration: none;
-  margin-left: 15px;
 }
 
 .questionLink a:hover {
