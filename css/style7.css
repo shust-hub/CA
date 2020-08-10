@@ -4729,12 +4729,12 @@ aside {
 }
 
 #privateClassesPage .rows {
-  margin-top: -60px;
+  margin-top: -40px;
 }
 
 @media only screen and (max-width: 767px) {
   #privateClassesPage .rows {
-    margin-top: 0;
+    margin-top: -60px;
   }
   #privateClassesPage .rows aside {
     margin-top: -60px;
