@@ -4087,10 +4087,6 @@ aside {
   margin-bottom: 15px;
 }
 
-.sideBanner .sideBanner__down a {
-  color: white;
-}
-
 .sideBanner h2,
 .sideBanner h3,
 .sideBanner h4,
@@ -4114,6 +4110,10 @@ aside {
   vertical-align: middle;
   line-height: 27px;
   color: #fff;
+}
+
+.sideBanner li a {
+  color: white;
 }
 
 .sideBanner .sideBanner__down input {
