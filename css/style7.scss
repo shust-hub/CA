@@ -1696,10 +1696,34 @@ aside {
   background-image:url("/CA/uploads/private-header.png"); 
   background-position: 50% 35%; 
   background-size: cover;
-  padding:60px 0;
+  padding:100px 0;
 
   @media only screen and (max-width: 767px){
     background-image:url("/CA/uploads/private-classes-header.jpg"); 
   }
+}
 
+#myFriendsPage {
+  .rows{
+    margin-top: -40px;
+    margin-bottom
+    
+    : -40px;
+  }
+  @media only screen and (max-width: 767px){
+    .rows{
+      margin-top: -60px;
+      aside {
+        margin-top: -60px;
+        margin-bottom: 60px;
+      }
+    }
+    }
+}
+
+.privateClassesPage{
+  background-position: 50% 35%; 
+  background-size: cover;
+  padding:100px 0;
+  background-image:url("/CA/uploads/friends-header.png");
 }
