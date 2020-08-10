@@ -4742,4 +4742,11 @@ aside {
     margin-bottom: 60px;
   }
 }
+
+.privateClassesPage {
+  background-image: url(/CA/uploads/private-header.png);
+  background-position: center center;
+  background-size: cover;
+  padding: 60px 0;
+}
 /*# sourceMappingURL=style7.css.map */

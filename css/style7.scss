@@ -1676,7 +1676,9 @@ aside {
   #privateClassesPage {
     .rows{
       margin-top: -40px;
-      margin-bottom: -40px;
+      margin-bottom
+      
+      : -40px;
     }
     @media only screen and (max-width: 767px){
       .rows{
@@ -1689,3 +1691,10 @@ aside {
       }
     
   }
+
+.privateClassesPage{
+  background-image:url(/CA/uploads/private-header.png); 
+  background-position: center center; 
+  background-size: cover;
+  padding:60px 0;
+}
