@@ -4744,9 +4744,15 @@ aside {
 }
 
 .privateClassesPage {
-  background-image: url(/CA/uploads/private-header.png);
+  background-image: url("/CA/uploads/private-header.png");
   background-position: 50% 35%;
   background-size: cover;
   padding: 60px 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .privateClassesPage {
+    background-image: url("/CA/uploads/private-classes-header.jpg");
+  }
 }
 /*# sourceMappingURL=style7.css.map */
