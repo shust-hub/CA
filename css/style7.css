@@ -4218,6 +4218,7 @@ aside {
   color: #fff;
   background-color: rgba(76, 206, 240, 0.9);
   padding: 0 50px;
+  line-height: 1.3em;
 }
 
 .headerUnderline {
@@ -4725,5 +4726,15 @@ aside {
 .menu-item-special a:hover {
   color: #4ccef0 !important;
   background-color: #fff !important;
+}
+
+#privateClassesPage .rows {
+  margin-top: -40px;
+}
+
+@media only screen and (max-width: 767px) {
+  #privateClassesPage .rows {
+    margin-top: 0;
+  }
 }
 /*# sourceMappingURL=style7.css.map */
