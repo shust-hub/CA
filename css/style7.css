@@ -4701,7 +4701,7 @@ aside {
   text-decoration: underline;
 }
 
-.questionLink a:before {
+.questionLink:before {
   content: "·";
   position: absolute;
   left: 0;
