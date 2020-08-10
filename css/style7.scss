@@ -1646,6 +1646,7 @@ aside {
   .questionLink {
     position: relative;
     padding-left: 20px;
+    margin-bottom: 10px;
   }
   .questionLink a{
     color: #707070;
@@ -1723,6 +1724,18 @@ aside {
     margin-top: 170px;
   }
 }
+
+.faqPage{
+  background-position: 50% 35%; 
+  background-size: cover;
+  padding:100px 0;
+  background-image:url("/CA/uploads/faq-header.jpg");
+  height: 400px!important;
+  .h1{
+    margin-top: 170px;
+  }
+}
+
 
 
 #onlinePage{
