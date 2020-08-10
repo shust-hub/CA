@@ -213,7 +213,7 @@
 
 @media only screen and (max-width: 768px) and (min-width: 0px) {
   #techTable .table thead th {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
@@ -248,6 +248,7 @@
 #techTable .yes {
   color: #34a853 !important;
   font-size: 1.8em;
+  text-align: center !important;
 }
 
 @media only screen and (max-width: 768px) and (min-width: 0px) {
@@ -259,6 +260,7 @@
 #techTable .no {
   color: #ea4335 !important;
   font-size: 1.8em;
+  text-align: center !important;
 }
 
 @media only screen and (max-width: 768px) and (min-width: 0px) {
