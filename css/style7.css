@@ -4335,8 +4335,7 @@ aside {
     max-width: 240px;
     margin: 10px auto 15px;
   }
-  .textWithImgBlock > .imgWrapper {
-    display: block;
+  .textWithImgBlock .imgWrapper {
     max-width: 240px;
     margin: 10px auto 15px;
   }
