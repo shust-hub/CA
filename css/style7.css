@@ -3985,6 +3985,7 @@ span {
 
 article.halfColumn {
   width: 100%;
+  padding: 0 10px;
 }
 
 aside {
@@ -4782,7 +4783,7 @@ aside {
   background-position: 50% 35%;
   background-size: cover;
   padding: 100px 0;
-  background-image: url("/CA/uploads/faq-header.jpg");
+  background-image: url("/CA/uploads/Contacts.jpg");
 }
 
 .faqPage .h1 {
