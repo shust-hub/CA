@@ -4341,15 +4341,13 @@ aside {
     margin: 10px auto 15px;
     display: block;
   }
-}
-
-.textWithImgBlock > .imgWithCaptionBlock {
-  width: 100%;
-  max-width: 100%;
-}
-
-.textWithImgBlock .textWithImgBlock__text {
-  width: 100%;
+  .textWithImgBlock > .imgWithCaptionBlock {
+    width: 100%;
+    max-width: 100%;
+  }
+  .textWithImgBlock .textWithImgBlock__text {
+    width: 100%;
+  }
 }
 
 .socLinksBlock {
