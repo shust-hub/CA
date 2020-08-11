@@ -4803,4 +4803,9 @@ aside {
     margin-bottom: 85px;
   }
 }
+
+.student-dob {
+  display: inline-block;
+  width: auto;
+}
 /*# sourceMappingURL=style7.css.map */

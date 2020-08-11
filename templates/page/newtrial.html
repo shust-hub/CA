@@ -369,8 +369,7 @@
                                     <div class="well main-student">
                                         <div class="child-num" style="font-weight: bold; display: none;" >Child </div>
                                         <input type="hidden" name="program[]" class="program-id" value="">
-    
-                                        <div class="row ">
+                                        <div class="row">
                                             <div class="pb-contact-form-field">
                                                 <input type="text" class="form-control inputForm student-info" placeholder="First Name*" name="student_firstname[]"  required>
                                             </div>
@@ -379,10 +378,10 @@
                                                 <input  type="text" class="form-control inputForm student-info" placeholder="Last Name*" name="student_lastname[]"  required>
                                             </div>
                                         </div>
-    <p>Date of birth</p>
-                                        <div class="row ">
+
+                                        <p>Date of birth</p>
+                                        <div class="row">
                                             <div class="pb-contact-form-field">
-    
                                                 <select class="form-control selectForm student-dob student-info" id="student_dob_month" name="student_dob_month[]" required>
                                                     <option value="">Month*</option>
                                                     {% for bm in studentMonths %}
@@ -403,16 +402,14 @@
                                                 </select>
                                                 <p>We need this info to give you the best class option</p>
                                             </div>
-    
-    
                                         </div>
     
                                     </div>
                                 </div>
-                                <input type="hidden" name="promo_code" id="reg_promo_code" value="">
+                                <!-- <input type="hidden" name="promo_code" id="reg_promo_code" value="">
                                 <input type="hidden" name="new_parent"  value="1">
                                 <input type="hidden" name="r" value="{{ time }}">
-                                <input type="hidden" name="tok" value="{{ tok }}">
+                                <input type="hidden" name="tok" value="{{ tok }}"> -->
                                 <h5>Parent Information</h5>
                                 <div class="row">
                                     <div class="pb-contact-form-field">
@@ -430,7 +427,6 @@
                                     <div class="pb-contact-form-field">
                                         <input type="text" placeholder="Email*" class="form-control" name="email" id="pb_email" value="" required>
                                     </div>
-    
                                 </div>
                                 <div class="row">
                                     <div class="pb-contact-form-field">
@@ -456,7 +452,6 @@
                                         <input type="text" placeholder="City*" class="form-control" name="city" id="pb_city" value="" required>
                                     </div>
                                 </div>
-    
                             </div>
     
                             <label class="pure-material-checkbox">
@@ -466,7 +461,7 @@
                             <input type="hidden" name="signup" value="">
     
                             <div style="display: flex; justify-content: center;">
-                                <input class="btn btn-primary" type="submit" id="submitRegistration"  value="See Trial Schedule"/>
+                                <input class="btn btn-primary" type="submit" id="submitRegistration" value="See Trial Schedule"/>
                             </div>
     
                         </form>
