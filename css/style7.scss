@@ -1303,10 +1303,11 @@ aside {
 
       img{
         max-width: 240px;
-        margin: 10px auto 15px;
+        margin: 0 auto;
       }
     }
   }
+}
   .textWithImgBlock > .imgWithCaptionBlock {
     width: 100%;
     max-width: 100%;
@@ -1315,6 +1316,8 @@ aside {
   .textWithImgBlock .textWithImgBlock__text {
     width: 100%;
   }
+
+
 
 .socLinksBlock{
   display: flex;

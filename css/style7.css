@@ -4296,14 +4296,19 @@ aside {
   margin-bottom: 25px;
 }
 
-.textWithImgBlock > .imgWithCaptionBlock {
-  width: 20%;
-  min-width: 240px;
+.textWithImgBlock .imgWrapper {
+  max-width: 240px;
   margin-right: 25px;
 }
 
-.textWithImgBlock > img {
+.textWithImgBlock img {
   max-width: 240px;
+  margin-right: 25px;
+}
+
+.textWithImgBlock > .imgWithCaptionBlock {
+  width: 20%;
+  min-width: 240px;
   margin-right: 25px;
 }
 
@@ -4323,22 +4328,23 @@ aside {
   .textWithImgBlock {
     display: block;
   }
-  .textWithImgBlock > .imgWithCaptionBlock {
-    width: 100%;
-    max-width: 100%;
-  }
-  .textWithImgBlock .textWithImgBlock__text {
-    width: 100%;
-  }
-  .textWithImgBlock > img {
-    display: block;
-    max-width: 240px;
-    margin: 10px auto 15px;
-  }
   .textWithImgBlock .imgWrapper {
     max-width: 240px;
     margin: 10px auto 15px;
   }
+  .textWithImgBlock .imgWrapper img {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+}
+
+.textWithImgBlock > .imgWithCaptionBlock {
+  width: 100%;
+  max-width: 100%;
+}
+
+.textWithImgBlock .textWithImgBlock__text {
+  width: 100%;
 }
 
 .socLinksBlock {
