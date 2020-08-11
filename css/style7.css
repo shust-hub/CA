@@ -4330,7 +4330,7 @@ aside {
   .textWithImgBlock .textWithImgBlock__text {
     width: 100%;
   }
-  .textWithImgBlock > img {
+  .textWithImgBlock > img, .textWithImgBlock > .imgWrapper {
     display: block;
     max-width: 240px;
     margin: 10px auto 15px;
