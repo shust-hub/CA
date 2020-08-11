@@ -357,6 +357,121 @@
                         </strong>
                     </article>
                 </div>
+                <div class="rows">
+                    <article>
+                        <form class="pb-contact-form" id="newOrderForm">
+
+                            <div class="block">
+                                <input type="hidden" id="pb_students_num" name="students" value="1">
+                                <div class="block" id="studentBlock">
+                                    <h5 class="titleForm">Student Information</h5>
+    
+                                    <div class="well main-student">
+                                        <div class="child-num" style="font-weight: bold; display: none;" >Child </div>
+                                        <input type="hidden" name="program[]" class="program-id" value="">
+    
+                                        <div class="row ">
+                                            <div class="pb-contact-form-field">
+                                                <input type="text" class="form-control inputForm student-info" placeholder="First Name*" name="student_firstname[]"  required>
+                                            </div>
+    
+                                            <div class="pb-contact-form-field">
+                                                <input  type="text" class="form-control inputForm student-info" placeholder="Last Name*" name="student_lastname[]"  required>
+                                            </div>
+                                        </div>
+    <p>Date of birth</p>
+                                        <div class="row ">
+                                            <div class="pb-contact-form-field">
+    
+                                                <select class="form-control selectForm student-dob student-info" id="student_dob_month" name="student_dob_month[]" required>
+                                                    <option value="">Month*</option>
+                                                    {% for bm in studentMonths %}
+                                                        <option value="{{ bm.id }}">{{ bm.name }}</option>
+                                                    {% endfor %}
+                                                </select>
+                                                <select class="form-control selectForm student-info student-dob" id="student_dob_day" name="student_dob_day[]" required>
+                                                    <option value="">Day*</option>
+                                                    {% for bm in studentDays %}
+                                                        <option value="{{ bm.id }}">{{ bm.name }}</option>
+                                                    {% endfor %}
+                                                </select>
+                                                <select class="form-control selectForm student-dob student-info" id="student_dob_year" name="student_dob_year[]" required>
+                                                    <option value="">Year*</option>
+                                                    {% for c in studentYears.min..studentYears.max %}
+                                                        <option value="{{  c }}">{{ c }}</option>
+                                                    {% endfor %}
+                                                </select>
+                                                <p>We need this info to give you the best class option</p>
+                                            </div>
+    
+    
+                                        </div>
+    
+                                    </div>
+                                </div>
+                                <input type="hidden" name="promo_code" id="reg_promo_code" value="">
+                                <input type="hidden" name="new_parent"  value="1">
+                                <input type="hidden" name="r" value="{{ time }}">
+                                <input type="hidden" name="tok" value="{{ tok }}">
+                                <h5>Parent Information</h5>
+                                <div class="row">
+                                    <div class="pb-contact-form-field">
+                                        <input type="text" class="form-control inputForm" placeholder="First Name*" name="firstname" id="pb_firstname" value=""  required>
+                                    </div>
+    
+                                    <div class="pb-contact-form-field">
+                                        <input type="text" class="form-control inputForm" placeholder="Last Name*" name="lastname" id="pb_lastname" value="" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="pb-contact-form-field">
+                                        <input type="text" placeholder="Cell Phone*" class="form-control" name="phone" id="pb_cellphone" value="" required>
+                                    </div>
+                                    <div class="pb-contact-form-field">
+                                        <input type="text" placeholder="Email*" class="form-control" name="email" id="pb_email" value="" required>
+                                    </div>
+    
+                                </div>
+                                <div class="row">
+                                    <div class="pb-contact-form-field">
+                                        <select class="form-control selectForm" name="country" id="pb_country">
+                                            <option value="United States" data-state="1">United States</option>
+                                            <option value="Canada">Canada</option>
+                                            {% for item in countries %}
+                                                <option value="{{ item.country }}" data-state="{{ item.state }}" {% if item.country==parent.country %} selected{% endif %}>{{ item.country }}</option>
+                                            {% endfor %}
+                                        </select>
+                                    </div>
+                                    <div class="pb-contact-form-field">
+                                        <select class="form-control selectForm" name="state" id="pb_state">
+                                            <option value="">State</option>
+                                            {% for item in states %}
+                                                <option value="{{ item.code }}">{{ item.name }}</option>
+                                            {% endfor %}
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="pb-contact-form-field">
+                                        <input type="text" placeholder="City*" class="form-control" name="city" id="pb_city" value="" required>
+                                    </div>
+                                </div>
+    
+                            </div>
+    
+                            <label class="pure-material-checkbox">
+                                <input type="checkbox" name="newsletter" value="1" checked="">
+                                <span>Sign up for class discounts, news, and offers</span>
+                            </label>
+                            <input type="hidden" name="signup" value="">
+    
+                            <div style="display: flex; justify-content: center;">
+                                <input class="btn btn-primary" type="submit" id="submitRegistration"  value="See Trial Schedule"/>
+                            </div>
+    
+                        </form>
+                    </article>
+                </div>
             </div>
         </section>
         <section>  
