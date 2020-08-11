@@ -1303,7 +1303,13 @@ aside {
     width: 100%;
   }
 
-  .textWithImgBlock > img, .textWithImgBlock > .imgWrapper  {
+  .textWithImgBlock > img{
+    display: block;
+    max-width: 240px;
+    margin: 10px auto 15px;
+  }
+
+  .textWithImgBlock > .imgWrapper  {
     display: block;
     max-width: 240px;
     margin: 10px auto 15px;
