@@ -1306,6 +1306,11 @@ aside {
         display: block;
       }
     }
+
+    .imgWithCaptionBlock > img{
+      max-width: 240px;
+      margin: 0 auto;
+    }
   }
 
   
@@ -1329,11 +1334,6 @@ aside {
   }
 
   .imgWithCaptionBlock .imgWithCaptionBlock__title{
-    max-width: 240px;
-    margin: 0 auto;
-  }
-
-  .imgWithCaptionBlock > img{
     max-width: 240px;
     margin: 0 auto;
   }

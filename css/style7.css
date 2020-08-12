@@ -4336,6 +4336,10 @@ aside {
     margin: 0 auto;
     display: block;
   }
+  .textWithImgBlock .imgWithCaptionBlock > img {
+    max-width: 240px;
+    margin: 0 auto;
+  }
   .textWithImgBlock > img {
     max-width: 240px;
     margin: 10px auto 15px;
@@ -4352,10 +4356,6 @@ aside {
     max-width: 240px;
   }
   .imgWithCaptionBlock .imgWithCaptionBlock__title {
-    max-width: 240px;
-    margin: 0 auto;
-  }
-  .imgWithCaptionBlock > img {
     max-width: 240px;
     margin: 0 auto;
   }
