@@ -266,6 +266,12 @@
   }
 }
 
+@media only screen and (min-width: 801px) {
+  #roboticsTable .table td, #roboticsTable .table th {
+    text-align: center !important;
+  }
+}
+
 .filterTable {
   position: relative;
   margin-bottom: 10px;
