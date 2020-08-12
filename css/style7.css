@@ -4347,6 +4347,7 @@ aside {
   }
   .textWithImgBlock .textWithImgBlock__text {
     width: 100%;
+    max-width: 240px;
   }
 }
 
