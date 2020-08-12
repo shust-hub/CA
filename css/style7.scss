@@ -1306,12 +1306,6 @@ aside {
         display: block;
       }
     }
-
-    // img{
-    //   max-width: 240px;
-    //   margin: 10px auto 15px;
-    //   display: block;
-    // }
   }
 
   
@@ -1328,6 +1322,14 @@ aside {
   
   .textWithImgBlock .textWithImgBlock__text {
     width: 100%;
+  }
+
+  .imgWithCaptionBlock    {
+    max-width: 240px;
+  }
+
+  .imgWithCaptionBlock .imgWithCaptionBlock__title{
+    max-width: 240px;
   }
 }
 

@@ -4348,6 +4348,12 @@ aside {
   .textWithImgBlock .textWithImgBlock__text {
     width: 100%;
   }
+  .imgWithCaptionBlock {
+    max-width: 240px;
+  }
+  .imgWithCaptionBlock .imgWithCaptionBlock__title {
+    max-width: 240px;
+  }
 }
 
 .socLinksBlock {
