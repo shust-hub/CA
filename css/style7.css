@@ -4783,11 +4783,11 @@ aside {
   background-position: 50% 35%;
   background-size: cover;
   padding: 100px 0;
-  height: 400px !important;
+  height: 500px !important;
 }
 
 .privateClassesPage .h1 {
-  margin-top: 170px;
+  margin-top: 200px;
 }
 
 @media only screen and (max-width: 767px) {
