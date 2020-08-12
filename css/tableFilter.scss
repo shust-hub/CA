@@ -255,7 +255,7 @@
     .table td:nth-child(3), .table th:nth-child(3) {
         @media only screen and (min-width: 801px){
             text-align: left!important;
-            padding-left: 50px!important;
+            padding: 0 50px!important;
         }
     }
 }
