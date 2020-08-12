@@ -252,6 +252,11 @@
             text-align: center!important;
         }
     }
+    .table td:nth-child(3), .table th:nth-child(3) {
+        @media only screen and (min-width: 801px){
+            text-align: center!important;
+        }
+    }
 }
 
 
