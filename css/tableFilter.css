@@ -274,7 +274,7 @@
 
 @media only screen and (min-width: 801px) {
   #roboticsTable .table td:nth-child(3), #roboticsTable .table th:nth-child(3) {
-    text-align: center !important;
+    text-align: left !important;
   }
 }
 
