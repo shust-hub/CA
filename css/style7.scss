@@ -1159,14 +1159,6 @@ aside {
   font-size: 110%;
 }
 
-// .blockquote p::before {
-//     content: "“";
-//     font-family: Georgia;
-//     font-size: 40px;
-//     line-height: 0;
-//     display: inline-block;
-// }
-
 @media (min-width: 576px){
   .container{
     max-width: 540px;
@@ -1436,7 +1428,7 @@ aside {
   }
 
   #onlinePageHeader .btn:hover {
-    background-color: rgba(95, 95, 95, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
 
   }
 
