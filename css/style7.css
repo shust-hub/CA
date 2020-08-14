@@ -4754,7 +4754,7 @@ aside {
 }
 
 .menu-item-special:hover {
-  color: #4ccef0;
+  color: #4ccef0 !important;
 }
 
 #privateClassesPage .rows {
