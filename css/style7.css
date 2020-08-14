@@ -4119,7 +4119,7 @@ aside {
   text-decoration: none;
 }
 
-.sideBanner li a:hover {
+.sideBanner li a:hover, .sideBanner a:hover {
   text-decoration: underline;
 }
 
