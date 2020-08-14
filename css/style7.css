@@ -3698,6 +3698,7 @@ span {
   text-align: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin-right: 21px;
 }
 
 .submenuWrapper .portalBtn:hover {
@@ -4748,7 +4749,7 @@ aside {
 }
 
 .menu-item-special {
-  color: #eb6f61;
+  color: #eb6f61 !important;
   font-weight: bold;
 }
 
