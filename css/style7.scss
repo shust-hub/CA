@@ -698,7 +698,7 @@ div.theme-footer-top .pb-testimonial ul>li>div>div.pb-testimonial-cite-up,
 .submenuWrapper .submenuLink{
     text-align: center;
     text-decoration: none;
-    padding-left: 20px;
+    padding-right: 20px;
     color: #8b8b8b;
     font-size: 15px;
 }
@@ -1691,21 +1691,15 @@ aside {
   }
   
 
-  .menu-item-special a{
-    color:  #eb6f61!important;
-    background-color: #fff!important;
-    font-weight: bold!important;
+  .menu-item-special{
+    color:  #eb6f61;
+    font-weight: bold;
   }
 
   .menu-item-special:hover{
-    color: #4ccef0!important;
-    background-color: #fff!important;
+    color: #4ccef0;
   }
 
-  .menu-item-special a:hover{
-    color: #4ccef0!important;
-    background-color: #fff!important;
-  }
 
   #privateClassesPage {
     .rows{
