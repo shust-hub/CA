@@ -917,6 +917,7 @@ aside {
 .blockTextWrapper{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   .blockText{
     width: 45%;
