@@ -920,14 +920,19 @@ aside {
   flex-wrap: wrap;
 
   .blockText{
-    width: 45%;
+    width: 49%;
     margin-bottom: 25px;
     background-color:#b3e5fc;
+    padding: 15px 15px 25px;
 
     .h5{
       font-weight: bold;
       color: #fe6500;
     }
+  }
+
+  .textRight{
+text-align: right;
   }
 }
 
