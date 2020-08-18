@@ -928,27 +928,12 @@ aside {
   width: 49%;
   margin-bottom: 25px;
   background-color: #b3e5fc;
-  padding: 15px 55px 35px 15px;
+  padding: 15px 45px 35px 15px;
   position: relative;
 }
 
 .blockTextWrapper .blockText .h5 {
   color: #FE6500;
-}
-
-.blockTextWrapper .blockText .blockText__img {
-  position: absolute;
-  font-size: 50px;
-  color: #0277BD;
-  bottom: 0;
-  right: 0;
-  text-align: right;
-}
-
-@media only screen and (max-width: 768px) and (min-width: 0px) {
-  .blockTextWrapper .blockText .blockText__img {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 768px) and (min-width: 0px) {
@@ -960,12 +945,7 @@ aside {
 
 .blockTextWrapper .textRight {
   text-align: right;
-  padding: 15px 15px 35px 55px;
-}
-
-.blockTextWrapper .textRight .blockText__img {
-  left: 0;
-  text-align: left;
+  padding: 15px 15px 35px 45px;
 }
 
 @media only screen and (max-width: 768px) and (min-width: 0px) {
