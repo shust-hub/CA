@@ -931,6 +931,7 @@ aside {
 
     @media only screen and (max-width: 768px) and (min-width: 0px) {
       width: 100%;
+      padding: 15px 15px 35px 15px;
     }
   }
 
@@ -939,6 +940,7 @@ aside {
     padding: 15px 15px 35px 55px;
     @media only screen and (max-width: 768px) and (min-width: 0px) {
       text-align: left;
+      padding: 15px 15px 35px 15px;
     }
   }
 }
