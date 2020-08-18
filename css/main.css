@@ -941,7 +941,7 @@ aside {
   font-size: 50px;
   color: #FE6500;
   bottom: 0;
-  left: 0;
+  right: 0;
 }
 
 @media only screen and (max-width: 768px) and (min-width: 0px) {
@@ -957,7 +957,7 @@ aside {
 }
 
 .blockTextWrapper .textRight .blockText__img {
-  right: 0;
+  left: 0;
 }
 
 @media only screen and (max-width: 768px) and (min-width: 0px) {
