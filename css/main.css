@@ -942,6 +942,7 @@ aside {
   color: #FE6500;
   bottom: 0;
   right: 0;
+  text-align: right;
 }
 
 @media only screen and (max-width: 768px) and (min-width: 0px) {
@@ -958,6 +959,7 @@ aside {
 
 .blockTextWrapper .textRight .blockText__img {
   left: 0;
+  text-align: left;
 }
 
 @media only screen and (max-width: 768px) and (min-width: 0px) {
