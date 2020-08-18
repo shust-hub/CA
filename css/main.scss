@@ -934,10 +934,14 @@ aside {
     .blockText__img{
       position: absolute;
       font-size: 50px;
-      color: #FE6500;
+      color: #0277BD;
       bottom: 0;
       right: 0;
       text-align: right;
+      @media only screen and (max-width: 768px) and (min-width: 0px) {
+        display: none;
+      }
+
     }
 
     @media only screen and (max-width: 768px) and (min-width: 0px) {
