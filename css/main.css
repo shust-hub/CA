@@ -929,10 +929,19 @@ aside {
   margin-bottom: 25px;
   background-color: #b3e5fc;
   padding: 15px 55px 35px 15px;
+  position: relative;
 }
 
 .blockTextWrapper .blockText .h5 {
   color: #FE6500;
+}
+
+.blockTextWrapper .blockText .blockText__img {
+  position: absolute;
+  font-size: 50px;
+  color: #FE6500;
+  bottom: 0;
+  left: 0;
 }
 
 @media only screen and (max-width: 768px) and (min-width: 0px) {
@@ -945,6 +954,10 @@ aside {
 .blockTextWrapper .textRight {
   text-align: right;
   padding: 15px 15px 35px 55px;
+}
+
+.blockTextWrapper .textRight .blockText__img {
+  right: 0;
 }
 
 @media only screen and (max-width: 768px) and (min-width: 0px) {
