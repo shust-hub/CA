@@ -926,13 +926,19 @@ aside {
     padding: 15px 15px 25px;
 
     .h5{
-      font-weight: bold;
-      color: #fe6500;
+      width: 100%;
+    }
+
+    @media only screen and (max-width: 768px) and (min-width: 0px) {
+      text-align: left;
     }
   }
 
   .textRight{
-text-align: right;
+    text-align: right;
+    @media only screen and (max-width: 768px) and (min-width: 0px) {
+      text-align: left;
+    }
   }
 }
 
