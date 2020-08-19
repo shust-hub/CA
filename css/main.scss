@@ -647,6 +647,16 @@ aside {
   }
 }
 
+.instructorBlocks{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.instructorBlocks > .imgWithCaptionBlock {
+  width: 23%;
+}
+
 .leftimg {
   float: left;
   margin: 7px 7px 7px 0;
