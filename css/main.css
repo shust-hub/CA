@@ -1188,4 +1188,8 @@ aside {
   display: inline-block;
   width: auto;
 }
+.mainForm {
+  width: 100%;
+  text-align: center;
+}
 /*# sourceMappingURL=main.css.map */
