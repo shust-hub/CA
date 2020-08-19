@@ -1189,8 +1189,12 @@ aside {
   padding: 15px 20px;
   margin: 0 auto;
 
-  input[name="email"]{
+  input{
+    max-width: 400px;
     margin: 15px auto 15px;
+  }
+
+  input[name="email"]{
     border-radius: 5px 5px 0 0;
     border-color: #E8E8E8;
     border-width: 1px;
