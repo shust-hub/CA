@@ -1197,7 +1197,7 @@ aside {
 
 .mainForm input {
   max-width: 400px;
-  margin: 15px auto 15px;
+  margin: 15px auto 15px !important;
 }
 
 .mainForm input[name="email"] {
