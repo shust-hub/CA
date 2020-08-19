@@ -1191,6 +1191,11 @@ aside {
 .mainForm {
   width: 100%;
   text-align: center;
-  background-color: #4ccef0;
+  padding: 15px 20px;
+  margin: 0 auto;
+}
+
+.mainForm input[name="email"] {
+  margin: 15px auto 15px;
 }
 /*# sourceMappingURL=main.css.map */
