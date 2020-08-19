@@ -1191,13 +1191,23 @@ aside {
 
   input{
     max-width: 400px;
-    margin: 15px auto 15px!important;
+    margin: 0 auto 10px!important;
   }
 
   input[name="email"]{
     border-radius: 5px 5px 0 0;
     border-color: #E8E8E8;
     border-width: 1px;
+    border-style: solid;
+  }
+
+  input[name="email"]:focus{
+    border-color: #FE6500;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
     border-style: solid;
   }
 
