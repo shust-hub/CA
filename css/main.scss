@@ -15,11 +15,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   z-index: 9999;
   padding: 20px 0 10px 0;
 }
@@ -47,7 +47,7 @@
   min-width: 100px;
   text-align: center;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .submenuWrapper .portalBtn:hover {
@@ -77,7 +77,7 @@
   min-width: 200px;
   text-align: center;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @media only screen and (max-width: 767px) {
@@ -92,7 +92,7 @@
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container {
@@ -108,22 +108,22 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .rows > aside {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 32%;
-          flex: 0 0 32%;
+  -ms-flex: 0 0 32%;
+  flex: 0 0 32%;
   background: transparent;
   padding: 30px 0 0 25px;
 }
 
 .rows > article {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   padding: 30px 0;
 }
 
@@ -312,9 +312,9 @@ aside {
   -webkit-transform: rotate(-420deg);
   transform: rotate(-420deg);
   -webkit-animation-name: colors;
-          animation-name: colors;
+  animation-name: colors;
   -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  animation-duration: 1.5s;
 }
 
 @-webkit-keyframes colors {
@@ -403,10 +403,10 @@ aside {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -ms-flex-pack: start;
+  justify-content: start;
   list-style-type: none;
   margin: 0;
 }
@@ -503,7 +503,7 @@ aside {
   padding-left: 25px;
   position: relative;
   margin-bottom: 0;
-  background-image: none!important;
+  background-image: none !important;
 }
 
 .listCheck li p {
@@ -548,7 +548,7 @@ aside {
   padding-left: 25px;
   position: relative;
   margin: 0;
-  background-image: none!important;
+  background-image: none !important;
 }
 
 .sideBanner li:before {
@@ -568,7 +568,7 @@ aside {
 
 .sideBanner li a:hover, .sideBanner a:hover {
   text-decoration: underline;
-  color: #fff!important;
+  color: #fff !important;
 }
 
 .sideBanner .sideBanner__down input {
@@ -590,16 +590,16 @@ aside {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .pressBlock--left {
   -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
 }
 
 .pressBlock a {
@@ -617,22 +617,22 @@ aside {
 
 .pressBlock a img:hover {
   -webkit-filter: brightness(120%);
-          filter: brightness(120%);
+  filter: brightness(120%);
 }
 
 .classesBlocks {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: 1fr [4];
+  grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 24px;
 }
 
 @media only screen and (max-width: 959px) and (min-width: 768px) {
   .classesBlocks {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: 1fr [3];
+    grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
   }
@@ -640,8 +640,8 @@ aside {
 
 @media only screen and (max-width: 767px) {
   .classesBlocks {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 1fr [2];
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
   }
@@ -678,8 +678,8 @@ aside {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-bottom: 25px;
 }
 
@@ -710,16 +710,17 @@ aside {
   padding: 0 0 15px;
 }
 
-  .imgWithCaptionBlock .bio{
-    margin-top: 15px;
+.imgWithCaptionBlock .bio {
+  margin-top: 15px;
+}
 
-    p{
-      padding: 0px 0px 5px 0px;
-    }
-    .h5{
-      margin-bottom: 10px;
-    }
-  }
+.imgWithCaptionBlock .bio p {
+  padding: 0px 0px 5px 0px;
+}
+
+.imgWithCaptionBlock .bio .h5 {
+  margin-bottom: 10px;
+}
 
 @media only screen and (max-width: 767px) {
   .textWithImgBlock {
@@ -764,10 +765,10 @@ aside {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .socLinksBlock img {
@@ -777,7 +778,7 @@ aside {
 
 .socLinksBlock img:hover {
   -webkit-filter: brightness(120%);
-          filter: brightness(120%);
+  filter: brightness(120%);
 }
 
 #onlinePageHeader {
@@ -790,7 +791,7 @@ aside {
   top: 50%;
   width: 100%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   left: 50%;
   z-index: 0;
   position: absolute;
@@ -804,7 +805,7 @@ aside {
   -o-object-fit: cover;
   object-fit: cover;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   left: 50%;
   z-index: 0;
   position: absolute;
@@ -831,7 +832,6 @@ aside {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-///////////////////////////////////////////
 .blockPriceWrapper, .blockStepWrapper {
   position: relative;
   margin: 20px 0 30px;
@@ -842,14 +842,14 @@ aside {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .blockPriceWrapper .blockPrice .blockPrice__item {
   padding: 20px 35px 35px;
   -ms-flex-preferred-size: auto;
-      flex-basis: auto;
+  flex-basis: auto;
 }
 
 .blockStepWrapper .blockPrice .blockPrice__item {
@@ -907,7 +907,7 @@ aside {
 .blockPriceWrapper .blockPriceLine {
   max-width: 500px;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   left: 50%;
   width: 100%;
 }
@@ -924,41 +924,48 @@ aside {
     display: block;
   }
 }
-//////////////////////////////////////////////////////////
-.blockTextWrapper{
+
+.blockTextWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 
-  .blockText{
-    width: 49%;
-    margin-bottom: 25px;
-    background-color:#b3e5fc;
-    padding: 15px 45px 35px 15px;
-    position: relative;
+.blockTextWrapper .blockText {
+  width: 49%;
+  margin-bottom: 25px;
+  background-color: #b3e5fc;
+  padding: 15px 45px 35px 15px;
+  position: relative;
+}
 
+.blockTextWrapper .blockText .h5 {
+  color: #FE6500;
+}
 
-    .h5{
-      color: #FE6500;
-    }
-
-    @media only screen and (max-width: 768px) and (min-width: 0px) {
-      width: 100%;
-      padding: 15px 15px 35px 15px;
-    }
-  }
-
-  .textRight{
-    text-align: right;
-    padding: 15px 15px 35px 45px;
-    @media only screen and (max-width: 768px) and (min-width: 0px) {
-      text-align: left;
-      padding: 15px 15px 35px 15px;
-    }
+@media only screen and (max-width: 768px) and (min-width: 0px) {
+  .blockTextWrapper .blockText {
+    width: 100%;
+    padding: 15px 15px 35px 15px;
   }
 }
 
-//////////////////////////////////////////////////////////
+.blockTextWrapper .textRight {
+  text-align: right;
+  padding: 15px 15px 35px 45px;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 0px) {
+  .blockTextWrapper .textRight {
+    text-align: left;
+    padding: 15px 15px 35px 15px;
+  }
+}
 
 .containerProgress {
   width: 100%;
@@ -1049,7 +1056,7 @@ aside {
   padding-left: 25px;
   position: relative;
   margin-bottom: 0;
-  background-image: none!important;
+  background-image: none !important;
 }
 
 .containerProgress .cardProgress .face.face2 .content li p {
@@ -1130,7 +1137,7 @@ aside {
 
 .privateClassesPage h1 {
   margin-top: 75px;
-  line-height: 1.2em!important;
+  line-height: 1.2em !important;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1157,6 +1164,18 @@ aside {
   padding: 100px 0;
   background-image: url("/uploads/Contacts.jpg");
 }
+.mainPage {
+  background-position: 50% 35%;
+  background-size: cover;
+  padding: 100px 0;
+  background-image: url("/uploads/main-header.png");
+  height: 400px !important;
+}
+
+.mainPage .h1 {
+  margin-top: 170px;
+}
+
 
 .faqPage .h1 {
   margin-top: 170px;
@@ -1181,31 +1200,31 @@ aside {
   display: inline-block;
   width: auto;
 }
-/*# sourceMappingURL=main.css.map */
-
-.mainForm{
+.mainForm {
   width: 100%;
   text-align: center;
   padding: 15px 20px;
   margin: 0 auto;
+}
 
-  .h3{
+#mainForm{
+ .h3 {
     margin-bottom: 25px;
   }
-
-  input{
+  
+  input {
     max-width: 450px;
-    margin: 0 auto 10px!important;
+    margin: 0 auto 10px !important;
   }
-
-  input[name="email"]{
+  
+   input[name="email"] {
     border-radius: 5px 5px 0 0;
     border-color: #E8E8E8;
     border-width: 1px;
     border-style: solid;
   }
-
-  input[name="email"]:focus{
+  
+   input[name="email"]:focus {
     border-color: #FE6500;
     border-top-width: 2px;
     border-bottom-width: 2px;
@@ -1214,5 +1233,5 @@ aside {
     border-left-color: transparent;
     border-style: solid;
   }
-
 }
+/*# sourceMappingURL=main.css.map */

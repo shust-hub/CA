@@ -697,14 +697,22 @@
 
         <section>
             <div class="container">
-                <div class="rows textCenter">
-                    <form class="mainForm" action="" id="onlineEmail">
-                        <h3 class="h3">
-                            For news & special offers, subscribe to our mailing list!
-                        </h3>
-                        <input type="text" placeholder="email address" name="email" required>
-                        <input type="submit" class="btn" value="SUBSCRIBE" >
-                    </form>
+                <div class="rows textCenter" id="mainForm">
+                    <h3 class="h3"> </h3>
+                    <div class="formEmail">
+                        <div class="formEmail__before">
+                            <form action="" id="formEmailGetSubscribe">
+                                <input type="text" placeholder="email address" name="email" required>
+                                <input type="submit" class="btn" value="SUBSCRIBE" >
+                            </form>
+                        </div>
+                        <div style="display: none;" class="formEmail__after">
+                            <h4 class="h4 textCenter">Thank You!</h4>
+                        </div>
+                        <div style="display: none;" class="formEmail__err">
+                            <h4 class="h4 textCenter"> This email is already in our system!</h4>
+                        </div>
+                    </div>
                 </div>
                 <div class="rows textCenter">
                     <article>
