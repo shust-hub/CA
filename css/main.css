@@ -1184,6 +1184,19 @@ aside {
   background-color: transparent;
 }
 
+.varietyPacksPage {
+  background-position: 50% 35%;
+  background-size: cover;
+  padding: 100px 0;
+  background-image: url("/CA/uploads/varietyPacksHeader.png");
+  height: 400px !important;
+}
+
+.varietyPacksPage .h1 {
+  margin-bottom: 0 !important;
+  background-color: transparent;
+}
+
 .faqPage {
   background-position: 35% 35%;
   background-size: cover;
