@@ -1167,7 +1167,20 @@ aside {
 }
 
 .levels23Page .h1 {
-  margin-bottom: 20px;
+  margin-bottom: 0 !important;
+  background-color: transparent;
+}
+
+.levels13Page {
+  background-position: 50% 35%;
+  background-size: cover;
+  padding: 100px 0;
+  background-image: url("/CA/uploads/levels2-3.jpg");
+  height: 400px !important;
+}
+
+.levels13Page .h1 {
+  margin-bottom: 0 !important;
   background-color: transparent;
 }
 
