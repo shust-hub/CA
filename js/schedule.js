@@ -428,6 +428,46 @@ jQuery(document).ready(function($){
 
     });
 
+                    // Работа кнопок фильтров 
+
+                    $('.GradesFilterButton').click(function(){
+
+                        $(this).parents().find('.FilterFormClasses').hide();
+    
+                        $(this).parent().find('.FilterFormGrades').animate({
+    
+                                height: "toggle"
+    
+                            }, 500, function() {
+    
+                        });
+    
+                        $(this).toggleClass('clicked');
+    
+                        $('.ClassesFilterButton').removeClass('clicked');
+    
+        
+    
+                    })
+    
+                    $('.ClassesFilterButton').click(function(){
+    
+                        $(this).parents().find('.FilterFormGrades').hide();
+    
+                        $(this).parent().find('.FilterFormClasses').animate({
+    
+                                height: "toggle"
+    
+                            }, 500, function() {
+    
+                        });
+    
+                        $(this).toggleClass('clicked');
+    
+                        $('.GradesFilterButton').removeClass('clicked');
+    
+                    })
+
     // $('div.tags').find('input:checkbox').live('click', function () {
     //     $('.results > li').hide();
     //     $('div.tags').find('input:checked').each(function () {
