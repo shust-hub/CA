@@ -467,7 +467,6 @@ jQuery(document).ready(function($){
     function detectRange(str) {
         let parts = str.replace(/[^0-9\s]/gi, '');
         let partsLast = parts.substr(parts.length - 1);
-        console.log(parseInt(parts[0]), parseInt(partsLast))
         return [parseInt(parts[0]), parseInt(partsLast)];
     }
 
@@ -484,7 +483,6 @@ jQuery(document).ready(function($){
 
     function filterRows(fObj, tObj) {
         let rows = $("tbody > tr", tObj);
-        // rows.hide();
         if ($(":checked", fObj).length == 0 || $(":checked", fObj).length == $("input[type='checkbox']", fObj)) {
             return;
         }
@@ -522,7 +520,7 @@ jQuery(document).ready(function($){
             filterRows($(this).parent(), $(this).parents(".sheduleTable").find($(".table")));
         });
         if ($(this).parents(".FilterFormGrades").find("input:checkbox").filter(':checked').length <= 0) {
-            $('tr').show();
+            $(this).parents(".sheduleTable").find($('tr')).show();
         } 
     })
 
