@@ -463,12 +463,6 @@ jQuery(document).ready(function($){
         });
     })
 
-    // $('div.tags').find('input:checkbox').live('click', function () {
-    //     $('.results > li').hide();
-    //     $('div.tags').find('input:checked').each(function () {
-    //         $('.results > li.' + $(this).attr('rel')).show();
-    //     });
-    // });
 
     function detectRange(str) {
         console.log(str);
@@ -493,16 +487,13 @@ jQuery(document).ready(function($){
     function filterRows(fObj, tObj) {
         let rows = $("tbody > tr", tObj);
         rows.hide();
-
         if ($(":checked", fObj).length == 0 || $(":checked", fObj).length == $("input[type='checkbox']", fObj)) {
             return;
         }
-
         let filter = [], range;
         $(":checked", fObj).each(function(i, el) {
             filter.push(parseInt($(el).val()));
         });
-
         rows.each(function(i, r) {
             range = detectRange($(this).attr("data-grades").trim());
             let hit = 0;
@@ -529,11 +520,9 @@ jQuery(document).ready(function($){
     $(".FilterFormGrades").find("input:checkbox").click(function() {
         $(this).parents(".filterTable").find(".FilterFormClasses").find("input:checkbox").prop('checked', false);
         filterRows($(this).parent(), $(this).parents(".sheduleTable").find($(".table")));
-        if ($(this).parents(".FilterFormGrades").find("input:checkbox").filter(':checked').length > 0) {
-        } else {
+        if ($(this).parents(".FilterFormGrades").find("input:checkbox").filter(':checked').length <= 0) {
             $('tr').show();
-        }
-
+        } 
     })
 
 });
