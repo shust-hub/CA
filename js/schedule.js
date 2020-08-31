@@ -450,6 +450,31 @@ jQuery(document).ready(function($){
         $('.GradesFilterButton').removeClass('clicked');
     })
 
+
+    $('.accordeon').each(function(){
+
+        $(this).next().hide();
+
+    })
+
+
+
+    $('.accordeon').next().hide();
+
+    $('.accordeon').click(function(){
+
+        $(this).toggleClass("open"); 
+
+        $(this).next().animate({
+
+                height: "toggle"
+
+            }, 500, function() {
+
+        });
+
+    })
+
     // $('div.tags').find('input:checkbox').live('click', function () {
     //     $('.results > li').hide();
     //     $('div.tags').find('input:checked').each(function () {
@@ -461,12 +486,14 @@ jQuery(document).ready(function($){
         console.log($(this).attr('value'));
         $(this).parents(".filterTable").find(".FilterFormGrades").find("input:checkbox").prop('checked', false);
         $(this).parents(".sheduleTable").find($('tr')).not(':first').hide();
-        $(this).parents(".sheduleTable").find('.FilterFormClasses').find('input:checkbox').each(function () {
+        $(this).parents(".sheduleTable").find('.FilterFormClasses').find('input:checked').each(function () {
             let value = $(this).attr('value');
             $('[data-program="' + value + '"]').show();
             console.log(value);
 
         });
     })
+
+
 
 });
