@@ -474,7 +474,7 @@ jQuery(document).ready(function($){
         console.log(str);
         let parts = str.replace(/[^0-9\s]/gi, '');
         console.log(parts)
-        let partsLast = str.substr(str.length - 1);
+        let partsLast = parts.substr(parts.length - 1);
         console.log(parseInt(parts[0]), parseInt(partsLast))
         return [parseInt(parts[0]), parseInt(partsLast)];
     }
