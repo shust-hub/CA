@@ -471,8 +471,8 @@ jQuery(document).ready(function($){
     }
 
     function inRange(n, r) {
-        var i = r[0];
-        var result = false;
+        let i = r[0];
+        let result = false;
         for (i; i <= r[1]; i++) {
             if (n == i) {
                 result = true;
@@ -526,5 +526,69 @@ jQuery(document).ready(function($){
             $(this).parents(".sheduleTable").find($('tr')).show();
         } 
     })
+
+
+    $('[data-program]').each(function () {
+        let atrr = $('[data-program]').attr('rel');
+            switch (atrr){
+                case 'Scratch Jr': $(this).find('a').attr('data-tooltip-content', "#tooltip_ScratchJr");
+                        $(this).css({"border-left":"6px solid #f0e247","border-right":"6px solid #f0e247"});
+                        break;
+
+                case '3D Video Game Design': $(this).find('a').attr('data-tooltip-content', "#tooltip_3DVideoGameDesign");
+                    $(this).css({"border-left":"6px solid #f0e247","border-right":"6px solid #f0e247"});
+                    break;
+
+                case 'Scratch': $(this).find('a').attr('data-tooltip-content', "#tooltip_Scratch");
+                    $(this).css({"border-left":"6px solid #d35347","border-right":"6px solid #d35347"});
+                    break;
+
+                case 'Minecraft Club': $(this).find('a').attr('data-tooltip-content', "#tooltip_MinecraftClub");
+                    $(this).css({"border-left":"6px solid #f0e247","border-right":"6px solid #f0e247"});
+                    break;
+
+                case 'Roblox Build': $(this).find('a').attr('data-tooltip-content', "#tooltip_RobloxBuild");
+                    $(this).css({"border-left":"6px solid #f0e247","border-right":"6px solid #f0e247"});
+                    break;
+
+                case 'Roblox Code': $(this).find('a').attr('data-tooltip-content', "#tooltip_RobloxCode");
+                    $(this).css({"border-left":"6px solid #5cb8d7","border-right":"6px solid #5cb8d7"});
+                    break;
+
+                case 'Python': $(this).find('a').attr('data-tooltip-content', "#tooltip_Python");
+                    $(this).css({"border-left":"6px solid #5cb8d7","border-right":"6px solid #5cb8d7"});
+                    break;
+
+                case 'Web Development': $(this).find('a').attr('data-tooltip-content', "#tooltip_WebDevelopment");
+                    $(this).css({"border-left":"6px solid #5cb8d7","border-right":"6px solid #5cb8d7"});
+                    break;
+
+                case 'Minecraft Java Mods': $(this).find('a').attr('data-tooltip-content', "#tooltip_MinecraftJavaMods");
+                    $(this).css({"border-left":"6px solid #d35347","border-right":"6px solid #d35347"});
+                    break;
+
+                case 'Minecraft Modding': $(this).find('a').attr('data-tooltip-content', "#tooltip_MinecraftModding");
+                    $(this).css({"border-left":"6px solid #5cb8d7","border-right":"6px solid #5cb8d7"});
+                    break;
+                
+                case 'Robotics': $(this).find('a').attr('data-tooltip-content', "#tooltip_Robotics");
+                    $(this).css({"border-left":"6px solid #5cb8d7","border-right":"6px solid #5cb8d7"});
+                    break;
+                
+                default:
+                    $(this).css({"border-left":"6px solid #cfcfcf","border-right":"6px solid #cfcfcf"});
+                    break;
+            }
+
+        $(this).find('a').addClass("tooltip");
+
+    });
+
+
+
+    $('.tooltip').tooltipster({
+        theme: 'tooltipster-shadow',
+        contentCloning: true
+    });
 
 });
