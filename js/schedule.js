@@ -511,6 +511,9 @@ jQuery(document).ready(function($){
             let value = $(this).attr('value');
             $(this).parents(".sheduleTable").find($('[data-program="' + value + '"]')).show();
         });
+        if ($(this).parents(".FilterFormClasses").find("input:checkbox").filter(':checked').length <= 0) {
+            $(this).parents(".sheduleTable").find($('tr')).show();
+        } 
     })
 
     $(".FilterFormGrades").find("input:checkbox").click(function() {
