@@ -504,7 +504,7 @@ jQuery(document).ready(function($){
         });
 
         rows.each(function(i, r) {
-            range = detectRange(attr("data-grades"));
+            range = detectRange($('tr').attr("data-grades"));
             let hit = 0;
             $.each(filter, function(j, f) {
                 if (inRange(f, range)) {
