@@ -471,6 +471,7 @@ jQuery(document).ready(function($){
     // });
 
     function detectRange(str) {
+        console.log(str);
         let parts = str.replace(/[^0-9\s]/gi, '');
         console.log(parts)
         let partsLast = str.substr(str.length - 1);
