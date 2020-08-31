@@ -472,7 +472,9 @@ jQuery(document).ready(function($){
 
     function detectRange(str) {
         let parts = str.replace(/[^0-9\s]/gi, '');
+        console.log(parts)
         let partsLast = str.substr(str.length - 1);
+        console.log(parseInt(parts[0]), parseInt(partsLast))
         return [parseInt(parts[0]), parseInt(partsLast)];
     }
 
@@ -490,6 +492,8 @@ jQuery(document).ready(function($){
     function filterRows(fObj, tObj) {
         let rows = $("tbody > tr", tObj);
         rows.hide();
+        console.log("all rows hide");
+
         if ($(":checked", fObj).length == 0 || $(":checked", fObj).length == $("input[type='checkbox']", fObj)) {
             return;
         }
@@ -501,7 +505,7 @@ jQuery(document).ready(function($){
 
         rows.each(function(i, r) {
             range = detectRange($('[data-grades]', r).text().trim());
-            var hit = 0;
+            let hit = 0;
             $.each(filter, function(j, f) {
                 if (inRange(f, range)) {
                     hit++;
