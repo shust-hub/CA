@@ -1,8 +1,36 @@
+var  checkSelect;
+
 jQuery(document).ready(function($){
 
+    checkSelect = function(s){
 
+        let hv = $(s).find("option:selected").text();
 
+        let alrt = $('#swalMessage');
 
+        if(!alrt[0]){
+
+            alrt = $('<div>').attr("id","swalMessage").css({"color":"red"});
+
+            $(s).after(
+
+                alrt
+
+            );
+
+        }
+
+        if(hv=="Tablet"||hv=="iPad") {
+
+            alrt.text('We highly recommend a second device so your child can use zoom better to interact with the instructor and class.');
+
+        } else {
+
+            alrt.empty();
+
+        }
+
+    };
 
 
 
@@ -56,11 +84,7 @@ jQuery(document).ready(function($){
 
             $(times[i]).html(text);
 
-
-
         }
-
-
 
     }
 
@@ -88,8 +112,6 @@ jQuery(document).ready(function($){
 
                 if (item['time'] < time - 86400000) {
 
-
-
                 } else {
 
                     inCart++;
@@ -116,8 +138,6 @@ jQuery(document).ready(function($){
 
                 $('#cart').show();
 
-
-
             } else {
 
                 $('#cart').hide();
@@ -132,7 +152,73 @@ jQuery(document).ready(function($){
 
     };
 
+
+
     showCartIcon();
+
+
+
+    let addToCart = function(id){
+
+        if(typeof localStorage.cart == "undefined"){
+
+            localStorage.setItem('cart', JSON.stringify([]));
+
+        }
+
+
+
+        let classesInCart = JSON.parse(localStorage.getItem('cart'));
+
+
+
+        let classAdd = false;
+
+
+
+        classesInCart.forEach(function(item, i, arr) {
+
+            if(item['id']===id){
+
+                classesInCart[i] = {
+
+                    "id":id,
+
+                    "cnt": item['cnt']+1,
+
+                    "time": new Date().getTime()
+
+                };
+
+                classAdd = true;
+
+            }
+
+        });
+
+
+
+        if(!classAdd){
+
+            classesInCart.push({
+
+                "id":id,
+
+                "cnt": 1,
+
+                "time": new Date().getTime()
+
+            });
+
+        }
+
+        localStorage.setItem('cart', JSON.stringify(classesInCart));
+
+    };
+
+
+
+
 
 
 
@@ -180,249 +266,184 @@ jQuery(document).ready(function($){
 
         }
 
-        textMessage += "<br>You must use a laptop/desktops for this class. No chromebooks, iPads or tablets. Your child must also use a headset.";
+        let textMessage2 = "<br>You must use a laptop/desktops for this class. No chromebooks, iPads or tablets. Your child must also use a headset.";
+
+
+
+        let hw = $(this).data("hw");
+
+        console.log(hw);
+
+        if(hw){
+
+            textMessage2 = "Please select the device your child will use in class from the allowed options below. A headset and a webcam is also required.";
+
+
+
+            Swal.fire({
+
+                html: textMessage2,
+
+                width: 600,
+
+                icon: 'question',
+
+                input: 'select',
+
+                inputOptions: hw,
+
+                inputPlaceholder:"Select the device",
+
+                inputAttributes: {
+
+                    'onchange': 'checkSelect(this);'
+
+                },
+
+                inputValidator: function(value) {
+
+                    return new Promise(function(resolve){
+
+                        if (value) {
+
+                            resolve();
+
+                        } else {
+
+                            resolve('Please select the device your child will use in class')
+
+                        }
+
+                    })
+
+                },
+
+                showCancelButton: true,
+
+                confirmButtonColor: '#3085d6',
+
+                confirmButtonText: 'Next',
+
+                cancelButtonText: 'Cancel',
+
+                reverseButtons: true,
+
+            }).then(function(result) {
+
+                console.log(result,1);
+
+                if (result.value) {
+
+                    addToCart(id);
+
+                    let link = showCartIcon();
+
+
+
+                    Swal.fire({
+
+                        html: textMessage,
+
+                        width: 600,
+
+                        icon: 'success',
+
+                        showCancelButton: true,
+
+                        confirmButtonColor: '#3085d6',
+
+                        confirmButtonText: 'Continue to check out',
+
+                        cancelButtonText: 'Add another class',
+
+                        reverseButtons: true,
+
+                    }).then(function(result) {
+
+                        if (result.value) {
+
+                            window.location.href=link
+
+                        } else {
+
+                            console.log(result,1);
+
+                        }
+
+                    });
 
 
 
 
 
-        if(typeof localStorage.cart == "undefined"){
 
-            localStorage.setItem('cart', JSON.stringify([]));
 
-        }
+                }
 
-        let classesInCart = JSON.parse(localStorage.getItem('cart'));
+            });
 
-        let classAdd = false;
 
-        classesInCart.forEach(function(item, i, arr) {
 
-            if(item['id']===id){
+        } else {
 
-                classesInCart[i] = {
+            addToCart(id);
 
-                    "id":id,
 
-                    "cnt": item['cnt']+1,
 
-                    "time": new Date().getTime()
+            let link = showCartIcon();
 
-                };
+            Swal.fire({
 
-                classAdd = true;
+                html: textMessage + textMessage2,
 
-            }
+                width: 600,
 
-        });
+                icon: 'success',
 
-        if(!classAdd){
+                showCancelButton: true,
 
-            classesInCart.push({
+                confirmButtonColor: '#3085d6',
 
-                "id":id,
+                confirmButtonText: 'Continue to check out',
 
-                "cnt": 1,
+                cancelButtonText: 'Add another class',
 
-                "time": new Date().getTime()
+                reverseButtons: true,
+
+            }).then(function(result) {
+
+                if (result.value) {
+
+                    window.location.href=link
+
+                }
 
             });
 
         }
 
-        localStorage.setItem('cart', JSON.stringify(classesInCart));
 
-        let link = showCartIcon();
 
-        Swal.fire({
 
-            html: textMessage,
-
-            width: 600,
-
-            icon: 'success',
-
-            showCancelButton: true,
-
-            confirmButtonColor: '#3085d6',
-
-            confirmButtonText: 'Continue to check out',
-
-            cancelButtonText: 'Add another class',
-
-            reverseButtons: true,
-
-        }).then((result) => {
-
-            if (result.value) {
-
-                window.location.href=link
-
-            }
-
-        });
 
     });
 
-
-                // Работа кнопок фильтров 
-                $('.GradesFilterButton').click(function(){
-                    $(this).parents().find('.FilterFormClasses').hide();
-                    $(this).parent().find('.FilterFormGrades').animate({
-                            height: "toggle"
-                        }, 500, function() {
-                    });
-                    $(this).toggleClass('clicked');
-                    $('.ClassesFilterButton').removeClass('clicked');
+    // $('div.tags').find('input:checkbox').live('click', function () {
+    //     $('.results > li').hide();
+    //     $('div.tags').find('input:checked').each(function () {
+    //         $('.results > li.' + $(this).attr('rel')).show();
+    //     });
+    // });
     
-                })
-                $('.ClassesFilterButton').click(function(){
-                    $(this).parents().find('.FilterFormGrades').hide();
-                    $(this).parent().find('.FilterFormClasses').animate({
-                            height: "toggle"
-                        }, 500, function() {
-                    });
-                    $(this).toggleClass('clicked');
-                    $('.GradesFilterButton').removeClass('clicked');
-                })
-    
-               // Фильтрация по классам 
-                $('[data-title="Class"]').each(function () {
-                    let Class =  $('a', this).attr('title');
-                    Class=Class.split(':')[0];
-                    Class=Class.split(' Level')[0];
-                    $(this).attr('rel', Class);
-                });
-    
-                function detectRange(str) {
-                    var parts = str.split("-");
-                    if (parts[0] == "K (graduated) "){
-                        parts[0] = '0';
-                        
-                    }
-                    return [parseInt(parts[0]), parseInt(parts[1])];
-                }
-    
-                    function inRange(n, r) {
-                        var i = r[0];
-                        var result = false;
-                        for (i; i <= r[1]; i++) {
-                        if (n == i) {
-                            result = true;
-                        }
-                        }
-                        return result;
-                    }
-    
-                function filterRows(fObj, tObj) {
-                    var rows = $("tbody > tr", tObj);
-                    rows.hide();
-                    if ($(":checked", fObj).length == 0 || $(":checked", fObj).length == $("input[type='checkbox']", fObj)) {
-                        return;
-                    }
-                    var filter = [], range;
-                    $(":checked", fObj).each(function(i, el) {
-                        filter.push(parseInt($(el).val()));
-                    });
-                    rows.each(function(i, r) {
-                        range = detectRange($('[data-title="Grade level"]', r).text().trim());
-                        var hit = 0;
-                        $.each(filter, function(j, f) {
-                            if (inRange(f, range)) {
-                                hit++;
-                            }
-                        });
-                        if (hit != 0) {
-                            $(r).show();
-                        }
-                    });
-                }
-    
-                        
-                $(".FilterFormClasses").find("input:checkbox").click(function() {
-                    $(this).parents(".filterTable").find(".FilterFormGrades").find("input:checkbox").prop('checked', false);
-                    $(this).parents(".pb-text").find($('tr')).not(':first').hide();
-                    $('input:checkbox:checked').each(function() {
-                        var status = $(this).attr('rel');
-                        var value = $(this).val();
-                        $('[rel="' + value + '"]').parent('tr').show();
-                    });
-                    if ($(this).parents(".FilterFormClasses").find("input:checkbox").filter(':checked').length > 0) {
-    
-                    } else {
-                        console.log('nothing checked');
-                        $('tr').show();
-                    }
-                });
-    
-                $(".FilterFormGrades").find("input:checkbox").click(function() {
-                    $(this).parents(".filterTable").find(".FilterFormClasses").find("input:checkbox").prop('checked', false);
-                    filterRows($(this).parent(), $(this).parents(".pb-text").find($("table")));
-                    if ($(this).parents(".FilterFormGrades").find("input:checkbox").filter(':checked').length > 0) {
-    
-                    } else {
-                        $('tr').show();
-                    }
-                })
-                
-                $('[data-title="Class"]').each(function () {
-                    var atrr = $(this).attr('rel').replace(/\s+/g, '');
-                        switch (atrr){
-                            case 'ScratchJr': $(this).find('a').attr('data-tooltip-content', "#tooltip_ScratchJr");
-                                              $(this).parent('tr').css({"border-left":"6px solid #f0e247","border-right":"6px solid #f0e247"});
-                                    break;
-                            case '3DVideoGameDesign': $(this).find('a').attr('data-tooltip-content', "#tooltip_3DVideoGameDesign");
-                                              $(this).parent('tr').css({"border-left":"6px solid #f0e247","border-right":"6px solid #f0e247"});
-                                    break;
-                            case 'Scratch': $(this).find('a').attr('data-tooltip-content', "#tooltip_Scratch");
-                                              $(this).parent('tr').css({"border-left":"6px solid #d35347","border-right":"6px solid #d35347"});
-                                    break;
-                            case 'MinecraftClub': $(this).find('a').attr('data-tooltip-content', "#tooltip_MinecraftClub");
-                                              $(this).parent('tr').css({"border-left":"6px solid #f0e247","border-right":"6px solid #f0e247"});
-                                break;
-                            case 'RobloxBuild': $(this).find('a').attr('data-tooltip-content', "#tooltip_RobloxBuild");
-                                              $(this).parent('tr').css({"border-left":"6px solid #f0e247","border-right":"6px solid #f0e247"});
-                                break;
-                            case 'RobloxCode': $(this).find('a').attr('data-tooltip-content', "#tooltip_RobloxCode");
-                                              $(this).parent('tr').css({"border-left":"6px solid #5cb8d7","border-right":"6px solid #5cb8d7"});
-                                break;
-                            case 'Python': $(this).find('a').attr('data-tooltip-content', "#tooltip_Python");
-                                              $(this).parent('tr').css({"border-left":"6px solid #5cb8d7","border-right":"6px solid #5cb8d7"});
-                                break;
-                            case 'WebDevelopment': $(this).find('a').attr('data-tooltip-content', "#tooltip_WebDevelopment");
-                                              $(this).parent('tr').css({"border-left":"6px solid #5cb8d7","border-right":"6px solid #5cb8d7"});
-                                break;
-                            case 'MinecraftJavaMods': $(this).find('a').attr('data-tooltip-content', "#tooltip_MinecraftJavaMods");
-                                $(this).parent('tr').css({"border-left":"6px solid #d35347","border-right":"6px solid #d35347"});
-                                break;
-                            case 'MinecraftModding': $(this).find('a').attr('data-tooltip-content', "#tooltip_MinecraftModding");
-                                $(this).parent('tr').css({"border-left":"6px solid #5cb8d7","border-right":"6px solid #5cb8d7"});
-                                break;
-                            default: console.log(" ")
-                                break;
-                        }
-                    $(this).find('a').addClass("tooltip");
-                });
-                
-    
-                $('.tooltip').tooltipster({
-                    theme: 'tooltipster-shadow',
-                    contentCloning: true
-                });
-    
-                $('.accordeon').each(function(){
-                    $(this).next().hide();
-                })
-            
-                $('.accordeon').next().hide();
-                $('.accordeon').click(function(){
-                    $(this).toggleClass("open"); 
-                    $(this).next().animate({
-                            height: "toggle"
-                        }, 500, function() {
-                    });
-                })
+    $('.FilterFormClasses').find('input:checkbox').live('click', function () {
+        $(this).parents(".filterTable").find(".FilterFormGrades").find("input:checkbox").prop('checked', false);
+        $(this).parents(".sheduleTable").find($('tr')).not(':first').hide();
+        $(this).parents(".sheduleTable").find('.FilterFormClasses').find('input:checkbox').each(function () {
+            let value = $(this).attr('value');
+            $('[data-program="' + value + '"]').show();
+        });
 
 
+    })
 
 });
