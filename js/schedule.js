@@ -452,27 +452,15 @@ jQuery(document).ready(function($){
 
 
     $('.accordeon').each(function(){
-
         $(this).next().hide();
-
     })
-
-
-
     $('.accordeon').next().hide();
-
     $('.accordeon').click(function(){
-
         $(this).toggleClass("open"); 
-
         $(this).next().animate({
-
                 height: "toggle"
-
             }, 500, function() {
-
         });
-
     })
 
     // $('div.tags').find('input:checkbox').live('click', function () {
@@ -488,9 +476,8 @@ jQuery(document).ready(function($){
         $(this).parents(".sheduleTable").find($('tr')).not(':first').hide();
         $(this).parents(".sheduleTable").find('.FilterFormClasses').find('input:checked').each(function () {
             let value = $(this).attr('value');
-            $('[data-program="' + value + '"]').show();
+            (this).parents(".sheduleTable").find($('[data-program="' + value + '"]')).show();
             console.log(value);
-
         });
     })
 
