@@ -528,8 +528,9 @@ jQuery(document).ready(function($){
     })
 
 
-    $(".sheduleTable").find($('tr')).each(function () {
-        let atrr =$(this).attr('[data-program]');
+    $(".sheduleTable").find($('tr')).not(':first').each(function () {
+        let atrr = $(this).attr('[data-program]');
+        console.log{atrr};
             switch (atrr){
                 case 'Scratch Jr': $(this).find('a').attr('data-tooltip-content', "#tooltip_ScratchJr");
                         $(this).css({"border-left":"6px solid #f0e247","border-right":"6px solid #f0e247"});
