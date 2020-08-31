@@ -469,18 +469,67 @@ jQuery(document).ready(function($){
     //         $('.results > li.' + $(this).attr('rel')).show();
     //     });
     // });
+
+    function detectRange(str) {
+        let parts = str.replace(/[^0-9\s]/gi, '');
+        let partsLast = str.substr(str.length - 1);
+        return [parseInt(parts[0]), parseInt(partsLast)];
+    }
+
+    function inRange(n, r) {
+        var i = r[0];
+        var result = false;
+        for (i; i <= r[1]; i++) {
+            if (n == i) {
+                result = true;
+            }
+        }
+        return result;
+    }
+
+    function filterRows(fObj, tObj) {
+        let rows = $("tbody > tr", tObj);
+        rows.hide();
+        if ($(":checked", fObj).length == 0 || $(":checked", fObj).length == $("input[type='checkbox']", fObj)) {
+            return;
+        }
+
+        let filter = [], range;
+        $(":checked", fObj).each(function(i, el) {
+            filter.push(parseInt($(el).val()));
+        });
+
+        rows.each(function(i, r) {
+            range = detectRange($('[data-grades]', r).text().trim());
+            var hit = 0;
+            $.each(filter, function(j, f) {
+                if (inRange(f, range)) {
+                    hit++;
+                }
+            });
+            if (hit != 0) {
+                $(r).show();
+            }
+        });
+    }
     
     $('.FilterFormClasses').find('input:checkbox').live('click', function () {
-        console.log($(this).attr('value'));
         $(this).parents(".filterTable").find(".FilterFormGrades").find("input:checkbox").prop('checked', false);
         $(this).parents(".sheduleTable").find($('tr')).not(':first').hide();
         $(this).parents(".sheduleTable").find('.FilterFormClasses').find('input:checked').each(function () {
             let value = $(this).attr('value');
             $(this).parents(".sheduleTable").find($('[data-program="' + value + '"]')).show();
-            console.log(value);
         });
     })
 
+    $(".FilterFormGrades").find("input:checkbox").click(function() {
+        $(this).parents(".filterTable").find(".FilterFormClasses").find("input:checkbox").prop('checked', false);
+        filterRows($(this).parent(), $(this).parents(".sheduleTable").find($(".table")));
+        if ($(this).parents(".FilterFormGrades").find("input:checkbox").filter(':checked').length > 0) {
+        } else {
+            $('tr').show();
+        }
 
+    })
 
 });
