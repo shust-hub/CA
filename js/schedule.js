@@ -465,9 +465,7 @@ jQuery(document).ready(function($){
 
 
     function detectRange(str) {
-        console.log(str);
         let parts = str.replace(/[^0-9\s]/gi, '');
-        console.log(parts)
         let partsLast = parts.substr(parts.length - 1);
         console.log(parseInt(parts[0]), parseInt(partsLast))
         return [parseInt(parts[0]), parseInt(partsLast)];
@@ -486,7 +484,7 @@ jQuery(document).ready(function($){
 
     function filterRows(fObj, tObj) {
         let rows = $("tbody > tr", tObj);
-        rows.hide();
+        // rows.hide();
         if ($(":checked", fObj).length == 0 || $(":checked", fObj).length == $("input[type='checkbox']", fObj)) {
             return;
         }
@@ -519,6 +517,7 @@ jQuery(document).ready(function($){
 
     $(".FilterFormGrades").find("input:checkbox").click(function() {
         $(this).parents(".filterTable").find(".FilterFormClasses").find("input:checkbox").prop('checked', false);
+        $(this).parents(".sheduleTable").find($('tr')).not(':first').hide();
         $(this).parents(".sheduleTable").find('.FilterFormGrades').find('input:checked').each(function () {
             filterRows($(this).parent(), $(this).parents(".sheduleTable").find($(".table")));
         });
