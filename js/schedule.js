@@ -529,7 +529,7 @@ jQuery(document).ready(function($){
 
 
     $('[data-program]').each(function () {
-        let atrr = $('[data-program]').attr('rel');
+        let atrr =$(this).attr('[data-program]');
             switch (atrr){
                 case 'Scratch Jr': $(this).find('a').attr('data-tooltip-content', "#tooltip_ScratchJr");
                         $(this).css({"border-left":"6px solid #f0e247","border-right":"6px solid #f0e247"});
