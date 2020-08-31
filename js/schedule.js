@@ -476,7 +476,7 @@ jQuery(document).ready(function($){
         $(this).parents(".sheduleTable").find($('tr')).not(':first').hide();
         $(this).parents(".sheduleTable").find('.FilterFormClasses').find('input:checked').each(function () {
             let value = $(this).attr('value');
-            (this).parents(".sheduleTable").find($('[data-program="' + value + '"]')).show();
+            $(this).parents(".sheduleTable").find($('[data-program="' + value + '"]')).show();
             console.log(value);
         });
     })
