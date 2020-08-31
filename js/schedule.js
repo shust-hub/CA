@@ -504,6 +504,8 @@ jQuery(document).ready(function($){
         });
 
         rows.each(function(i, r) {
+            let stg = tObj.find($('tr')).attr("data-grades", r);
+            console.log( stg );
             range = detectRange($('tr').attr("data-grades", r));
             let hit = 0;
             $.each(filter, function(j, f) {
