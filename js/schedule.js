@@ -493,7 +493,6 @@ jQuery(document).ready(function($){
     function filterRows(fObj, tObj) {
         let rows = $("tbody > tr", tObj);
         rows.hide();
-        console.log("all rows hide");
 
         if ($(":checked", fObj).length == 0 || $(":checked", fObj).length == $("input[type='checkbox']", fObj)) {
             return;
@@ -505,6 +504,7 @@ jQuery(document).ready(function($){
         });
 
         rows.each(function(i, r) {
+            console.log($('tr').attr("data-grades"));
             range = detectRange($('tr').attr("data-grades"));
             let hit = 0;
             $.each(filter, function(j, f) {
