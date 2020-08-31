@@ -519,7 +519,9 @@ jQuery(document).ready(function($){
 
     $(".FilterFormGrades").find("input:checkbox").click(function() {
         $(this).parents(".filterTable").find(".FilterFormClasses").find("input:checkbox").prop('checked', false);
-        filterRows($(this).parent(), $(this).parents(".sheduleTable").find($(".table")));
+        $(this).parents(".sheduleTable").find('.FilterFormGrades').find('input:checked').each(function () {
+            filterRows($(this).parent(), $(this).parents(".sheduleTable").find($(".table")));
+        });
         if ($(this).parents(".FilterFormGrades").find("input:checkbox").filter(':checked').length <= 0) {
             $('tr').show();
         } 
