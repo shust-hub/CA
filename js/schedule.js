@@ -428,45 +428,27 @@ jQuery(document).ready(function($){
 
     });
 
-                    // Работа кнопок фильтров 
+    // Работа кнопок фильтров 
 
-                    $('.GradesFilterButton').click(function(){
+    $('.GradesFilterButton').click(function(){
+        $(this).parents().find('.FilterFormClasses').hide();
+        $(this).parent().find('.FilterFormGrades').animate({
+                height: "toggle"
+            }, 500, function() {
+        });
+        $(this).toggleClass('clicked');
+        $('.ClassesFilterButton').removeClass('clicked');
+    })
+    $('.ClassesFilterButton').click(function(){
+        $(this).parents().find('.FilterFormGrades').hide();
+        $(this).parent().find('.FilterFormClasses').animate({
+                height: "toggle"
+            }, 500, function() {
+        });
 
-                        $(this).parents().find('.FilterFormClasses').hide();
-    
-                        $(this).parent().find('.FilterFormGrades').animate({
-    
-                                height: "toggle"
-    
-                            }, 500, function() {
-    
-                        });
-    
-                        $(this).toggleClass('clicked');
-    
-                        $('.ClassesFilterButton').removeClass('clicked');
-    
-        
-    
-                    })
-    
-                    $('.ClassesFilterButton').click(function(){
-    
-                        $(this).parents().find('.FilterFormGrades').hide();
-    
-                        $(this).parent().find('.FilterFormClasses').animate({
-    
-                                height: "toggle"
-    
-                            }, 500, function() {
-    
-                        });
-    
-                        $(this).toggleClass('clicked');
-    
-                        $('.GradesFilterButton').removeClass('clicked');
-    
-                    })
+        $(this).toggleClass('clicked');
+        $('.GradesFilterButton').removeClass('clicked');
+    })
 
     // $('div.tags').find('input:checkbox').live('click', function () {
     //     $('.results > li').hide();
@@ -476,14 +458,15 @@ jQuery(document).ready(function($){
     // });
     
     $('.FilterFormClasses').find('input:checkbox').live('click', function () {
+        console.log($(this).attr('value'));
         $(this).parents(".filterTable").find(".FilterFormGrades").find("input:checkbox").prop('checked', false);
         $(this).parents(".sheduleTable").find($('tr')).not(':first').hide();
         $(this).parents(".sheduleTable").find('.FilterFormClasses').find('input:checkbox').each(function () {
             let value = $(this).attr('value');
             $('[data-program="' + value + '"]').show();
+            console.log(value);
+
         });
-
-
     })
 
 });
